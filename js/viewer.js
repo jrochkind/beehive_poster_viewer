@@ -39,7 +39,9 @@ function addHelloWorldPlugin() {
 }
 
 function setupOpenSeadragonViewer() {
-  var viewer = OpenSeadragon({
+  /* Save in global cause we're gonna need to refer to it and stuff 
+     and we're too lazy to make a closure right now */
+  window.openSeadragonViewer = OpenSeadragon({
     id: "openseadragon",
     //prefixUrl: "http://annotorious.github.io/js/openseadragon/images/",
     showNavigator: false,
@@ -47,11 +49,19 @@ function setupOpenSeadragonViewer() {
     tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
   });
 
-  anno.makeAnnotatable(viewer);
+  anno.makeAnnotatable(openSeadragonViewer);
+}
+
+function positionOverlayControls() {
+  var controls = $("#overlayControls");
+  var container = $("#openseadragon .openseadragon-container");
+
+  container.append(controls);
 }
 
 
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
   addHelloWorldPlugin();
+  positionOverlayControls();
 });
