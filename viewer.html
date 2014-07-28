@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Beehive Design Collective</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- trying to link to local annotorious was not working for reasons
+         I am not sure, linking ot live one on site for now -->
+    <link href="http://annotorious.github.io/latest/annotorious.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="./openseadragon-bin-1.1.1/openseadragon.js"></script>
+    <script type="text/javascript" src="http://annotorious.github.io/latest/annotorious.min.js"></script>
+
+    <script type="text/javascript" src="./js/viewer.js">
+    </script>
+    
+
+    <style>
+      #map-annotate-button {
+        position:absolute;
+        top:3px;
+        right:3px;
+        background-color:#000;
+        color:#fff;
+        padding:3px 8px;
+        z-index:10000;
+        font-size:11px;
+        text-decoration:none;
+
+        /*display: none;*/
+      }
+    </style>
+      
+
+
+
+  </head>
+
+  <body style="zoom: 1;">
+
+    <div class="content">
+      <div style="position:absolute; top: 0; bottom: 0; left: 0; right: 0;">
+          <div id="openseadragon" style="position:absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>`
+          <a id="map-annotate-button" onclick="annotate(); return false;" href="http://annotorious.github.io/demos/openseadragon-preview.html#">ADD ANNOTATION</a>
+        </div>
+    </div>
+
+  </body>
+</html>
