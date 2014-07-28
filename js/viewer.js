@@ -1,5 +1,8 @@
 /* All the javascript we need for the poster viewer in one file */
 
+var poster = "mr-inside"
+var lang = "en";
+
 
 /* Used by actual on-screen annotorious make annotation stuff, which
    we're not really using at present */
@@ -131,10 +134,45 @@ function addPermalinkFunc() {
     $("#linkModal").trigger('openModal');
   });
 
-
-
 }
 
+function addStoryList() {
+  /* fetch the xml of stories */
+  var fetchUrl = "./narrative/" + poster + "/" + lang + ".xml";
+  $.ajax({
+    url: fetchUrl,
+    success: function(xml) {
+      var storyList = $("#storyList");
+
+      $(xml).find('story').each(function(i, storyXml){
+        var li = $("<li/>");
+        var a  = $("<a href='#' class='story'/>").
+          text($(storyXml).find("label").text()).
+          data('beehive-story', storyXml);
+
+        li.append(a).appendTo(storyList);
+      });
+    },
+  });
+
+  $("#storyList").on("click", ".story", function(event) {
+    event.preventDefault();
+    var story = $( $(this).data("beehive-story") );
+    var region = $(story.find("region"));
+
+    var rect = new OpenSeadragon.Rect(parseFloat(region.attr("x")),
+        parseFloat(region.attr("y")),
+        parseFloat(region.attr("width")),
+        parseFloat(region.attr("height")));
+
+    openSeadragonViewer.viewport.fitBounds(rect);
+
+    $("#storyLabel").text( story.find("label").text() );
+    $("#storyText").html( story.find("html").text()  );
+    $(".controlsText").show();
+  });
+
+}
 
 
 jQuery( document ).ready(function( $ ) {
@@ -142,4 +180,5 @@ jQuery( document ).ready(function( $ ) {
   addHelloWorldPlugin();
   positionOverlayControls();
   addPermalinkFunc();
+  addStoryList();
 });
