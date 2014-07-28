@@ -20,13 +20,17 @@ body {
   top: 34px;
   left: 6px;
 
-
   border: 1px solid black;
   width: 360px;
 
-  padding: 6px;
+  background-color: #F8F8F4;
+}
 
-  background: red;
+.controlsSection {
+  padding: 6px;
+}
+.controlsSection:empty {
+  display: none;
 }
 
 
