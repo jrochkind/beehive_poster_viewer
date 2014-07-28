@@ -59,9 +59,80 @@ function positionOverlayControls() {
   container.append(controls);
 }
 
+/* Function to create a URL linking to current view, and to
+   set current view from URL on load */
+function addPermalinkFunc() {
+  function boundsToParams(bounds) {
+    return "x=" + encodeURIComponent(bounds.x.toFixed(5)) + 
+      "&y=" + encodeURIComponent(bounds.y.toFixed(5)) +
+      "&w=" + encodeURIComponent(bounds.width.toFixed(5)) +
+      "&h=" + encodeURIComponent(bounds.height.toFixed(5))
+  }
+
+/* Take an OpenSeadragon.Rect, add it into query params for a link.
+     We keep 5 decimal places which is enough for an image 100,000 pixels
+     high/wide, which should be plenty (coordinate are relative 0 -> 1 )*/
+  function urlWithNewBounds(bounds) {
+    var currentParams = paramsToHash(window.location.search);
+    var url = window.location.href.split('?')[0];
+    
+    currentParams.x = bounds.x.toFixed(5);
+    currentParams.y = bounds.y.toFixed(5);
+    currentParams.w = bounds.width.toFixed(5);
+    currentParams.h = bounds.height.toFixed(5);
+
+    url += '?' + jQuery.param(currentParams);
+
+    return url;
+  }
+
+  function paramsToHash(querystring) {
+    // remove any preceding url and split
+    querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
+    var params = {}, pair, d = decodeURIComponent;
+    // march and parse
+    for (var i = querystring.length - 1; i >= 0; i--) {
+      pair = querystring[i].split('=');
+      params[d(pair[0])] = d(pair[1]);
+    }
+
+    return params;
+  };
+
+  /* On load, do we have coordinates in a query string? If so, then zoom
+     to specified coords */
+ openSeadragonViewer.addHandler('open', function (event) {
+    var params = paramsToHash(document.location.search);
+    if ( ("x" in params ) && (params.x !== "") &&
+         ("y" in params ) && (params.y !== "") &&
+         ("w" in params ) && (params.w !== "") &&
+         ("h" in params ) && (params.h !== "") ) {
+
+      var rect = new OpenSeadragon.Rect(parseFloat(params.x),
+        parseFloat(params.y),
+        parseFloat(params.w),
+        parseFloat(params.h));
+      openSeadragonViewer.viewport.fitBounds(rect);
+    }
+  });
+
+
+  $("#overlayControls").on("click", ".makePermaLink", function(event) {
+    event.preventDefault();
+    var bounds = openSeadragonViewer.viewport.getBounds();
+
+    alert(urlWithNewBounds(bounds));
+  });
+
+
+
+}
+
+
 
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
   addHelloWorldPlugin();
   positionOverlayControls();
+  addPermalinkFunc();
 });
