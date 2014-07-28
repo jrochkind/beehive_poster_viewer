@@ -75,7 +75,7 @@ function addPermalinkFunc() {
   function urlWithNewBounds(bounds) {
     var currentParams = paramsToHash(window.location.search);
     var url = window.location.href.split('?')[0];
-    
+
     currentParams.x = bounds.x.toFixed(5);
     currentParams.y = bounds.y.toFixed(5);
     currentParams.w = bounds.width.toFixed(5);
@@ -99,6 +99,11 @@ function addPermalinkFunc() {
     return params;
   };
 
+  /* prepare the modal we'll display permalinks in */
+  $("#linkModal").easyModal({
+      overlayOpacity: 0.8
+  });
+
   /* On load, do we have coordinates in a query string? If so, then zoom
      to specified coords */
  openSeadragonViewer.addHandler('open', function (event) {
@@ -121,7 +126,9 @@ function addPermalinkFunc() {
     event.preventDefault();
     var bounds = openSeadragonViewer.viewport.getBounds();
 
-    alert(urlWithNewBounds(bounds));
+
+    $("#linkModalUrlField").val( urlWithNewBounds(bounds) );
+    $("#linkModal").trigger('openModal');
   });
 
 

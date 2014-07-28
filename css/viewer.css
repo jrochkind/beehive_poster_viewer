@@ -14,6 +14,11 @@ body {
   right: 0;
 }
 
+/*******************
+ * Overlay control panel
+ *
+ ******************/
+
 #overlayControls {
   /* position below and lined up with openseadragon controls for now */
   position: absolute;
@@ -31,6 +36,23 @@ body {
 }
 .controlsSection:empty {
   display: none;
+}
+
+/*******************
+ *
+ * Modal popup for permalink display
+ *
+ ******************/
+
+#linkModal {
+  border: 1px solid black;
+  background-color: #F8F8F4;
+  padding: 12px;
+  width: 400px;
+}
+#linkModalUrlField {
+  width: 380px;
+  padding: 6px;
 }
 
 
