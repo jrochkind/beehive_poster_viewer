@@ -18,6 +18,22 @@ html, body{
   margin: 0;
 }
 
+/********************
+ * screen-reader only, borrowed from bootstrap
+ ********************/
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
 /*******************
  * Overlay control panel
  *
@@ -36,13 +52,23 @@ html, body{
 }
 #minimizedControls {
   padding: 6px;
+  padding-bottom: 2px;
   display: inline-block;
   width: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   opacity: 0.8;
 }
 #minimizedControls:hover {
   opacity: 1;
+}
+.controlsMinimizeImg {
+  height: 16px;
+  width: 16px;
+  float: right;
+}
+.controlsMaximizeImg {
+  height: 16px;
+  width: 16px;
 }
 
 
