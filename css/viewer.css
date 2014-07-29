@@ -45,9 +45,11 @@ html, body{
   width: auto;
   border-radius: 20px;
   opacity: 0.8;
+  filter:alpha(opacity=80); /* for IE <= 8 */
 }
 #minimizedControls:hover {
   opacity: 1;
+  filter:alpha(opacity=100); /* for IE <= 8 */
 }
 .controlsMinimizeImg, .makePermaLinkImg {
   float: right;
