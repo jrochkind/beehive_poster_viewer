@@ -50,6 +50,7 @@ function setupOpenSeadragonViewer() {
     showNavigator: false,
     autoHideControls: false,
     prefixUrl: "/beehive/openseadragon/images/",
+    animationTime: 4,
     //tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
     tileSources:  "./tiles/mr-inside/mr-inside.dzi"
   });
