@@ -58,9 +58,24 @@ function setupOpenSeadragonViewer() {
 
 function positionOverlayControls() {
   var controls = $("#overlayControls");
+  var minimizedButton = $("#minimizedControls");
   var container = $("#openseadragon .openseadragon-container");
 
+
   container.append(controls);
+  container.append(minimizedButton);
+
+  // Add minimization behavior
+  controls.on("click", ".controlsMinimize", function(event) {
+    controls.fadeOut().finish();
+    minimizedButton.show();
+  });
+  minimizedButton.on("click", ".controlsMaximize", function(event) {
+    minimizedButton.hide();
+    controls.fadeIn();
+  });
+
+
 }
 
 /* Function to create a URL linking to current view, and to

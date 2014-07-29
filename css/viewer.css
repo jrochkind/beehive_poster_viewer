@@ -23,16 +23,26 @@ html, body{
  *
  ******************/
 
-#overlayControls {
+#overlayControls, #minimizedControls {
   /* position below and lined up with openseadragon controls for now */
   position: relative;
-  margin: 34px 6px;
+  margin: 38px 6px;
 
   border: 1px solid black;
   width: 320px;
 
   background-color: #F8F8F4;
   max-height: 90%;
+}
+#minimizedControls {
+  padding: 6px;
+  display: inline-block;
+  width: auto;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+#minimizedControls:hover {
+  opacity: 1;
 }
 
 
