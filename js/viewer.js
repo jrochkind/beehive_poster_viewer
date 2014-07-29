@@ -198,12 +198,11 @@ function addStoryList() {
         parseFloat(region.attr("width")),
         parseFloat(region.attr("height")));
 
-    openSeadragonViewer.viewport.fitBounds(rect);
-
     $("#storyLabel").text( story.find("label").text() );
     $("#storyText").html( story.find("html").text()  );
 
     $("#storyList").slideUp('slow', function() {
+      openSeadragonViewer.viewport.fitBounds(rect);
       $(".controlsText").slideDown('slow');
     });
   });
