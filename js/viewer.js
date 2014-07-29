@@ -48,6 +48,7 @@ function setupOpenSeadragonViewer() {
     id: "openseadragon",
     //prefixUrl: "http://annotorious.github.io/js/openseadragon/images/",
     showNavigator: false,
+    autoHideControls: false,
     prefixUrl: "/beehive/openseadragon/images/",
     //tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
     tileSources:  "./tiles/mr-inside/mr-inside.dzi"
