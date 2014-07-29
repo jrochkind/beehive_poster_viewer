@@ -49,7 +49,8 @@ function setupOpenSeadragonViewer() {
     //prefixUrl: "http://annotorious.github.io/js/openseadragon/images/",
     showNavigator: false,
     prefixUrl: "/beehive/openseadragon/images/",
-    tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
+    //tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
+    tileSources:  "./tiles/mr-inside/mr-inside.dzi"
   });
 
   anno.makeAnnotatable(openSeadragonViewer);
