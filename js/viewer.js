@@ -84,9 +84,19 @@ function positionOverlayControls() {
   $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
 
-    $(".controlsText").slideUp('slow', function() {
-      $("#storyList").slideDown('slow');
-    });
+    if ($(this).hasClass("open")) {
+      $("#storyList").slideUp('slow', function() {
+        $(".scene-expander").removeClass("open");     
+      });
+    } else {
+      $(".controlsText").slideUp('slow', function() {
+        $("#storyList").slideDown('slow', function() {
+          $(".scene-expander").addClass("open");
+        });
+      });
+    }
+
+
   });
 
   // Story text close
