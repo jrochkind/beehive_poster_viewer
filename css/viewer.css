@@ -25,14 +25,15 @@ html, body{
 
 #overlayControls {
   /* position below and lined up with openseadragon controls for now */
-  position: absolute;
-  top: 34px;
-  left: 6px;
+  position: relative;
+  margin: 34px 6px;
 
   border: 1px solid black;
-  width: 360px;
+  width: 320px;
 
   background-color: #F8F8F4;
+  max-height: 90%;
+  overflow-y: auto;
 }
 
 .controlsSection {
