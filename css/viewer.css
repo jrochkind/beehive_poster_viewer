@@ -61,15 +61,17 @@ html, body{
 #minimizedControls:hover {
   opacity: 1;
 }
-.controlsMinimizeImg {
-  height: 16px;
-  width: 16px;
+.controlsMinimizeImg, .makePermaLinkImg {
   float: right;
 }
-.controlsMaximizeImg {
+.makePermaLinkImg {
+  margin-right: 8px;
+}
+.icon {
   height: 16px;
   width: 16px;
 }
+
 
 
 .controlsSection {
