@@ -33,11 +33,12 @@ html, body{
 
   background-color: #F8F8F4;
   max-height: 90%;
-  overflow-y: auto;
 }
+
 
 .controlsSection {
   padding: 6px;
+  overflow-y: auto;
 }
 .controlsSection:empty {
   display: none;
