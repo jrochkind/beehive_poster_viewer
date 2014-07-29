@@ -80,20 +80,31 @@ function positionOverlayControls() {
     });
   });
 
+  function closeStoryList(func) {
+    $("#storyList").slideUp('slow', function() {
+      $(".scene-expander").removeClass("open");
+      if (func !== 'undefined') {
+        func();
+      }
+    });
+  }
+
+  function openStoryList() {
+    $(".controlsText").slideUp('slow', function() {
+      $("#storyList").slideDown('slow', function() {
+        $(".scene-expander").addClass("open");
+      });
+    });
+  }
+
   // Story list expand/contract
   $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
 
     if ($(this).hasClass("open")) {
-      $("#storyList").slideUp('slow', function() {
-        $(".scene-expander").removeClass("open");     
-      });
+      closeStoryList();
     } else {
-      $(".controlsText").slideUp('slow', function() {
-        $("#storyList").slideDown('slow', function() {
-          $(".scene-expander").addClass("open");
-        });
-      });
+      openStoryList();
     }
 
 
@@ -102,6 +113,26 @@ function positionOverlayControls() {
   // Story text close
   $("#overlayControls").on("click", ".close-story-link", function(event) {
     $(".controlsText").slideUp('slow');
+  });
+
+  // Click on story
+  $("#storyList").on("click", ".story", function(event) {
+    event.preventDefault();
+    var story = $( $(this).data("beehive-story") );
+    var region = $(story.find("region"));
+
+    var rect = new OpenSeadragon.Rect(parseFloat(region.attr("x")),
+        parseFloat(region.attr("y")),
+        parseFloat(region.attr("width")),
+        parseFloat(region.attr("height")));
+
+    $("#storyLabel").text( story.find("label").text() );
+    $("#storyText").html( story.find("html").text()  );
+
+    closeStoryList(function() {    
+      openSeadragonViewer.viewport.fitBounds(rect);
+      $(".controlsText").slideDown('slow');
+    });
   });
 
 }
@@ -198,25 +229,7 @@ function addStoryList() {
       });
     },
   });
-
-  $("#storyList").on("click", ".story", function(event) {
-    event.preventDefault();
-    var story = $( $(this).data("beehive-story") );
-    var region = $(story.find("region"));
-
-    var rect = new OpenSeadragon.Rect(parseFloat(region.attr("x")),
-        parseFloat(region.attr("y")),
-        parseFloat(region.attr("width")),
-        parseFloat(region.attr("height")));
-
-    $("#storyLabel").text( story.find("label").text() );
-    $("#storyText").html( story.find("html").text()  );
-
-    $("#storyList").slideUp('slow', function() {
-      openSeadragonViewer.viewport.fitBounds(rect);
-      $(".controlsText").slideDown('slow');
-    });
-  });
+  
 
 }
 
