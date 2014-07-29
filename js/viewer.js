@@ -68,14 +68,25 @@ function positionOverlayControls() {
 
   // Add minimization behavior
   controls.on("click", ".controlsMinimize", function(event) {
-    controls.fadeOut().finish();
-    minimizedButton.show();
+    controls.slideUp('slow', function() {;
+      // wait til animation is done
+      minimizedButton.fadeIn();
+    });
   });
   minimizedButton.on("click", ".controlsMaximize", function(event) {
-    minimizedButton.hide();
-    controls.fadeIn();
+    minimizedButton.fadeOut(function() {
+      controls.slideDown('slow');
+    });
   });
 
+  // Story list expand/contract
+  $("#overlayControls").on("click", ".scene-expander",function(event) {
+    event.preventDefault();
+
+    $(".controlsText").slideUp(1000, function() {
+      $("#storyList").slideDown('slow');
+    });
+  });
 
 }
 
@@ -186,10 +197,36 @@ function addStoryList() {
 
     $("#storyLabel").text( story.find("label").text() );
     $("#storyText").html( story.find("html").text()  );
-    $(".controlsText").show();
+
+    $("#storyList").slideUp('slow', function() {
+      $(".controlsText").slideDown('slow');
+    });
   });
 
 }
+
+  // Height limits on the story list we couldn't figure out
+  // how to do with pure CSS, we'll use some JS that we run on
+  // load and screen size change. 
+  function storyListHeightLimit() {
+    // Need to make sure it's a container that makes it onto
+    // full screen mode. 
+    var container = $("#openseadragon");
+    var panel     = $("#overlayControls")
+
+    var maxPanelHeight = container.height() - 
+      parseInt($(panel).css('margin-top')) -
+      8 // 8px bottom margin we want
+
+    panel.css("max-height", maxPanelHeight);
+
+    // There's only supposed to be one controlsSection on
+    // screen at once. For each one, that might be visible,
+    // make sure it's no higher than it's container panel
+    panel.find(".controlsSection").each(function(i, section) {
+
+    });
+  }
 
 
 jQuery( document ).ready(function( $ ) {

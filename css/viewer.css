@@ -18,20 +18,6 @@ html, body{
   margin: 0;
 }
 
-/********************
- * screen-reader only, borrowed from bootstrap
- ********************/
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-}
 
 
 /*******************
@@ -48,7 +34,9 @@ html, body{
   width: 320px;
 
   background-color: #F8F8F4;
-  max-height: 90%;
+  /* This is just approximate height limiting, we need JS to
+     to do it right */
+  /* max-height: 90%; */
 }
 #minimizedControls {
   padding: 6px;
@@ -70,6 +58,27 @@ html, body{
 .icon {
   height: 16px;
   width: 16px;
+}
+
+.controlsStoryList {
+  border-top: 1px solid black;
+}
+.controlsStoryList h3 {
+  margin: 0;
+}
+.controlsText {
+  border-top: 1px solid black;
+}
+
+#storyLabel {
+  margin: 0;
+}
+
+
+.scene-expander-icon {
+  float: right;
+  background-size: 100%;
+  background-image: url(../images/menu-pull-down.png);
 }
 
 
