@@ -60,6 +60,11 @@ html, body{
   width: 16px;
 }
 
+.controls-header-label {
+  display: inline;
+  margin: 0;
+}
+
 .controlsStoryList {
   border-top: 1px solid black;
 }
@@ -70,8 +75,11 @@ html, body{
   border-top: 1px solid black;
 }
 
-#storyLabel {
+#storyHeading {
   margin: 0;
+}
+.close-story-link {
+  float: right;
 }
 
 

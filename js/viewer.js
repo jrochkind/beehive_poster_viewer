@@ -83,9 +83,14 @@ function positionOverlayControls() {
   $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
 
-    $(".controlsText").slideUp(1000, function() {
+    $(".controlsText").slideUp('slow', function() {
       $("#storyList").slideDown('slow');
     });
+  });
+
+  // Story text close
+  $("#overlayControls").on("click", ".close-story-link", function(event) {
+    $(".controlsText").slideUp('slow');
   });
 
 }
