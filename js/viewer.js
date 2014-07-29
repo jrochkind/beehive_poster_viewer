@@ -83,7 +83,7 @@ function positionOverlayControls() {
   function closeStoryList(func) {
     $("#storyList").slideUp('slow', function() {
       $(".scene-expander").removeClass("open");
-      if (func !== 'undefined') {
+      if (typeof func !== 'undefined') {
         func();
       }
     });
