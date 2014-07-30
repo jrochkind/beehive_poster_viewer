@@ -118,10 +118,15 @@ function positionOverlayControls() {
     $(".controlsText").slideUp('slow');
   });
 
-  // Click on story
-  $("#storyList").on("click", ".story", function(event) {
-    event.preventDefault();
-    var story = $( $(this).data("beehive-story") );
+
+  // arg is the <li> element containing the .story link
+  // with story data attached. 
+  function loadStory(li) {
+    var story = $( li.find(".story").data("beehive-story") );
+
+    if (story.size() == 0)
+      return;
+
     var region = $(story.find("region"));
 
     var rect = new OpenSeadragon.Rect(parseFloat(region.attr("x")),
@@ -129,6 +134,15 @@ function positionOverlayControls() {
         parseFloat(region.attr("width")),
         parseFloat(region.attr("height")));
 
+    // Save the li in data for next/prev
+    $(".controlsText").data("beehive-story-li", li);
+
+    // Show/hide next/prev buttons based on if
+    // we got em
+    $(".controls-text-nav-prev").css("visibility",  (li.prev().size() > 0) ? "visible" : "hidden"  );
+    $(".controls-text-nav-next").css("visibility",  (li.next().size() > 0) ? "visible" : "hidden"  );
+
+    // Load the story content
     $("#storyLabel").text( story.find("label").text() );
     $("#storyText").html( story.find("html").text()  );
 
@@ -136,6 +150,25 @@ function positionOverlayControls() {
       openSeadragonViewer.viewport.fitBounds(rect);
       $(".controlsText").slideDown('slow');
     });
+  }
+
+  // Click on story
+  $("#storyList").on("click", ".story", function(event) {
+    event.preventDefault();
+
+    var li = $(this).closest("li")
+
+    loadStory(li);
+  });
+
+  // Next/prev
+  $(".controlsText").on("click", ".controls-text-nav-prev", function(event) {
+    var li = $(".controlsText").data("beehive-story-li");    
+    loadStory(li.prev());
+  });
+  $(".controlsText").on("click", ".controls-text-nav-next", function(event) {
+    var li = $(".controlsText").data("beehive-story-li");
+    loadStory(li.next());
   });
 
 }
