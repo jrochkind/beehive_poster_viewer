@@ -1,4 +1,8 @@
-/* All the javascript we need for the poster viewer in one file */
+/* All the javascript we need for the poster viewer in one file
+
+  Sorry this file is a bit of a mess organizationally. 
+
+*/
 
 var poster = "mr-inside"
 var lang = "en";
@@ -50,7 +54,6 @@ function setupOpenSeadragonViewer() {
     showNavigator: false,
     autoHideControls: false,
     prefixUrl: "/beehive/openseadragon/images/",
-    animationTime: 6,
     //tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
     tileSources:  "./tiles/mr-inside/mr-inside.dzi"
   });
@@ -129,7 +132,7 @@ function positionOverlayControls() {
     $("#storyLabel").text( story.find("label").text() );
     $("#storyText").html( story.find("html").text()  );
 
-    closeStoryList(function() {    
+    closeStoryList(function() {
       openSeadragonViewer.viewport.fitBounds(rect);
       $(".controlsText").slideDown('slow');
     });
@@ -248,13 +251,27 @@ function addStoryList() {
 
     panel.css("max-height", maxPanelHeight);
 
-    // There's only supposed to be one controlsSection on
-    // screen at once. For each one, that might be visible,
-    // make sure it's no higher than it's container panel
-    panel.find(".controlsSection").each(function(i, section) {
-
-    });
+    // The story list and and the story text area take
+    // turns being on the screen once at a time, below
+    // the header area. They each need a max height
+    // such that they won't overflow the panel. 
+    /*var headerHeight = panel.find(".controlsHeader").height();
+    var sceneExpanderHeight = panel.find(".scene-expander").height();
+    var maxLowerHeight = maxPanelHeight - headerHeight - sceneExpanderHeight;
+    panel.find(".storyList, .controlsText").each(function(i, section) {
+      $(section).css("max-height", maxLowerHeight);
+    });*/
   }
+  jQuery(document).ready(function($) {
+    // Once on load
+    storyListHeightLimit();
+
+    // And again if window changes
+    $( window ).resize(function(event) {
+      storyListHeightLimit();
+    });
+  });
+
 
 
 jQuery( document ).ready(function( $ ) {
