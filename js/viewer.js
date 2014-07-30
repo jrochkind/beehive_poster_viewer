@@ -255,12 +255,16 @@ function addStoryList() {
     // turns being on the screen once at a time, below
     // the header area. They each need a max height
     // such that they won't overflow the panel. 
-    /*var headerHeight = panel.find(".controlsHeader").height();
-    var sceneExpanderHeight = panel.find(".scene-expander").height();
-    var maxLowerHeight = maxPanelHeight - headerHeight - sceneExpanderHeight;
-    panel.find(".storyList, .controlsText").each(function(i, section) {
+    var storyListBottom = 
+      $(".controls-story-list-expander").position().top + 
+      $(".controls-story-list-expander").outerHeight(true);
+    // CSS max-heigh doesn't account for padding or borders, we need
+    // to subtract extra to account, we just do a healthy extra amt. 
+    var maxLowerHeight = maxPanelHeight - storyListBottom - 24;
+
+    panel.find(".controls-story-list, .controlsText").each(function(i, section) {
       $(section).css("max-height", maxLowerHeight);
-    });*/
+    });
   }
   jQuery(document).ready(function($) {
     // Once on load
