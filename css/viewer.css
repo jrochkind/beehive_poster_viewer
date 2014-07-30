@@ -18,6 +18,26 @@ html, body{
   margin: 0;
 }
 
+/* our own nav controls, easier than trying to customize
+   OpenSeadragon's */
+#navControls {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: none transparent;
+
+  opacity: 0.8;
+  filter:alpha(opacity=80); /* for IE <= 8 */
+
+}
+#navControls:hover {
+  opacity: 1;
+  filter:alpha(opacity=100); /* for IE <= 8 */
+}
 
 
 /*******************

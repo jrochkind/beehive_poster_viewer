@@ -85,7 +85,13 @@ function setupOpenSeadragonViewer() {
     showNavigator: false,
     autoHideControls: false,
     prefixUrl: "./openseadragon-bin-1.1.1/images/",
-    tileSources: dziFile
+    tileSources: dziFile,
+    // We tell OSD to use our own nav buttons, easier than
+    // trying to customize OSD's
+    zoomInButton: 'zoomInBtn',
+    zoomOutButton: 'zoomOutBtn',
+    homeButton: 'homeBtn',
+    fullPageButton: 'fullPageBtn'
   });
 
   anno.makeAnnotatable(openSeadragonViewer);
@@ -93,10 +99,12 @@ function setupOpenSeadragonViewer() {
 
 function positionOverlayControls() {
   var controls = $("#overlayControls");
+  var navControls = $("#navControls");
   var minimizedButton = $("#minimizedControls");
   var container = $("#openseadragon .openseadragon-container");
 
 
+  container.append(navControls);
   container.append(controls);
   container.append(minimizedButton);
 
