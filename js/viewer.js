@@ -303,15 +303,23 @@ function addPermalinkFunc() {
 
 }
 
-function addStoryList() {
+function loadPosterData() {
   /* fetch the xml of stories */
   var fetchUrl = "./narrative/" + poster + "/" + lang + ".xml";
   $.ajax({
     url: fetchUrl,
     success: function(xml) {
-      var storyList = $("#storyList");
+      xml = $(xml);
 
-      $(xml).find('story').each(function(i, storyXml){
+      // Load title
+      var title = xml.find("data > title").text().trim();
+      var title_link = xml.find("data > link").text().trim();
+      $("#titleLink").attr("href", title_link).text(title);
+      document.title = title;
+
+      // Load scenes
+      var storyList = $("#storyList");
+      xml.find('story').each(function(i, storyXml){
         var li = $("<li/>");
         var a  = $("<a href='#' class='story'/>").
           text($(storyXml).find("label").text()).
@@ -371,6 +379,6 @@ jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
   positionOverlayControls();
   addPermalinkFunc();
-  addStoryList();
+  loadPosterData();
   addHelloWorldPlugin();
 });
