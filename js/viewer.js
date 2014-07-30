@@ -84,7 +84,7 @@ function positionOverlayControls() {
   });
 
   function closeStoryList(func) {
-    $("#storyList").slideUp('slow', function() {
+    $(".controls-story-list").slideUp('slow', function() {
       $(".scene-expander").removeClass("open");
       if (typeof func !== 'undefined') {
         func();
@@ -94,7 +94,7 @@ function positionOverlayControls() {
 
   function openStoryList() {
     $(".controlsText").slideUp('slow', function() {
-      $("#storyList").slideDown('slow', function() {
+      $(".controls-story-list").slideDown('slow', function() {
         $(".scene-expander").addClass("open");
       });
     });

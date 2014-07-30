@@ -62,17 +62,35 @@ html, body{
   width: 16px;
 }
 
+.controlsSection {
+  padding: 6px;
+  overflow-y: auto;
+}
+.controlsSection:empty {
+  display: none;
+}
+
 .controls-header-label {
   display: inline;
   margin: 0;
 }
 
-.controlsStoryList {
+.controls-story-list-expander {
   border-top: 1px solid black;
 }
-.controlsStoryList h3 {
+.controls-story-list-expander h3 {
   margin: 0;
 }
+
+.controls-story-list {
+  padding-top: 0;
+}
+.story-list {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+
 .controlsText {
   border-top: 1px solid black;
 }
@@ -94,15 +112,6 @@ html, body{
   background-image: url(../images/menu-pull-down.png);
 }
 
-
-
-.controlsSection {
-  padding: 6px;
-  overflow-y: auto;
-}
-.controlsSection:empty {
-  display: none;
-}
 
 /*******************
  *
