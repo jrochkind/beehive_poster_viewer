@@ -100,6 +100,32 @@ function positionOverlayControls() {
     });
   }
 
+  // temporarily set OpenSeadragon animation params
+  // to a very slow animate, then restore.
+  function withSlowOSDAnimation(f) {
+    var viewport = openSeadragonViewer.viewport;
+
+    // save old ones
+    var oldValues = {};
+    oldValues.centerSpringXAnimationTime = viewport.centerSpringX.animationTime;
+    oldValues.centerSpringYAnimationTime = viewport.centerSpringY.animationTime;
+    oldValues.zoomSpringAnimationTime = viewport.zoomSpring.animationTime;
+
+    // set our new ones
+    viewport.centerSpringX.animationTime =
+      viewport.centerSpringY.animationTime =
+      viewport.zoomSpring.animationTime =
+      6;
+
+    // callback
+    f()
+
+    // restore values
+    viewport.centerSpringX.animationTime = oldValues.centerSpringXAnimationTime;
+    viewport.centerSpringY.animationTime = oldValues.centerSpringYAnimationTime;
+    viewport.zoomSpring.animationTime = oldValues.zoomSpringAnimationTime;
+  }
+
   // Story list expand/contract
   $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
@@ -147,7 +173,9 @@ function positionOverlayControls() {
     $("#storyText").html( story.find("html").text()  );
 
     closeStoryList(function() {
-      openSeadragonViewer.viewport.fitBounds(rect);
+      withSlowOSDAnimation(function() {
+        openSeadragonViewer.viewport.fitBounds(rect);
+      });
       $(".controlsText").slideDown('slow');
     });
   }
