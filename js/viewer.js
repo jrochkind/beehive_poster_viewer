@@ -4,8 +4,31 @@
 
 */
 
-var poster = "mr-inside"
-var lang = "en";
+
+
+var beehive_poster;
+var beehive_lang;
+
+
+function paramsToHash(querystring) {
+  // remove any preceding url and split
+  querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
+  var params = {}, pair, d = decodeURIComponent;
+  // march and parse
+  for (var i = querystring.length - 1; i >= 0; i--) {
+    pair = querystring[i].split('=');
+    params[d(pair[0])] = d(pair[1]);
+  }
+
+  return params;
+}
+
+// Take poster and lang from query params &poster=&lang=
+function setPosterAndLang() {
+  var h = paramsToHash(window.location.search);
+  beehive_poster = h.poster;
+  beehive_lang   = (typeof h.lang === "undefined") ? 'en' : h.lang;
+}
 
 
 /* Used by actual on-screen annotorious make annotation stuff, which
@@ -52,6 +75,10 @@ function addHelloWorldPlugin() {
 function setupOpenSeadragonViewer() {
   /* Save in global cause we're gonna need to refer to it and stuff 
      and we're too lazy to make a closure right now */
+
+  //eg  "./tiles/mr-inside/mr-inside.dzi"
+  var dziFile = "./tiles/" + beehive_poster + "/" + beehive_poster + ".dzi"
+
   window.openSeadragonViewer = OpenSeadragon({
     id: "openseadragon",
     //prefixUrl: "http://annotorious.github.io/js/openseadragon/images/",
@@ -59,7 +86,7 @@ function setupOpenSeadragonViewer() {
     autoHideControls: false,
     prefixUrl: "/beehive/openseadragon/images/",
     //tileSources: "/beehive/MR_WholePoster_PrintRes/mr_zoom.dzi"
-    tileSources:  "./tiles/mr-inside/mr-inside.dzi"
+    tileSources: dziFile
   });
 
   anno.makeAnnotatable(openSeadragonViewer);
@@ -256,18 +283,6 @@ function addPermalinkFunc() {
     return url;
   }
 
-  function paramsToHash(querystring) {
-    // remove any preceding url and split
-    querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
-    var params = {}, pair, d = decodeURIComponent;
-    // march and parse
-    for (var i = querystring.length - 1; i >= 0; i--) {
-      pair = querystring[i].split('=');
-      params[d(pair[0])] = d(pair[1]);
-    }
-
-    return params;
-  };
 
   /* prepare the modal we'll display permalinks in */
   $("#linkModal").easyModal({
@@ -305,7 +320,7 @@ function addPermalinkFunc() {
 
 function loadPosterData() {
   /* fetch the xml of stories */
-  var fetchUrl = "./narrative/" + poster + "/" + lang + ".xml";
+  var fetchUrl = "./narrative/" + beehive_poster + "/" + beehive_lang + ".xml";
   $.ajax({
     url: fetchUrl,
     success: function(xml) {
@@ -374,6 +389,8 @@ function loadPosterData() {
   });
 
 
+
+setPosterAndLang();
 
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
