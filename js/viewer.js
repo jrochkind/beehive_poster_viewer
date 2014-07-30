@@ -27,17 +27,21 @@ function addHelloWorldPlugin() {
 
   annotorious.plugin.HelloWorldPlugin.prototype.initPlugin = function(anno) {
     // Add initialization code here, if needed (or just skip this method if not)
-
-      anno.addHandler('onMouseOverAnnotation', function(ann) {
-        return true;
-      });
-
   }
 
   annotorious.plugin.HelloWorldPlugin.prototype.onInitAnnotator = function(annotator) {
     // A Field can be an HTML string or a function(annotation) that returns a string
     annotator.popup.addField(function(annotation) { 
-      return '<em>Hello World: ' + annotation.text.length + ' chars</em>'
+      var geometry = annotation.shapes[0].geometry;
+
+      return '<pre>' +
+        '&lt;region\n' +
+        'x="' + geometry.x.toFixed(5) +  '"\n' +
+        'y="' + geometry.y.toFixed(5) +  '"\n' +
+        'width="' + geometry.width.toFixed(5) +  '"\n' +
+        'height="' + geometry.height.toFixed(5) +  '"\n' +
+        '/&gt;' +
+        '</pre>';
     });
   }
 
@@ -196,9 +200,9 @@ function positionOverlayControls() {
 
     closeStoryList(function() {
       withSlowOSDAnimation(function() {
-        var adjustedRect = adjustRectForPanel(rect);
+        rect = adjustRectForPanel(rect);
 
-        openSeadragonViewer.viewport.fitBounds(adjustedRect);
+        openSeadragonViewer.viewport.fitBounds(rect);
       });
       $(".controlsText").slideDown('slow');
     });
@@ -365,8 +369,8 @@ function addStoryList() {
 
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
-  addHelloWorldPlugin();
   positionOverlayControls();
   addPermalinkFunc();
   addStoryList();
+  addHelloWorldPlugin();
 });
