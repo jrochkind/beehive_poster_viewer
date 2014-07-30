@@ -126,6 +126,28 @@ function positionOverlayControls() {
     viewport.zoomSpring.animationTime = oldValues.zoomSpringAnimationTime;
   }
 
+  /* Take an OpenSeadragon.Rect, and make it bigger zo we can zoom
+     to it leaving room for the control panel too */
+  function adjustRectForPanel(rect) {
+    var newRect = jQuery.extend(true, {}, rect)
+
+    var overlay = $("#overlayControls");
+    var containerWidth = openSeadragonViewer.viewport.getContainerSize().x;
+    var panelWidth = overlay.width() + 
+      parseInt(overlay.css("margin-left")) +
+      parseInt(overlay.css("margin-right"));
+
+    var reservedPortion = panelWidth / containerWidth;
+
+    // Not sure if this math is exactly right, I think we need
+    // to math more. 
+    var newWidth = rect.width + (rect.width * reservedPortion);
+    newRect.x = rect.x - (newWidth - rect.width);
+    newRect.width = newWidth;
+
+    return newRect;
+  }
+
   // Story list expand/contract
   $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
@@ -174,7 +196,9 @@ function positionOverlayControls() {
 
     closeStoryList(function() {
       withSlowOSDAnimation(function() {
-        openSeadragonViewer.viewport.fitBounds(rect);
+        var adjustedRect = adjustRectForPanel(rect);
+
+        openSeadragonViewer.viewport.fitBounds(adjustedRect);
       });
       $(".controlsText").slideDown('slow');
     });
