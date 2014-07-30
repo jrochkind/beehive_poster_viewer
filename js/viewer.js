@@ -342,6 +342,13 @@ function loadPosterData() {
 
         li.append(a).appendTo(storyList);
       });
+
+      // Make the scene list visible only if we actually have
+      // scenes
+      if (storyList.find("li").size() > 0) {
+        $(".controls-story-list-expander").show();
+      }
+
     },
   });
   
