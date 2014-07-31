@@ -356,6 +356,9 @@ function loadPosterData() {
         $(".controls-story-list-expander").show();
       }
 
+      // Adjust heights after load
+      storyListHeightLimit();
+
     },
   });
   
@@ -393,8 +396,7 @@ function loadPosterData() {
     });
   }
   jQuery(document).ready(function($) {
-    // Once on load
-    storyListHeightLimit();
+
 
     // And again if window changes
     $( window ).resize(function(event) {
@@ -412,4 +414,7 @@ jQuery( document ).ready(function( $ ) {
   addPermalinkFunc();
   loadPosterData();
   addHelloWorldPlugin();
+
+  // Once on load
+  storyListHeightLimit();
 });
