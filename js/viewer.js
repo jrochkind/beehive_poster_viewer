@@ -230,7 +230,8 @@ function positionOverlayControls() {
 
     // Load the story content
     $("#storyLabel").text( story.find("label").text() );
-    $("#storyText").html( story.find("html").text()  );
+    $("#storyText").html( story.find("html").html()  );
+    $(".controlsText").slideDown('slow');
 
     closeStoryList(function() {
       withSlowOSDAnimation(function() {
