@@ -179,7 +179,7 @@ function positionOverlayControls() {
 
     // Not sure if this math is exactly right, I think we need
     // to math more. 
-    var newWidth = rect.width + (rect.width * reservedPortion);
+    var newWidth = rect.width / (1 - reservedPortion);
     newRect.x = rect.x - (newWidth - rect.width);
     newRect.width = newWidth;
 
