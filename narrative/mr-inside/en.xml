@@ -13,31 +13,20 @@
 <story>
   <label>The view from the grassroots</label>
   <region
-    x="0.02035"
-    y="0.01133"
-    width="0.94914"
-    height="0.46490"
-  />
-  <html>
-  Opening up the poster, the world on the inside is drawn from the perspective of an ant on the ground at the base of a towering ceiba tree. This ground’s eye view reflects the experiences of those who are rooted in a place and directly affected by the plans on the map. Between the roots of the ceiba, lively scenes illuminate stories of grassroots organizing and community resilience. This graphic documents many examples
-  of alternatives to top-down development plans, highlighting resistance led by Indigenous peoples who have fought back against genocide and ongoing threats to their survival.
-  </html>
-</story>
-
-<story>
-  <label>The view from the ground</label>
-  <region
     x="0.18616"
     y="0.15986"
     width="0.63581"
     height="0.18006"
   />
   <html>
+    <p>Opening up the poster, the world on the inside is drawn from the perspective of an ant on the ground at the base of a towering ceiba tree. This ground’s eye view reflects the experiences of those who are rooted in a place and directly affected by the plans on the map. Between the roots of the ceiba, lively scenes illuminate stories of grassroots organizing and community resilience. This graphic documents many examples
+  of alternatives to top-down development plans, highlighting resistance led by Indigenous peoples who have fought back against genocide and ongoing threats to their survival.</p>
+
     <p>The Ceiba tree’s spreading buttress roots hold the scenes together and tell an overarching story of rootedness. This tree serves as a gathering
     place, a beacon in the center of town that brings people to- gether to share stories and announce calls to action.</p>
 
     <p>A multitude of characters symbolize strategies and tactics
-    for building and defending autonomy. Every critter in the poster is based on a real species native to somewhere between Mexico and Colombia. 400 individual species of insects, plants, and animals give a glimpse of the incredible biodiver- sity of the region.</p>
+    for building and defending autonomy. Every critter in the poster is based on a real species native to somewhere between Mexico and Colombia. 400 individual species of insects, plants, and animals give a glimpse of the incredible biodiversity of the region.</p>
   </html>
 </story>
 
@@ -192,9 +181,8 @@ emblematic of popular protest against the PPP.
       height="0.12800"
       />
     <html>
-      <p>Farmers, teachers, and workers are joining forces to tackle the tentacles of the land grabbing copy machine. These important social sectors are represented by three of the most important crops in the region, cul-
-      turally and nutritionally: the three sisters of corns, beans, and squash.</p>
-      <p>Planted together in milpas, a tradi- tional system of farming in Meso- america, these plants support each other, each improving the growth of the others.</p>
+      <p>Farmers, teachers, and workers are joining forces to tackle the tentacles of the land grabbing copy machine. These important social sectors are represented by three of the most important crops in the region, culturally and nutritionally: the three sisters of corns, beans, and squash.</p>
+      <p>Planted together in milpas, a traditional system of farming in Mesoamérica, these plants support each other, each improving the growth of the others.</p>
     </html>   
   </story>
 
@@ -243,7 +231,7 @@ media into their own hands to build resistance movements, from small-scale distr
 />
     <html>In the bottom right corner of the poster, a cruise ship invades the coast. The ship is based off an amphibious landing
 ￼￼craft used by the U.S. marines to deploy troops on the shores of Central America. The chompy teeth are tourists going on holiday to unwind as they gobble up a packaged experience.
-They don’t see beyond billboards that offer up Indigenous culture for sale and entertainment, and local people for serving food and cleaning toilets. Relying on rac- ism, the tourist industry exploits local communities of color while selling the idea that a privileged
+They don’t see beyond billboards that offer up Indigenous culture for sale and entertainment, and local people for serving food and cleaning toilets. Relying on racism, the tourist industry exploits local communities of color while selling the idea that a privileged
 few are entitled to their vacationland.
     </html>
   </story>
@@ -626,9 +614,161 @@ reasons to come together. When existence is resistance, the seemingly simple act
     </html>
   </story>
 
+  <story>
+    <label>An Alternative Economy: Design</label>
+    <region
+      x="0.68421"
+      y="0.16764"
+      width="0.05383"
+      height="0.04177"
+    />
+    <html>
+      Each terrace of the hive is buzzing as bees work on de- signing an economy to provide for their needs. As opposed to the accumulation of wealth that is central to the capitalist economy, this economy is centered around health, food, shelter and wellbeing. The Bees plan their economic system by studying the health and structure of their hive, taking notes, and mapping out routes for gathering local resources.
+    </html>
+  </story>
 
+  <story>
+    <label>An Alternative Economy: Production</label>
+    <region
+      x="0.72960"
+      y="0.18216"
+      width="0.04502"
+      height="0.06450"
+    />
+    <html>
+      Carpenter bees and other species of solitary bees
+show solidarity by building
+habitats for other pollinators. A worker-owned print shop produces paper from recycled materials.
+    </html>
+  </story>
 
+  <story>
+    <label>An Alternative Economy: Exchange</label>
+    <region
+      x="0.69933"
+      y="0.26093"
+      width="0.06413"
+      height="0.05339"
+    />
+    <html>In contrast to the exploitative maps made by the colonizers, bumble bees, mason bees, and carder bees are mapping out a solidarity economy that is mutually beneficial. A bee on a conch shell phone busily takes orders while others prepare to send out bundles of heirloom seeds, honey, tortillas, candles, bee houses, and books, as part of a regional network that relies on local skills and goods.
+    </html>
+  </story>
 
+  <story>
+    <label>An Alternative Economy: Eating together</label>
+    <region
+      x="0.62940"
+      y="0.23196"
+      width="0.08249"
+      height="0.05616"
+    />
+    <html>
+      These bees have invited friends over for a meal and for a popular education workshop about direct trade. They explain how to connect with local farmers to get food straight
+      from the farm to the table, cutting out the middleman. They use local bark to make DIY    biogas that heats the comal for cooking tortillas;
+      next to it the same bark is
+      mixed with honey to make
+      balché, a traditional fermented mead.
+    </html>
+  </story>
+
+  <story>
+    <label>An Alternative Economy: Dividing the hive</label>
+    <region
+      x="0.68104"
+      y="0.19608"
+      width="0.05497"
+      height="0.03479"
+    />
+    <html>
+      Bees work on dividing the hive, a skill passed down through the generations by oral tradition. The stingless bees are kept in a specially-made box, as the bee logs (stacked on the left side of this scene) are in short supply due to deforestation. Survival of Melipona bees depends on knowledge from elder beekeepers. In conservation efforts, some scientists with “zoo” mentalities have destroyed hives they tried to protect by collecting them for study in labs. The stingless bees remind
+      us of the vital connection between culture and ecology.
+    </html>
+  </story>
+
+  <story>
+    <label>An Alternative Economy: Reinvestment</label>
+    <region
+      x="0.65457"
+      y="0.14533"
+      width="0.03477"
+      height="0.06208"
+    />
+    <html>
+      <p>Unlike the one-way flows of the global economy, resources in the hive are recycled and reinvested.</p>
+      <h4>Seed saving</h4>
+      <p>Harvesting seeds and saving them to grow a new set of crops next season, the bees build sustainable sovereign food systems that will continue to feed their peoples
+      for generations. Saving seed is an example of self-sufficiency and independence from industrial agriculture.
+      </p>
+    </html>
+  </story>
+
+  <story>
+    <label>An Alternative Economy: Composing</label>
+    <region
+      x="0.58990"
+      y="0.22322"
+      width="0.04451"
+      height="0.03546"
+    />
+    <html>
+      Turning food
+      scraps and garden
+      waste into lush
+      fertile soil, the
+      bees and worms
+      build future food
+      systems, literally starting from the ground up.
+    </html>
+  </story>
+
+  <story>
+    <label>An Alternative Economy: Most valued assets</label>
+    <region
+      x="0.53870"
+      y="0.13475"
+      width="0.07708"
+      height="0.04777"
+    />
+    <html>
+      <p>Safeguarded at the top of the hive, the bee larvae are highly valued as they provide the base of the next generation and an investment
+      in the future. Seeds and eggs are the currency
+      of the economy that runs this bee
+      society; they are the
+      concentrated units that all life comes from, and speak to the symbiotic relationship between plants and pollinators.</p>
+      <h4>Seeds of the future</h4>
+      <p>As the larvae grow, so does their education. The newbees
+      learn to cooperate and play together while pumping out honey with a seesaw. Other youth share what they’ve learned about the colonial invasion of European stinging bees, through a mural and
+      a play. Kites soar above, celebrating the young bees’ irrepress- ible spirit of resistance.</p>
+    </html>
+  </story>
+
+  <story>
+    <label>An Alternative Economy: Astronomers</label>
+    <region
+      x="0.56220"
+      y="0.11067"
+      width="0.03839"
+      height="0.02988"
+    />
+    <html>
+      At the top of the hive, Melipona bees study the cosmos, learning from the cycles of the earth and moon. Informed by these natural cycles, the community can plan for planting and cultivating.
+    </html>
+  </story>
+
+  <story>
+    <label>Globalization from below</label>
+    <region
+      x="0.28675"
+      y="0.18450"
+      width="0.54325"
+      height="0.13483"
+    />
+    <html>
+      <p>Facing the serious dangers of colony collapse, over 50 bee species have come together to build an alternative economic system that emphasizes horizontal and equitable relationships, while providing the basic needs of their community.</p>
+      <p>The values of an extractive economy have led us to a mass extinction crisis and climate chaos. The holistic values of a solidarity economy are part of the antidote to this crisis. Like the bees, rebuilding local and regional networks can help us deal with the challenges and consequences of a rapidly chang- ing planet. All the critters defending their land between the roots of the Ceiba are showing us the meaning of globalization from below: reaching out across borders, cultures, and generations to link move- ments and support each other’s struggles for survival.
+      </p>
+    </html>
+  </story>
 
 
 
