@@ -102,9 +102,37 @@ html, body{
   margin: 0;
 }
 
-.controls-story-list {
-  padding-top: 0;
+.controls-slide-container {
+  position: relative;  
 }
+
+/* used to dim the story when the scene list is open */
+#slideContainerOverlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  filter:alpha(opacity=80); /* for IE <= 8 */
+  background-color: black;
+}
+
+.controls-story-list {
+  position: absolute;
+  top: 0;
+
+  border: 1px solid black;
+  /* have to leave space for our new border now, grr */
+  left: -1px;
+  right: -1px;
+
+  padding-top: 0; /* makes the slide look better */
+
+  border-top: none;
+  background-color: #F8F8F4;
+}
+
 .story-list {
   margin-top: 6px;
   margin-bottom: 6px;

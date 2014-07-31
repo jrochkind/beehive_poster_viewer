@@ -59,10 +59,10 @@ function addHelloWorldPlugin() {
 
       return '<pre>' +
         '&lt;region\n' +
-        'x="' + geometry.x.toFixed(5) +  '"\n' +
-        'y="' + geometry.y.toFixed(5) +  '"\n' +
-        'width="' + geometry.width.toFixed(5) +  '"\n' +
-        'height="' + geometry.height.toFixed(5) +  '"\n' +
+        '  x="' + geometry.x.toFixed(5) +  '"\n' +
+        '  y="' + geometry.y.toFixed(5) +  '"\n' +
+        '  width="' + geometry.width.toFixed(5) +  '"\n' +
+        '  height="' + geometry.height.toFixed(5) +  '"\n' +
         '/&gt;' +
         '</pre>';
     });
