@@ -408,12 +408,13 @@ function loadPosterData() {
 
 setPosterAndLang();
 
+addHelloWorldPlugin();
+
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
   positionOverlayControls();
   addPermalinkFunc();
   loadPosterData();
-  addHelloWorldPlugin();
 
   // Once on load
   storyListHeightLimit();
