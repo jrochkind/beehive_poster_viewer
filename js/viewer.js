@@ -122,6 +122,10 @@ function positionOverlayControls() {
   });
 
   function closeStoryList(func) {
+    if ($("#slideContainerOverlay").is(":visible")) {
+      $("#slideContainerOverlay").fadeOut('slow');
+    }
+
     $(".controls-story-list").slideUp('slow', function() {
       $(".scene-expander").removeClass("open");
       if (typeof func !== 'undefined') {
@@ -131,11 +135,13 @@ function positionOverlayControls() {
   }
 
   function openStoryList() {
-    $(".controlsText").slideUp('slow', function() {
+    $("#slideContainerOverlay").fadeIn('slow');
+
+    //$(".controlsText").slideUp('slow', function() {
       $(".controls-story-list").slideDown('slow', function() {
         $(".scene-expander").addClass("open");
       });
-    });
+    //});
   }
 
   // temporarily set OpenSeadragon animation params
@@ -239,7 +245,6 @@ function positionOverlayControls() {
 
         openSeadragonViewer.viewport.fitBounds(rect);
       });
-      $(".controlsText").slideDown('slow');
     });
   }
 
