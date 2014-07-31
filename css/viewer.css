@@ -1,6 +1,32 @@
 /* one CSS file for custom styles we need for poster viewer */
 
 
+/* fonts */
+@font-face {
+  font-family: 'beehiveserifmedium';
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.eot');
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'beehivesansserif2medium';
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.eot');
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'beehivehandlettering2medium';
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.eot');
+  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 html, body{
   min-height: 100%;
   margin: 0;
