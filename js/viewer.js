@@ -424,4 +424,27 @@ jQuery( document ).ready(function( $ ) {
 
   // Once on load
   storyListHeightLimit();
+
+  /* Crazy hack. We placed our controls inside the .openseadragon-container
+     so they'd remain on screen in full screen mode. But OpenSeadragon is
+     swallowing clicks -- it catches mousedown events and calls stopPropagation,
+     which on firefox means a click event never fires at all for some reason,
+     and our controls aren't clickable. On Chrome, the click still fires,
+     but you can't drag to select text because of the swallowed mousedown. 
+
+     So crazy hack which seems to work. We catch mousedown on our controls,
+     and stop propagation so OpenSeadragon never gets it. Then on mouseup on
+     our controls, we manually trigger a click. That does not seem to result
+     in double click events in any browser, although I was worried about it. 
+     Hacky, but the best I could figure out after much hacking/debugging. */
+
+
+  $("#overlayControls, #navControls, #minimizedControls").on("mousedown", function(e) {
+    e.stopImmediatePropagation();    
+  });
+  $("#overlayControls, #navControls, #minimizedControls").on("mouseup", function(e) {
+    e.click();
+  });
+  
+
 });
