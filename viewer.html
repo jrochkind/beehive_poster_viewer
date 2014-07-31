@@ -60,22 +60,27 @@
         <h3><a href="#" class="scene-expander">Scenes<img class="scene-expander-icon icon"></a></h3>
       </div>
 
-      <div class="controls-story-list controlsSection" style="display:none">
-        <ul id="storyList" class="story-list storyList">
-        </ul>
-      </div>
-      <div class="controlsText controlsSection" style="display:none">
-        <div class="controls-text-nav">
-          <a href="#" class="controls-text-nav-prev">&lt; Prev</a>
-          <a href="#" class="controls-text-nav-next">Next &gt;</a>
-          <a href="#" class="close-story-link">
-            <img src="./images/cross.png" alt="Close" title="Close" class="icon"/>
-          </a>
+      <div class="controls-slide-container">
+        <div id="slideContainerOverlay" class="slide-container-overlay" style="display: none;">
         </div>
-        <h3 id="storyHeading">
-          <span id="storyLabel"></span>
-        </h3>
-        <div id="storyText" class="storyText"></div>
+
+        <div class="controls-story-list controlsSection" style="display:none">
+          <ul id="storyList" class="story-list storyList">
+          </ul>
+        </div>
+        <div class="controlsText controlsSection" style="display:none">
+          <div class="controls-text-nav">
+            <a href="#" class="controls-text-nav-prev">&lt; Prev</a>
+            <a href="#" class="controls-text-nav-next">Next &gt;</a>
+            <a href="#" class="close-story-link">
+              <img src="./images/cross.png" alt="Close" title="Close" class="icon"/>
+            </a>
+          </div>
+          <h3 id="storyHeading">
+            <span id="storyLabel"></span>
+          </h3>
+          <div id="storyText" class="storyText"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,11 +92,11 @@
     <a id="zoomInBtn" href="#">
       <img src="./images/zoomin.png">
     </a>
-    <a id="zoomOutBtn" href="#">
-      <img src="./images/zoomout.png">
+    <a id="zoomOutBtn" href="#" class="clickable">
+      <img src="./images/zoomout.png" class="clickable">
     </a>
     <a id="homeBtn" href="#">
-      <img src="./images/home.png">
+      <img src="./images/home.png" class="clickable">
     </a>
     <a id="fullPageBtn" href="#">
       <img src="./images/fullpage.png">
