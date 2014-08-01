@@ -2,6 +2,9 @@
 
 
 /* fonts */
+
+/* Call as 'font-family: beehiveserif' seems to work in all browsers, don't
+   entirely understand */
 @font-face {
   font-family: 'beehiveserifmedium';
   src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.eot');
@@ -55,7 +58,7 @@ h4 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
 }
 .controls-text-nav {
-  font-family: beehiveserifmedium, Times New Roman, Times, serif;
+  font-family: beehiveserif, Times New Roman, Times, serif;
   font-size: 20px;
 }
 .controls-text-nav.bottom {
@@ -79,7 +82,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, .controls-text-nav a
 }
 
 ul.story-list {
-  font-family: beehiveserifmedium, Times New Roman, Times, serif;
+  font-family: beehiveserif, Times New Roman, Times, serif;
   font-size: 20px;
   padding-left: 6px;
   list-style: none
