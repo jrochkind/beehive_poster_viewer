@@ -204,9 +204,12 @@ html, body{
   /* This is just approximate height limiting, we need JS to
      to do it right */
   max-height: 90%;
-}
-#overlayControls {
-  border: 1px solid black;  
+
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 }
 
 
@@ -266,11 +269,17 @@ html, body{
   position: absolute;
   top: 0;
 
-  border: 1px solid #000;  
+  border: 1px solid #000;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+
 
   /* have to leave space for our new border now, grr */
-  left: -1px;
-  right: -1px;
+  left: -2px;
+  right: -2px;
 
   padding-top: 0; /* makes the slide look better */
 
