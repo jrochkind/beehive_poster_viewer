@@ -150,7 +150,7 @@ html, body{
   border: 1px solid black;
   width: 320px;
 
-  background-color: #F8F8F4;
+  background-color: #FAFAFA;
   /* This is just approximate height limiting, we need JS to
      to do it right */
   max-height: 90%;
@@ -235,7 +235,7 @@ html, body{
   padding-top: 0; /* makes the slide look better */
 
   border-top: none;
-  background-color: #F8F8F4;
+  background-color: #FAFAFA;
 }
 
 .story-list {
