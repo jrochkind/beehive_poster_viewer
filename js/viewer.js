@@ -214,17 +214,16 @@ function positionOverlayControls() {
   // arg is the <li> element containing the .story link
   // with story data attached. 
   function loadStory(li) {
-    var story = $( li.find(".story").data("beehive-story") );
+    var story = li.find(".story").data("beehive-story");
 
-    if (story.size() == 0)
+    if (typeof story === "undefined")
       return;
 
-    var region = $(story.find("region"));
 
-    var rect = new OpenSeadragon.Rect(parseFloat(region.attr("x")),
-        parseFloat(region.attr("y")),
-        parseFloat(region.attr("width")),
-        parseFloat(region.attr("height")));
+    var rect = new OpenSeadragon.Rect(parseFloat(story.region.x),
+        parseFloat(story.region.y),
+        parseFloat(story.region.width),
+        parseFloat(story.region.height));
 
     // Save the li in data for next/prev
     $(".controlsText").data("beehive-story-li", li);
@@ -235,8 +234,8 @@ function positionOverlayControls() {
     $(".controls-text-nav-next").css("visibility",  (li.next().size() > 0) ? "visible" : "hidden"  );
 
     // Load the story content
-    $("#storyLabel").text( story.find("label").text() );
-    $("#storyText").html( story.find("html").html()  );
+    $("#storyLabel").text( story.label );
+    $("#storyText").html( story.html  );
     $(".controlsText").slideDown('slow');
 
     closeStoryList(function() {
@@ -331,6 +330,27 @@ function addPermalinkFunc() {
 
 }
 
+// We store the story data in XML becuase it's more convenient
+// to edit by hand for the sort of data we have (really!), but
+// json is easier to deal with in javascript, esp cross-browser. 
+function storyXmlToJson(storyXml) {
+  storyXml = $(storyXml);
+  var json = {};
+
+  json.label        = storyXml.find("label").text();
+  // .html() on xml node doesn't work in safari, XMLSerializer
+  json.html         = new XMLSerializer().serializeToString(storyXml.find("html").get(0));
+
+  var regionXml     = storyXml.find("region")
+  json.region       = {};
+  json.region.x     = regionXml.attr("x");
+  json.region.y     = regionXml.attr("y");
+  json.region.width = regionXml.attr("width");
+  json.region.height = regionXml.attr("height");
+
+  return json;
+}
+
 function loadPosterData() {
   /* fetch the xml of stories */
   var fetchUrl = "./narrative/" + beehive_poster + "/" + beehive_lang + ".xml";
@@ -351,7 +371,7 @@ function loadPosterData() {
         var li = $("<li/>");
         var a  = $("<a href='#' class='story'/>").
           text($(storyXml).find("label").text()).
-          data('beehive-story', storyXml);
+          data('beehive-story', storyXmlToJson(storyXml));
 
         li.append(a).appendTo(storyList);
       });
