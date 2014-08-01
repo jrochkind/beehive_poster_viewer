@@ -93,7 +93,7 @@ ul.story-list a {
 ul.story-list li {
   text-indent: -0.66em;
   padding-left: 0.66em;
-
+  margin-bottom: 3px;
 }
 
 
