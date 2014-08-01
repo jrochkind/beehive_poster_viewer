@@ -43,12 +43,12 @@ http://www.fontspring.com/fonts/typodermic/euphorigenic */
 
 h1, h2 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
 }
 h3 {
   font-family: Euphorigenic, Times New Roman, Times, serif;;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   margin-bottom: 0.5em;
 }
@@ -156,7 +156,7 @@ html, body{
   max-height: 90%;
 }
 #overlayControls {
-  border: 3px double black;  
+  border: 1px solid black;  
 }
 
 
@@ -226,11 +226,11 @@ html, body{
   position: absolute;
   top: 0;
 
-  border: 3px double #000;  
+  border: 1px solid #000;  
 
   /* have to leave space for our new border now, grr */
-  left: -3px;
-  right: -3px;
+  left: -1px;
+  right: -1px;
 
   padding-top: 0; /* makes the slide look better */
 
