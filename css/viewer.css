@@ -12,20 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'beehivesansserif2medium';
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.eot');
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivesansserif2-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'beehivehandlettering2medium';
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.eot');
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehivehandlettering2-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* we're also loading Cardo from Google Fonts in html */
 
 /* Euphorigenic font by Typodermic Fonts, All Rights Reserved.
 Courtesy of Typodermic Fonts and Fontspring:
@@ -299,17 +286,8 @@ html, body{
 
 .controlsText {
   border-top: 1px solid black;
-  border-image: url(../images/single-bar.png) 5 100 0 0 repeat;  
-
-  /* comparing multiple fonts, remove once we've decided, this is just
-     a convenience */
-  font-family: Cardo, Times New Roman, Times, serif;
-  font-family: Gentium Book Basic, Times New Roman, Times, serif;
-  font-family: Volkorn, Times New Roman, Times, serif;
-  font-family: Old Standard TT, Times New Roman, Times, serif;
-  font-family: Times New Roman, Times, serif;
-  font-family: Georgia, Times New Roman, Times, serif;
-
+  border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
+  font-family: Cardo, Georgia, Times New Roman, Times, serif;  
 }
 
 #storyHeading {
