@@ -248,7 +248,14 @@ html, body{
   border-top: 1px solid black;
   border-image: url(../images/single-bar.png) 5 100 0 0 repeat;  
 
+  /* comparing multiple fonts, remove once we've decided, this is just
+     a convenience */
+  font-family: Cardo, Times New Roman, Times, serif;
+  font-family: Gentium Book Basic, Times New Roman, Times, serif;
+  font-family: Volkorn, Times New Roman, Times, serif;
+  font-family: Old Standard TT, Times New Roman, Times, serif;
   font-family: Times New Roman, Times, serif;
+
 }
 
 #storyHeading {
