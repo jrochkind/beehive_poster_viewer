@@ -58,6 +58,9 @@ h4 {
   font-family: beehiveserifmedium, Times New Roman, Times, serif;
   font-size: 20px;
 }
+.controls-text-nav.bottom {
+  margin-top: 1em;
+}
 .controlsText p {
   margin-top: 0;
 }
