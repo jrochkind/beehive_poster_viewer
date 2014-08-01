@@ -40,9 +40,6 @@ http://www.fontspring.com/fonts/typodermic/euphorigenic */
     font-weight: normal;
     font-style: normal;
 }
-.eup {
-  font-family: Euphorigenic, Georgia, Times New Roman, times, serif;
-}
 
 h1, h2 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
@@ -267,6 +264,7 @@ html, body{
   font-family: Volkorn, Times New Roman, Times, serif;
   font-family: Old Standard TT, Times New Roman, Times, serif;
   font-family: Times New Roman, Times, serif;
+  font-family: Georgia, Times New Roman, Times, serif;
 
 }
 
