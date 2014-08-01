@@ -24,6 +24,71 @@
   font-style: normal;
 }
 
+/* Euphorigenic font by Typodermic Fonts, All Rights Reserved.
+Courtesy of Typodermic Fonts and Fontspring:
+http://www.fontspring.com/fonts/typodermic/euphorigenic */
+@font-face {
+    font-family: 'Euphorigenic';
+    src: url('../fonts/euphorigenic.eot');
+    src: url('../fonts/euphorigenic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/euphorigenic.woff') format('woff'),
+         url('../fonts/euphorigenic.ttf') format('truetype'),
+         url('../fonts/euphorigenic.svg#EuphorigenicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+  font-family: Euphorigenic, Times New Roman, Times, serif;
+  font-size: 28px;
+  font-weight: normal;
+}
+h3 {
+  font-family: Euphorigenic, Times New Roman, Times, serif;;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+h4 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: Euphorigenic, Times New Roman, Times, serif;
+}
+.controls-text-nav {
+  font-family: beehiveserifmedium, Times New Roman, Times, serif;
+  font-size: 20px;
+}
+.controlsText p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, .controls-text-nav a, .story-list a {
+  text-decoration: none;
+  font-weight: normal;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, .controls-text-nav a:hover, .story-list a:hover {
+  text-decoration: underline;
+}
+
+ul.story-list {
+  font-family: beehiveserifmedium, Times New Roman, Times, serif;
+  font-size: 20px;
+  padding-left: 6px;
+  list-style: none
+}
+ul.story-list a {
+  display: block; /* so we can hover all the way to the end */
+}
+ul.story-list li {
+  text-indent: -0.66em;
+  padding-left: 0.66em;
+
+}
 
 
 
@@ -82,8 +147,13 @@ html, body{
   background-color: #F8F8F4;
   /* This is just approximate height limiting, we need JS to
      to do it right */
-  /* max-height: 90%; */
+  max-height: 90%;
 }
+#overlayControls {
+  border: 3px double black;  
+}
+
+
 #minimizedControls {
   padding: 6px;
   padding-bottom: 2px;
@@ -123,6 +193,8 @@ html, body{
 
 .controls-story-list-expander {
   border-top: 1px solid black;
+  border-image: url(../images/single-bar.png) 5 0 0 0 repeat;  
+
 }
 .controls-story-list-expander h3 {
   margin: 0;
@@ -148,10 +220,11 @@ html, body{
   position: absolute;
   top: 0;
 
-  border: 1px solid black;
+  border: 3px double #000;  
+
   /* have to leave space for our new border now, grr */
-  left: -1px;
-  right: -1px;
+  left: -3px;
+  right: -3px;
 
   padding-top: 0; /* makes the slide look better */
 
@@ -167,6 +240,9 @@ html, body{
 
 .controlsText {
   border-top: 1px solid black;
+  border-image: url(../images/single-bar.png) 5 100 0 0 repeat;  
+
+  font-family: Times New Roman, Times, serif;
 }
 
 #storyHeading {
