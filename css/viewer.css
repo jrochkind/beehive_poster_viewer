@@ -40,6 +40,9 @@ http://www.fontspring.com/fonts/typodermic/euphorigenic */
     font-weight: normal;
     font-style: normal;
 }
+.eup {
+  font-family: Euphorigenic, Georgia, Times New Roman, times, serif;
+}
 
 h1, h2 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
@@ -64,6 +67,13 @@ h4 {
 .controls-text-nav.bottom {
   margin-top: 1em;
 }
+.controls-prev-next {
+  float: right;
+}
+.scene-expander {
+  display: block; /* just to increase it's clickable area */
+}
+
 .controlsText p {
   margin-top: 0;
 }
@@ -199,8 +209,10 @@ html, body{
 
 .controls-story-list-expander {
   border-top: 1px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
   border-image: url(../images/single-bar.png) 5 0 0 0 repeat;  
-
 }
 .controls-story-list-expander h3 {
   margin: 0;
@@ -265,15 +277,6 @@ html, body{
   float: right;
 }
 
-
-.scene-expander {
-  display: block;
-}
-.scene-expander-icon {
-  float: right;
-  background-size: 100%;
-  background-image: url(../images/menu-pull-down.png);
-}
 
 
 /*******************

@@ -257,13 +257,22 @@ function positionOverlayControls() {
   });
 
   // Next/prev
-  $(".controlsText").on("click", ".controls-text-nav-prev", function(event) {
+  $(".controls-text-nav").on("click", ".controls-text-nav-prev", function(event) {
     var li = $(".controlsText").data("beehive-story-li");    
     loadStory(li.prev());
   });
-  $(".controlsText").on("click", ".controls-text-nav-next", function(event) {
+  $(".controls-text-nav").on("click", ".controls-text-nav-next", function(event) {
     var li = $(".controlsText").data("beehive-story-li");
-    loadStory(li.next());
+
+    var nextLi;
+    if (typeof li == 'undefined') {
+      //go with the first one
+      nextLi = $("#storyList li").first();
+    } else {
+      nextLi = li.next();
+    }
+
+    loadStory(nextLi);
   });
 
 }

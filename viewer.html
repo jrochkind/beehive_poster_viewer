@@ -66,7 +66,16 @@
 
 
       <div class="controls-story-list-expander controlsSection" style="display:none;">
-        <h3><a href="#" class="scene-expander">Scenes<img class="scene-expander-icon icon"></a></h3>
+        <div class="controls-text-nav">
+          <div class="controls-prev-next">
+
+            <a href="#" class="controls-text-nav-prev" style="visibility:hidden;">&lt; Prev</a>
+
+            <a href="#" class="controls-text-nav-next">Next &gt;</a>
+          </div>
+
+          <a href="#" class="scene-expander">Scenes ∨</a>
+        </div>        
       </div>
 
       <div class="controls-slide-container">
@@ -78,25 +87,15 @@
           </ul>
         </div>
         <div class="controlsText controlsSection" style="display:none">
-          <div class="controls-text-nav">
-            <a href="#" class="controls-text-nav-prev">&lt; Prev</a>
-            <a href="#" class="controls-text-nav-next">Next &gt;</a>
-            <a href="#" class="close-story-link">
-              <img src="./images/cross.png" alt="Close" title="Close" class="icon"/>
-            </a>
-          </div>
+          <a href="#" class="close-story-link">
+            <img src="./images/cross.png" alt="Close" title="Close" class="icon">
+          </a>
 
           <h3 id="storyHeading">
             <span id="storyLabel"></span>
           </h3>
 
           <div id="storyText" class="storyText"></div>
-
-          <div class="controls-text-nav bottom">
-            <a href="#" class="controls-text-nav-prev">&lt; Prev</a>
-            <a href="#" class="controls-text-nav-next">Next &gt;</a>
-          </div>
-
         </div>
       </div>
     </div>
