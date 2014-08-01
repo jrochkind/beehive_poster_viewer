@@ -216,13 +216,10 @@ html, body{
 .controlsMinimizeImg {
   float: right;
 }
-.icon {
-  height: 16px;
-  width: 16px;
-}
+
 .tiny-icon {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
 }
 
 .controlsSection {
