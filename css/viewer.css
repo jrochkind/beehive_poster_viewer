@@ -129,19 +129,75 @@ html, body{
   margin: 0px;
   padding: 0px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   display: inline-block;
   background: none transparent;
-
-  opacity: 0.8;
-  filter:alpha(opacity=80); /* for IE <= 8 */
-
-}
-#navControls:hover {
   opacity: 1;
-  filter:alpha(opacity=100); /* for IE <= 8 */
 }
+
+#navControls .hexagon {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+#zoomInBtn {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image:url(../images/plus_blue_07.png);
+}
+#zoomInBtn:hover {
+  background-image:url(../images/plus_brown_px_07.png);
+}
+#zoomOutBtn {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image:url(../images/minus_blue_07.png);
+  position: relative;
+  top:29px;
+  left:-25px;
+}
+#zoomOutBtn:hover {
+  background-image:url(../images/minus_brown_07.png);
+}
+#fullPosterBtn {
+  background-image:url(../images/fullview_blue_07.png);
+  position: relative;
+  left:-50px;
+}
+#fullPosterBtn:hover {
+  background-image:url(../images/fullview_brown_07.png);
+}
+#fullPageBtn {
+  background-image:url(../images/fullscreen_blue_07.png);
+  position: relative;
+  top:28px;
+  left:-75px;
+}
+#fullPageBtn:hover {
+  background-image:url(../images/fullscreen_brown_07.png);
+}
+#makePermaLink {
+  background-image:url(../images/link_blue_07.png);
+  position: relative;
+  left:-98px;
+}
+#makePermaLink:hover {
+  background-image:url(../images/link_brown_07.png);
+}
+#showControlsBtn {
+  background-image:url(../images/menu_blue_07.png);
+  position: relative;
+  top:28px;
+  left:-122px;
+}
+#showControlsBtn:hover {
+  background-image:url(../images/menu_brown_07.png);
+}
+
 
 
 /*******************
@@ -149,10 +205,10 @@ html, body{
  *
  ******************/
 
-#overlayControls, #minimizedControls {
+#overlayControls {
   /* position below and lined up with openseadragon controls for now */
   position: relative;
-  margin: 38px 6px;
+  margin: 78px 6px 38px 6px;
 
   border: 1px solid black;
   width: 320px;
@@ -167,24 +223,8 @@ html, body{
 }
 
 
-#minimizedControls {
-  padding: 6px;
-  padding-bottom: 2px;
-  display: inline-block;
-  width: auto;
-  border-radius: 20px;
-  opacity: 0.8;
-  filter:alpha(opacity=80); /* for IE <= 8 */
-}
-#minimizedControls:hover {
-  opacity: 1;
-  filter:alpha(opacity=100); /* for IE <= 8 */
-}
-.controlsMinimizeImg, .makePermaLinkImg {
+.controlsMinimizeImg {
   float: right;
-}
-.makePermaLinkImg {
-  margin-right: 8px;
 }
 .icon {
   height: 16px;

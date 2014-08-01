@@ -119,7 +119,7 @@ function setupOpenSeadragonViewer() {
     // trying to customize OSD's
     zoomInButton: 'zoomInBtn',
     zoomOutButton: 'zoomOutBtn',
-    homeButton: 'homeBtn',
+    homeButton: 'fullPosterBtn',
     fullPageButton: 'fullPageBtn'
   });
 
@@ -129,13 +129,12 @@ function setupOpenSeadragonViewer() {
 function positionOverlayControls() {
   var controls = $("#overlayControls");
   var navControls = $("#navControls");
-  var minimizedButton = $("#minimizedControls");
+  var minimizedButton = $("#showControlsBtn");
   var container = $("#openseadragon .openseadragon-container");
 
 
   container.append(navControls);
   container.append(controls);
-  container.append(minimizedButton);
 
   // Add minimization behavior
   controls.on("click", ".controlsMinimize", function(event) {
@@ -144,7 +143,7 @@ function positionOverlayControls() {
       minimizedButton.fadeIn();
     });
   });
-  minimizedButton.on("click", ".controlsMaximize", function(event) {
+  navControls.on("click", "#showControlsBtn", function(event) {
     minimizedButton.fadeOut(function() {
       controls.slideDown('slow');
     });
@@ -359,7 +358,7 @@ function addPermalinkFunc() {
   });
 
 
-  $("#overlayControls").on("click", ".makePermaLink", function(event) {
+  $("#navControls").on("click", "#makePermaLink", function(event) {
     event.preventDefault();
     var bounds = openSeadragonViewer.viewport.getBounds();
 

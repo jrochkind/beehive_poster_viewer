@@ -55,9 +55,6 @@
     <div class="controlContentWrapper">
       <div class="controlsHeader controlsSection">
         <a href="#" class="controlsMinimize"><img src="./images/minus.png" class="controlsMinimizeImg icon" alt="Minimize" title="Minimize"></a>
-
-        <a href="#" class="makePermaLink"><img src="./images/link.png" class="icon makePermaLinkImg" alt="Share Link" title="Share Link"></a>
-
         <h1 class="controls-header-label">
           <a id="titleLink" href="http://beehivecollective.org">Beehive Design Collective</a>
         </h1>
@@ -105,23 +102,13 @@
 
   <!-- our own nav's that we'll use instead of OpenSeadragon's -->
   <div id="navControls">
-    <a id="zoomInBtn" href="#">
-      <img src="./images/zoomin.png" class="clickable">
-    </a>
-    <a id="zoomOutBtn" href="#">
-      <img src="./images/zoomout.png" class="clickable">
-    </a>
-    <a id="homeBtn" href="#">
-      <img src="./images/home.png" class="clickable">
-    </a>
-    <a id="fullPageBtn" href="#">
-      <img src="./images/fullpage.png" class="clickable">
-    </a>
-  </div>
-
-  <!-- the minimized control panel widget -->
-  <div id="minimizedControls" style="display: none;">
-    <a href="#" class="controlsMaximize"><img src="./images/hamburger-menu.png" alt="menu" title="Menu" class="controlsMaximizeImg icon"></a>
+    <a id="zoomInBtn" href="#" class="hexagon"></a>
+    <a id="zoomOutBtn" href="#" class="hexagon"></a>
+    <a id="fullPosterBtn" href="#" class="hexagon"></a>
+    <a id="fullPageBtn" href="#" class="hexagon"></a>
+    <a id="makePermaLink" href="#" class="hexagon"></a>
+    <!-- the minimized control panel, starts out hidden -->
+    <a id="showControlsBtn" href="#" class="hexagon" style="display:none"></a>
   </div>
 
   <div id="linkModal" style="display:none">
