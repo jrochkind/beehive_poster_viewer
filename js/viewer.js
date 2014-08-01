@@ -160,6 +160,7 @@ function positionOverlayControls() {
       if (typeof func !== 'undefined') {
         func();
       }
+      $("#sceneExpanderImg").attr("src", "./images/expand.png")
     });
   }
 
@@ -169,6 +170,7 @@ function positionOverlayControls() {
     //$(".controlsText").slideUp('slow', function() {
       $(".controls-story-list").slideDown('slow', function() {
         $(".scene-expander").addClass("open");
+        $("#sceneExpanderImg").attr("src", "./images/collapse.png")
       });
     //});
   }

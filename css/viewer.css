@@ -190,6 +190,10 @@ html, body{
   height: 16px;
   width: 16px;
 }
+.tiny-icon {
+  height: 15px;
+  width: 15px;
+}
 
 .controlsSection {
   padding: 6px;
