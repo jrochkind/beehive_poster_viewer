@@ -45,7 +45,7 @@ h4 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
 }
 .controls-text-nav {
-  font-family: beehiveserif, Times New Roman, Times, serif;
+  font-family: beehiveserif, Euphorigenic, Times New Roman, Times, serif;
   font-size: 20px;
 }
 .controls-text-nav.bottom {
@@ -79,7 +79,7 @@ ul.story-list {
   margin-top: 6px;
   margin-bottom: 6px;
 
-  font-family: beehiveserif, Times New Roman, Times, serif;
+  font-family: beehiveserif, Euphorigenic, Times New Roman, Times, serif;
   font-size: 20px;
 
   padding-left: 0;
