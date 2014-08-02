@@ -213,8 +213,9 @@ html, body{
 }
 
 
-.controlsMinimizeImg {
+.controlsMinimize {
   float: right;
+  margin-left: 1em;
 }
 
 .tiny-icon {
@@ -301,6 +302,7 @@ html, body{
 }
 .close-story-link {
   float: right;
+  margin-left: 1em;
 }
 
 
