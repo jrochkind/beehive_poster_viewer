@@ -56,6 +56,12 @@ h4 {
 .controls-prev-next {
   float: right;
 }
+.nav-prev-icon, .nav-next-icon, .scene-expander-icon {
+  /* nudge */
+  position: relative;
+  top: -1px;
+}
+
 .scene-expander {
   display: block; /* just to increase it's clickable area */
 }
