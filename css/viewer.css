@@ -206,7 +206,7 @@ html, body{
   margin: 78px 6px 38px 6px;
 
   border: 1px solid black;
-  width: 324px;
+  width: 326px;
 
   background-color: #FAFAFA;
   /* This is just approximate height limiting, we need JS to
@@ -232,13 +232,17 @@ html, body{
 }
 
 .controlsSection {
-  padding: 6px 12px 6px 12px;
+  padding: 6px 14px 6px 14px;
   overflow-y: auto;
 }
 .controlsSection:empty {
   display: none;
 }
 
+
+.controlsHeader {
+  padding-top: 10px;
+}
 .controls-header-label {
   display: inline;
   margin: 0;
@@ -296,7 +300,13 @@ html, body{
 
 .controlsText {
   border-top: 1px solid black;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;  
   border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
+
+  padding-top: 14px;
+
   font-family: Cardo, Georgia, Times New Roman, Times, serif;  
   font-size: 95%;
 }
