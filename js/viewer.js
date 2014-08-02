@@ -339,7 +339,7 @@ function addPermalinkFunc() {
 
   /* prepare the modal we'll display permalinks in */
   $("#linkModal").easyModal({
-      overlayOpacity: 0.8
+      overlayOpacity: 0.65
   });
 
   /* On load, do we have coordinates in a query string? If so, then zoom

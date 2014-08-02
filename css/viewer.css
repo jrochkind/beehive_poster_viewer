@@ -32,6 +32,8 @@ h1, h2 {
   font-family: Euphorigenic, Times New Roman, Times, serif;
   font-size: 24px;
   font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
 }
 h3 {
   font-family: Euphorigenic, Times New Roman, Times, serif;;
@@ -316,14 +318,35 @@ html, body{
  ******************/
 
 #linkModal {
-  border: 1px solid black;
-  background-color: #F8F8F4;
-  padding: 12px;
-  width: 400px;
+  padding: 18px;
+
+  width: 80%;
+
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+
+  background-color: #FAFAFA;
 }
-#linkModalUrlField {
-  width: 380px;
-  padding: 6px;
+#linkModal input[type=text] {
+  display: block;
+  line-height: 3;
+  padding-left: 6px;
+  padding-right: 6px;
+
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;  
+
+  font-family: courier, fixed;
 }
 
 
