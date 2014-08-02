@@ -101,6 +101,8 @@ html, body{
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  font-size: 100%;
 }
 
 .content, #openseadragon {
@@ -294,6 +296,7 @@ html, body{
   border-top: 1px solid black;
   border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
   font-family: Cardo, Georgia, Times New Roman, Times, serif;  
+  font-size: 95%;
 }
 
 #storyHeading {
