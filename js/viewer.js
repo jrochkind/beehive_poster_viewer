@@ -379,8 +379,16 @@ function storyXmlToJson(storyXml) {
   var json = {};
 
   json.label        = storyXml.find("label").text();
+
   // .html() on xml node doesn't work in safari, XMLSerializer
-  json.html         = new XMLSerializer().serializeToString(storyXml.find("html").get(0));
+  // if it's raw text with no elements, wrap in a single <p> for
+  // consistency. 
+  var htmlElement   = storyXml.find("html").get(0);
+  var serialized    = new XMLSerializer().serializeToString(htmlElement);
+  if (htmlElement.childNodes.length === 1 && htmlElement.childNodes[0].nodeType === 3) {
+    serialized = "<p>"+serialized+"</p>";
+  }
+  json.html         = serialized;
 
   var regionXml     = storyXml.find("region")
   json.region       = {};
