@@ -212,7 +212,7 @@ html, body{
   margin: 78px 6px 38px 6px;
 
   border: 1px solid black;
-  width: 330px;
+  width: 334px;
 
   background-color: #FAFAFA;
   /* This is just approximate height limiting, we need JS to
@@ -238,7 +238,7 @@ html, body{
 }
 
 .controlsSection {
-  padding: 6px 16px 6px 16px;
+  padding: 6px 18px 6px 18px;
   overflow-y: auto;
 }
 .controlsSection:empty {
