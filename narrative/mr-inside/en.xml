@@ -12,12 +12,12 @@
 
 <story>
   <label>The view from the grassroots</label>
-<region
-  x="0.0"
-  y="0.0"
-  width="1.0"
-  height="0.5"
-/>
+  <region
+    x="0.0"
+    y="0.0"
+    width="1.0"
+    height="0.5"
+  />
   <html>
     <p>Opening up the poster, the world on the inside is drawn from the perspective of an ant on the ground at the base of a towering ceiba tree. This ground’s eye view reflects the experiences of those who are rooted in a place and directly affected by the plans on the map. Between the roots of the ceiba, lively scenes illuminate stories of grassroots organizing and community resilience. This graphic documents many examples
   of alternatives to top-down development plans, highlighting resistance led by Indigenous peoples who have fought back against genocide and ongoing threats to their survival.</p>
@@ -383,10 +383,10 @@ to take back the water for its use as a life giving force.
   <story>
     <label>Water for life</label>
     <region
-      x="0.09512"
-      y="0.25228"
-      width="0.09274"
-      height="0.07539"
+      x="0.08964"
+      y="0.19988"
+      width="0.11774"
+      height="0.10714"
     />
     <html>
     Moss covered toad statues illustrate the age-old uses of water - drinking,
