@@ -236,6 +236,8 @@ function addControls() {
 
   // Story text close
   $("#overlayControls").on("click", ".close-story-link", function(event) {
+    event.preventDefault();
+    
     $(".controlsText").slideUp('slow');
   });
 
@@ -259,7 +261,7 @@ function addControls() {
   });
   $(".controls-text-nav").on("click", ".controls-text-nav-next", function(event) {
     event.preventDefault();
-    
+
     var li = $(".controlsText").data("beehive-story-li");
 
     var nextLi;
