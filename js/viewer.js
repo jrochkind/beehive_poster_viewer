@@ -197,7 +197,7 @@ function setupOpenSeadragonViewer() {
   });
 }
 
-function positionOverlayControls() {
+function addControls() {
   var controls = $("#overlayControls");
   var navControls = $("#navControls");
   var minimizedButton = $("#showControlsBtn");
@@ -252,10 +252,14 @@ function positionOverlayControls() {
 
   // Next/prev
   $(".controls-text-nav").on("click", ".controls-text-nav-prev", function(event) {
+    event.preventDefault();
+
     var li = $(".controlsText").data("beehive-story-li");    
     loadStory(li.prev());
   });
   $(".controls-text-nav").on("click", ".controls-text-nav-next", function(event) {
+    event.preventDefault();
+    
     var li = $(".controlsText").data("beehive-story-li");
 
     var nextLi;
@@ -528,7 +532,7 @@ if (paramsToHash(document.location.search).admin === "true") {
 
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
-  positionOverlayControls();
+  addControls();
   addPermalinkFunc();  
 
   // Once on load
