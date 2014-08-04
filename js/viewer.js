@@ -86,6 +86,7 @@ function loadStory(li) {
   // Load the story content
   $("#storyLabel").text( story.label );
   $("#storyText").html( story.html  );
+  $(".controlsText").get(0).scrollTop = 0;
   $(".controlsText").slideDown('slow');
 
   closeStoryList(function() {
@@ -218,7 +219,7 @@ function addControls() {
   });
   navControls.on("click", "#showControlsBtn", function(event) {
     event.preventDefault();
-    
+
     minimizedButton.fadeOut(function() {
       controls.slideDown('slow');
     });
