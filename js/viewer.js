@@ -209,12 +209,16 @@ function addControls() {
 
   // Add minimization behavior
   controls.on("click", ".controlsMinimize", function(event) {
+    event.preventDefault();
+
     controls.slideUp('slow', function() {;
       // wait til animation is done
       minimizedButton.fadeIn();
     });
   });
   navControls.on("click", "#showControlsBtn", function(event) {
+    event.preventDefault();
+    
     minimizedButton.fadeOut(function() {
       controls.slideDown('slow');
     });
@@ -237,7 +241,7 @@ function addControls() {
   // Story text close
   $("#overlayControls").on("click", ".close-story-link", function(event) {
     event.preventDefault();
-    
+
     $(".controlsText").slideUp('slow');
   });
 
