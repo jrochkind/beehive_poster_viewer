@@ -468,7 +468,7 @@ function loadPosterData() {
       success: function() {
         // Important to add the plugin BEFORE we make the OpenSeadragon viewer
         // annotatable
-        addHelloWorldPlugin();
+        addShowRegionPlugin();
 
         anno.makeAnnotatable(openSeadragonViewer);
 
@@ -490,15 +490,15 @@ function annotate() {
 }
 
 /* Just a demo, not really using */
-function addHelloWorldPlugin() {
+function addShowRegionPlugin() {
 
-  annotorious.plugin.HelloWorldPlugin = function(opt_config_options) { }
+  annotorious.plugin.ShowRegionPlugin = function(opt_config_options) { }
 
-  annotorious.plugin.HelloWorldPlugin.prototype.initPlugin = function(anno) {
+  annotorious.plugin.ShowRegionPlugin.prototype.initPlugin = function(anno) {
     // Add initialization code here, if needed (or just skip this method if not)
   }
 
-  annotorious.plugin.HelloWorldPlugin.prototype.onInitAnnotator = function(annotator) {
+  annotorious.plugin.ShowRegionPlugin.prototype.onInitAnnotator = function(annotator) {
     // A Field can be an HTML string or a function(annotation) that returns a string
     annotator.popup.addField(function(annotation) { 
       var geometry = annotation.shapes[0].geometry;
@@ -515,7 +515,7 @@ function addHelloWorldPlugin() {
   }
 
   // Add the plugin like so
-  anno.addPlugin('HelloWorldPlugin', {});
+  anno.addPlugin('ShowRegionPlugin', {});
 }
 
 
