@@ -61,6 +61,115 @@ function setPosterAndLang() {
   beehive_lang   = (typeof h.lang === "undefined") ? 'en' : h.lang;
 }
 
+// arg is the <li> element containing the .story link
+// with story data attached. 
+function loadStory(li) {
+  var story = li.find(".story").data("beehive-story");
+
+  if (typeof story === "undefined")
+    return;
+
+
+  var rect = new OpenSeadragon.Rect(parseFloat(story.region.x),
+      parseFloat(story.region.y),
+      parseFloat(story.region.width),
+      parseFloat(story.region.height));
+
+  // Save the li in data for next/prev
+  $(".controlsText").data("beehive-story-li", li);
+
+  // Show/hide next/prev buttons based on if
+  // we got em
+  $(".controls-text-nav-prev").css("visibility",  (li.prev().size() > 0) ? "visible" : "hidden"  );
+  $(".controls-text-nav-next").css("visibility",  (li.next().size() > 0) ? "visible" : "hidden"  );
+
+  // Load the story content
+  $("#storyLabel").text( story.label );
+  $("#storyText").html( story.html  );
+  $(".controlsText").slideDown('slow');
+
+  closeStoryList(function() {
+    withSlowOSDAnimation(function() {
+      rect = adjustRectForPanel(rect);
+
+      openSeadragonViewer.viewport.fitBounds(rect);
+    });
+  });
+}
+
+function closeStoryList(func) {
+  if ($("#slideContainerOverlay").is(":visible")) {
+    $("#slideContainerOverlay").fadeOut('slow');
+  }
+
+  $(".controls-story-list").slideUp('slow', function() {
+    $(".scene-expander").removeClass("open");
+    if (typeof func !== 'undefined') {
+      func();
+    }
+    $("#sceneExpanderImg").attr("src", "./images/expand.png")
+  });
+}
+
+function openStoryList() {
+  $("#slideContainerOverlay").fadeIn('slow');
+
+  //$(".controlsText").slideUp('slow', function() {
+    $(".controls-story-list").slideDown('slow', function() {
+      $(".scene-expander").addClass("open");
+      $("#sceneExpanderImg").attr("src", "./images/collapse.png")
+    });
+  //});
+}
+
+// temporarily set OpenSeadragon animation params
+// to a very slow animate, then restore.
+function withSlowOSDAnimation(f) {
+  var viewport = openSeadragonViewer.viewport;
+
+  // save old ones
+  var oldValues = {};
+  oldValues.centerSpringXAnimationTime = viewport.centerSpringX.animationTime;
+  oldValues.centerSpringYAnimationTime = viewport.centerSpringY.animationTime;
+  oldValues.zoomSpringAnimationTime = viewport.zoomSpring.animationTime;
+
+  // set our new ones
+  viewport.centerSpringX.animationTime =
+    viewport.centerSpringY.animationTime =
+    viewport.zoomSpring.animationTime =
+    6;
+
+  // callback
+  f()
+
+  // restore values
+  viewport.centerSpringX.animationTime = oldValues.centerSpringXAnimationTime;
+  viewport.centerSpringY.animationTime = oldValues.centerSpringYAnimationTime;
+  viewport.zoomSpring.animationTime = oldValues.zoomSpringAnimationTime;
+}
+
+/* Take an OpenSeadragon.Rect, and make it bigger zo we can zoom
+   to it leaving room for the control panel too */
+function adjustRectForPanel(rect) {
+  var newRect = jQuery.extend(true, {}, rect)
+
+  var overlay = $("#overlayControls");
+  var containerWidth = openSeadragonViewer.viewport.getContainerSize().x;
+  var panelWidth = overlay.width() + 
+    parseInt(overlay.css("margin-left")) +
+    parseInt(overlay.css("margin-right"));
+
+  var reservedPortion = panelWidth / containerWidth;
+
+  // Not sure if this math is exactly right, I think we need
+  // to math more. 
+  var newWidth = rect.width / (1 - reservedPortion);
+  newRect.x = rect.x - (newWidth - rect.width);
+  newRect.width = newWidth;
+
+  return newRect;
+}
+
 
 
 
@@ -111,78 +220,6 @@ function positionOverlayControls() {
     });
   });
 
-  function closeStoryList(func) {
-    if ($("#slideContainerOverlay").is(":visible")) {
-      $("#slideContainerOverlay").fadeOut('slow');
-    }
-
-    $(".controls-story-list").slideUp('slow', function() {
-      $(".scene-expander").removeClass("open");
-      if (typeof func !== 'undefined') {
-        func();
-      }
-      $("#sceneExpanderImg").attr("src", "./images/expand.png")
-    });
-  }
-
-  function openStoryList() {
-    $("#slideContainerOverlay").fadeIn('slow');
-
-    //$(".controlsText").slideUp('slow', function() {
-      $(".controls-story-list").slideDown('slow', function() {
-        $(".scene-expander").addClass("open");
-        $("#sceneExpanderImg").attr("src", "./images/collapse.png")
-      });
-    //});
-  }
-
-  // temporarily set OpenSeadragon animation params
-  // to a very slow animate, then restore.
-  function withSlowOSDAnimation(f) {
-    var viewport = openSeadragonViewer.viewport;
-
-    // save old ones
-    var oldValues = {};
-    oldValues.centerSpringXAnimationTime = viewport.centerSpringX.animationTime;
-    oldValues.centerSpringYAnimationTime = viewport.centerSpringY.animationTime;
-    oldValues.zoomSpringAnimationTime = viewport.zoomSpring.animationTime;
-
-    // set our new ones
-    viewport.centerSpringX.animationTime =
-      viewport.centerSpringY.animationTime =
-      viewport.zoomSpring.animationTime =
-      6;
-
-    // callback
-    f()
-
-    // restore values
-    viewport.centerSpringX.animationTime = oldValues.centerSpringXAnimationTime;
-    viewport.centerSpringY.animationTime = oldValues.centerSpringYAnimationTime;
-    viewport.zoomSpring.animationTime = oldValues.zoomSpringAnimationTime;
-  }
-
-  /* Take an OpenSeadragon.Rect, and make it bigger zo we can zoom
-     to it leaving room for the control panel too */
-  function adjustRectForPanel(rect) {
-    var newRect = jQuery.extend(true, {}, rect)
-
-    var overlay = $("#overlayControls");
-    var containerWidth = openSeadragonViewer.viewport.getContainerSize().x;
-    var panelWidth = overlay.width() + 
-      parseInt(overlay.css("margin-left")) +
-      parseInt(overlay.css("margin-right"));
-
-    var reservedPortion = panelWidth / containerWidth;
-
-    // Not sure if this math is exactly right, I think we need
-    // to math more. 
-    var newWidth = rect.width / (1 - reservedPortion);
-    newRect.x = rect.x - (newWidth - rect.width);
-    newRect.width = newWidth;
-
-    return newRect;
-  }
 
   // Story list expand/contract
   $("#overlayControls").on("click", ".scene-expander",function(event) {
@@ -203,41 +240,6 @@ function positionOverlayControls() {
   });
 
 
-  // arg is the <li> element containing the .story link
-  // with story data attached. 
-  function loadStory(li) {
-    var story = li.find(".story").data("beehive-story");
-
-    if (typeof story === "undefined")
-      return;
-
-
-    var rect = new OpenSeadragon.Rect(parseFloat(story.region.x),
-        parseFloat(story.region.y),
-        parseFloat(story.region.width),
-        parseFloat(story.region.height));
-
-    // Save the li in data for next/prev
-    $(".controlsText").data("beehive-story-li", li);
-
-    // Show/hide next/prev buttons based on if
-    // we got em
-    $(".controls-text-nav-prev").css("visibility",  (li.prev().size() > 0) ? "visible" : "hidden"  );
-    $(".controls-text-nav-next").css("visibility",  (li.next().size() > 0) ? "visible" : "hidden"  );
-
-    // Load the story content
-    $("#storyLabel").text( story.label );
-    $("#storyText").html( story.html  );
-    $(".controlsText").slideDown('slow');
-
-    closeStoryList(function() {
-      withSlowOSDAnimation(function() {
-        rect = adjustRectForPanel(rect);
-
-        openSeadragonViewer.viewport.fitBounds(rect);
-      });
-    });
-  }
 
   // Click on story
   $("#storyList").on("click", ".story", function(event) {
@@ -302,8 +304,11 @@ function addPermalinkFunc() {
       overlayOpacity: 0.65
   });
 
+  /* load data from the narrative file */
+  loadPosterData();
+
   /* On load, do we have coordinates in a query string? If so, then zoom
-     to specified coords */
+     to specified coords. If not, load first story! */
  openSeadragonViewer.addHandler('open', function (event) {
     var params = paramsToHash(document.location.search);
     if ( ("x" in params ) && (params.x !== "") &&
@@ -316,6 +321,12 @@ function addPermalinkFunc() {
         parseFloat(params.w),
         parseFloat(params.h));
       openSeadragonViewer.viewport.fitBounds(rect);
+    } else {
+      // Load the first story
+      var li = $("#storyList li:first");
+      if (li.size() > 0) {
+        loadStory(li);
+      }
     }
   });
 
@@ -518,8 +529,7 @@ if (paramsToHash(document.location.search).admin === "true") {
 jQuery( document ).ready(function( $ ) {
   setupOpenSeadragonViewer();
   positionOverlayControls();
-  addPermalinkFunc();
-  loadPosterData();
+  addPermalinkFunc();  
 
   // Once on load
   storyListHeightLimit();
