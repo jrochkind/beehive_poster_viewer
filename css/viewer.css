@@ -346,6 +346,10 @@ html, body{
 
   background-color: #FAFAFA;
 }
+#linkModal h1, #linkModal h2, #linkModal h3 {
+  font-family: beehiveserifmedium;
+}
+
 #linkModal input[type=text] {
   display: block;
   line-height: 3;
