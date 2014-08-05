@@ -1,149 +1,84 @@
 
 <data>
-
   <title>
-
       Mesoamérica Resiste (Portada) del Colectivo de Diseño la Colmena.
-
   </title>
-
   <link>
-
     http://beehivecollective.org/beehive_poster/mesoamerica-resiste/
-
   </link>
-
 
   <stories>  
 
 
 
-
     <story>
-
       <label>La mirada del colonizador</label>
-
       <region
-
         x="0"
-
         y="0"
-
         width="1.0"
-
         height="1.0"
-
       />
-
       <html>
-
         El cartel se dobla sobre sí mismo creando un
 cuadrado que se abre mostrando una imagen
 más grande por dentro. Cerrando las solapas
 del exterior, el cartel parece un mapa antiguo
 de Mesoamérica de los conquistadores españoles. La perspectiva de arriba hacia abajo se refiere a los paralelos entre la historia colonial y el capitalismo contemporáneo. Extranjeros sin conexión a esta tierra han trazado este mapa con el motivo de extracción y ganancias.
 
-
       </html>
-
     </story>
 
-
     <story>
-
       <label>El puente de tierra</label>
-
       <region
-
         x="0.29332"
-
         y="0.37626"
-
         width="0.31297"
-
         height="0.29643"
-
       />
-
       <html>
-
         <p>Mesoamérica es una región cultural y geográfica que forma un istmo entre
-
 Norteamérica y Suramérica y los Océanos Atlántico y Pacífico, lo cual
-
 implica que esta región sea altamente estratégica para el comercio internacional. De igual manera, esta región genera mucho interés debido a sus reservas ricas de recursos naturales. Por su geografía y clima, Mesoamérica es una de las regiones de mayor biodiversidad en todo el mundo.
-
         </p>
-
         <p>Los megaproyectos de desarrollo y las industrias extractivas destructivas representan una pena de muerte para los ecosistemas y las comunidades arraigadas a estas tierras.
 
-
         </p>
-
       </html>
-
     </story>
 
-
     <story>
-
       <label>Pavimentando el camino para el libre comercio</label>
-
           <region
-
             x="0.23901"
-
             y="0.41110"
-
             width="0.22967"
-
             height="0.14958"
-
           />
-
       <html>
-
         <p>Desde la invasión de las tropas acorazadas de Hernán Cortés en el año 1519, un larga línea de colonizadores foráneos y corporaciones multinacionales han ocupado y explotado a Mesoamérica. El gobier- no de los EE.UU. y sus intereses corporativos han referido a México y Centroamérica como el “patio trasero” o su “república bananera” desde el inicio de los años 1880s. Ahora con los tratados de libre comercio dirigidos a la eliminación de las “barreras” al comercio
 (por ejemplo las leyes que protegen los derechos laborales o el medio ambiente), las industrias están cada vez más impacientes para poder desarrollar la infraestructura en Mesoamérica para explotar mejor a la región.
-
 </p>
-
         <p>En el 2001, el presidente Mexicano y el Banco Interamericano de Desarrollo (BID) presentaron un plan que literalmente allana el camino para implementar las políticas de libre comercio. El original “Plan Puebla Panamá” (PPP), incluía los estados del sur de México (iniciando en Puebla) y los países de Centroamérica hasta Panamá. Después de una oposición fuerte en toda la región el PPP fue sometido a un cambio de imagen en cuanto a las relaciones públicas y en 2008 fue renombrado el Proyecto de Integración y Desarrollo de Mesoamérica que ahora incluye a República Dominicana y Colombia.
-
 </p>
-
 
       </html>
-
     </story>
-
 
     <story>
-
       <label>Proyecto Mesoamérica</label>
-
       <region
-
         x="0.23897"
-
         y="0.22177"
-
         width="0.10508"
-
         height="0.06461"
-
       />
-
       <html>
-
         <p>El “Proyecto Mesoamérica” consiste de 8 iniciativas para “fortalecer la integración regional y promover el desarrollo social y económico”, pero en realidad la mayoría del financiamiento está dirigida a los grandes proyectos infraestructurales para mejorar la “competitividad del mercado” por medio del transporte de grandes volumes de comercio por la región. Las carreteras, puertos y canales se conectan con zonas industriales, mineras y otros proyectos extractivos y de producción de energía a gran escala para suministrar el poder eléctrico que lo haga todo posible.</p>
-
         <p>Estos planes se están desarrollando en el contexto de la creciente guerra en contra del narcotráfico cuyos resultados son un incremento dramático de violencia y la mayor militarización de la frontera entre los EE.UU. y México.</p>
-
       </html>
-
     </story>
-
 
     <story>
 
