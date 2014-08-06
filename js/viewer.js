@@ -217,7 +217,7 @@ function addControls() {
       minimizedButton.fadeIn();
     });
   });
-  navControls.on("click touchstart", "#showControlsBtn", function(event) {
+  navControls.on("click", "#showControlsBtn", function(event) {
     event.preventDefault();
 
     minimizedButton.fadeOut(function() {
@@ -227,7 +227,7 @@ function addControls() {
 
 
   // Story list expand/contract
-  $("#overlayControls").on("click touchstart", ".scene-expander",function(event) {
+  $("#overlayControls").on("click", ".scene-expander",function(event) {
     event.preventDefault();
 
     if ($(this).hasClass("open")) {
@@ -240,7 +240,7 @@ function addControls() {
   });
 
   // Story text close
-  $("#overlayControls").on("click touchstart", ".close-story-link", function(event) {
+  $("#overlayControls").on("click", ".close-story-link", function(event) {
     event.preventDefault();
 
     $(".controlsText").slideUp('slow');
@@ -249,7 +249,7 @@ function addControls() {
 
 
   // Click on story
-  $("#storyList").on("click touchstart", ".story", function(event) {
+  $("#storyList").on("click", ".story", function(event) {
     event.preventDefault();
 
     var li = $(this).closest("li")
@@ -258,13 +258,13 @@ function addControls() {
   });
 
   // Next/prev
-  $(".controls-text-nav").on("click touchstart", ".controls-text-nav-prev", function(event) {
+  $(".controls-text-nav").on("click", ".controls-text-nav-prev", function(event) {
     event.preventDefault();
 
     var li = $(".controlsText").data("beehive-story-li");    
     loadStory(li.prev());
   });
-  $(".controls-text-nav").on("click touchstart", ".controls-text-nav-next", function(event) {
+  $(".controls-text-nav").on("click", ".controls-text-nav-next", function(event) {
     event.preventDefault();
 
     var li = $(".controlsText").data("beehive-story-li");
@@ -342,7 +342,7 @@ function addPermalinkFunc() {
   });
 
 
-  $("#navControls").on("click touchstart", "#makePermaLink", function(event) {
+  $("#navControls").on("click", "#makePermaLink", function(event) {
     event.preventDefault();
     var bounds = openSeadragonViewer.viewport.getBounds();
 
