@@ -41,59 +41,11 @@
         style="display:none;"
         href="http://annotorious.github.io/demos/openseadragon-preview.html#">DEFINE REGION</a>
   </div>
-    
-  <!-- this is where the overlay controls live. It will be added by
-    JS into the openseadragon canvas
-    element. And positioned and styled further by CSS. -->
-  <div id="overlayControls">
-    <div class="controlContentWrapper">
-      <div class="controlsHeader controlsSection">
-        <a href="#" class="controlsMinimize"><img src="./images/collapse.png" class="controlsMinimizeImg tiny-icon" alt="Minimize" title="Minimize"></a>
-        <h1 class="controls-header-label">
-          <a id="titleLink" href="http://beehivecollective.org">Beehive Design Collective</a>
-        </h1>
-      </div>
 
 
-
-      <div class="controls-story-list-expander controlsSection" style="display:none;">
-        <div class="controls-text-nav">
-          <div class="controls-prev-next">
-
-            <a href="#" class="controls-text-nav-prev" style="visibility:hidden;"> <img src="./images/left.png" alt="" class="tiny-icon nav-prev-icon"> <span data-i18n-key="previous">Previous</span></a>
-
-            <a href="#" class="controls-text-nav-next"><span data-i18n-key="next">Next</span> <img src="./images/right.png" alt="" class="tiny-icon nav-next-icon"></a>
-          </div>
-
-          <a href="#" class="scene-expander"><span data-i18n-key="scenes">Scenes</span> <img src="./images/expand.png" alt="" id="sceneExpanderImg" class="scene-expander-icon tiny-icon"/></a>
-        </div>        
-      </div>
-
-      <div class="controls-slide-container">
-        <div id="slideContainerOverlay" class="slide-container-overlay" style="display: none;">
-        </div>
-
-        <div class="controls-story-list controlsSection" style="display:none">
-          <ul id="storyList" class="story-list storyList">
-          </ul>
-        </div>
-        <div class="controlsText controlsSection" style="display:none">
-          <a href="#" class="close-story-link">
-            <img src="./images/collapse.png" alt="Close" title="Close" class="tiny-icon">
-          </a>
-
-          <h3 id="storyHeading">
-            <span id="storyLabel"></span>
-          </h3>
-
-          <div id="storyText" class="storyText"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
+<!-- nav controls followed by our control panel. names are confusing
+     for legacy reasons sorry -->
+<div id="bothCustomControls">
   <!-- our own nav's that we'll use instead of OpenSeadragon's -->
   <div id="navControls">
     <a id="zoomInBtn" href="#" class="hexagon" title="Zoom in"></a>
@@ -104,6 +56,58 @@
     <!-- the minimized control panel, starts out hidden -->
     <a id="showControlsBtn" href="#" class="hexagon" title = "Menu" style="display:none"></a>
   </div>
+    
+  <!-- this is where the overlay controls live. It will be added by
+    JS into the openseadragon canvas
+    element. And positioned and styled further by CSS. -->
+    <div id="overlayControls">
+      <div class="controlContentWrapper">
+        <div class="controlsHeader controlsSection">
+          <a href="#" class="controlsMinimize"><img src="./images/collapse.png" class="controlsMinimizeImg tiny-icon" alt="Minimize" title="Minimize"></a>
+          <h1 class="controls-header-label">
+            <a id="titleLink" href="http://beehivecollective.org">Beehive Design Collective</a>
+          </h1>
+        </div>
+
+        <div class="controls-story-list-expander controlsSection" style="display:none;">
+          <div class="controls-text-nav">
+            <div class="controls-prev-next">
+
+              <a href="#" class="controls-text-nav-prev" style="visibility:hidden;"> <img src="./images/left.png" alt="" class="tiny-icon nav-prev-icon"> <span data-i18n-key="previous">Previous</span></a>
+
+              <a href="#" class="controls-text-nav-next"><span data-i18n-key="next">Next</span> <img src="./images/right.png" alt="" class="tiny-icon nav-next-icon"></a>
+            </div>
+
+            <a href="#" class="scene-expander"><span data-i18n-key="scenes">Scenes</span> <img src="./images/expand.png" alt="" id="sceneExpanderImg" class="scene-expander-icon tiny-icon"/></a>
+          </div>        
+        </div>
+
+        <div class="controls-slide-container">
+          <div id="slideContainerOverlay" class="slide-container-overlay" style="display: none;">
+          </div>
+
+          <div class="controls-story-list controlsSection" style="display:none">
+            <ul id="storyList" class="story-list storyList">
+            </ul>
+          </div>
+          <div class="controlsText controlsSection" style="display:none">
+            <a href="#" class="close-story-link">
+              <img src="./images/collapse.png" alt="Close" title="Close" class="tiny-icon">
+            </a>
+
+            <h3 id="storyHeading">
+              <span id="storyLabel"></span>
+            </h3>
+
+            <div id="storyText" class="storyText"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <div id="linkModal" style="display:none">
     <h2>Share link to this view</h2>

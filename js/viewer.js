@@ -204,9 +204,10 @@ function addControls() {
   var minimizedButton = $("#showControlsBtn");
   var container = $("#openseadragon .openseadragon-container");
 
+  openSeadragonViewer.addControl($("#bothCustomControls").get(0), {anchor: OpenSeadragon.ControlAnchor.TOP_LEFT});  
 
-  container.append(navControls);
-  container.append(controls);
+  //container.append(navControls);
+  //container.append(controls);
 
   // Add minimization behavior
   controls.on("click", ".controlsMinimize", function(event) {
@@ -344,8 +345,8 @@ function addPermalinkFunc() {
 
   $("#navControls").on("click", "#makePermaLink", function(event) {
     event.preventDefault();
-    var bounds = openSeadragonViewer.viewport.getBounds();
 
+    var bounds = openSeadragonViewer.viewport.getBounds();
 
     $("#linkModalUrlField").val( urlWithNewBounds(bounds) );
     $("#linkModal").trigger('openModal');
@@ -432,8 +433,9 @@ function loadPosterData() {
     var panel     = $("#overlayControls")
 
     var maxPanelHeight = container.height() - 
-      parseInt($(panel).css('margin-top')) -
-      8 // 8px bottom margin we want
+      panel.position().top -
+      parseInt(panel.css('margin-top')) -
+      12; // 12px bottom margin we want
 
     panel.css("max-height", maxPanelHeight);
 
@@ -453,7 +455,6 @@ function loadPosterData() {
     });
   }
   jQuery(document).ready(function($) {
-
 
     // And again if window changes
     $( window ).resize(function(event) {
@@ -542,9 +543,6 @@ jQuery( document ).ready(function( $ ) {
   addControls();
   addPermalinkFunc();  
 
-  // Once on load
-  storyListHeightLimit();
-
   applyI18nValues(beehive_lang);
 
   /* Crazy hack. We placed our controls inside the .openseadragon-container
@@ -561,6 +559,7 @@ jQuery( document ).ready(function( $ ) {
   $("#overlayControls, #navControls, #minimizedControls").on("mousedown", function(e) {
     e.stopImmediatePropagation();
   });
+
   /*$("#overlayControls, #navControls, #minimizedControls").on("mouseup", function(e) {
     //e.target.click();
   });*/

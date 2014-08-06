@@ -46,6 +46,7 @@ h4 {
   margin-bottom: 1em;
   font-family: Euphorigenic, Times New Roman, Times, serif;
 }
+
 .controls-text-nav {
   font-family: beehiveserif, Euphorigenic, Times New Roman, Times, serif;
   font-size: 20px;
@@ -121,6 +122,17 @@ html, body{
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+/* Our div that wraps both #navControls and #overlayControls, that
+   we add to OpenSeadragon with #addControls */
+#bothCustomControls {
+  /* it's gonna be transparent, but need to give it a width
+     wide enough to hold all our stuff. 100% does not work. */
+  width: 800px;
+  /* Oddly, need to override OSD's attempt to make it position:relative
+     to avoid unwanted top margin, not sure why */
+  position: static !important;
 }
 
 /* our own nav controls, easier than trying to customize
@@ -208,8 +220,12 @@ html, body{
 
 #overlayControls {
   /* position below and lined up with openseadragon controls for now */
-  position: relative;
-  margin: 78px 6px 38px 6px;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  margin-top: 78px;
+  margin-bottom: 38px;
+  margin-right: 6px;
 
   border: 1px solid black;
   width: 342px;
