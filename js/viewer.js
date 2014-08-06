@@ -209,7 +209,7 @@ function addControls() {
   container.append(controls);
 
   // Add minimization behavior
-  controls.on("click", ".controlsMinimize", function(event) {
+  controls.on("click touchstart", ".controlsMinimize", function(event) {
     event.preventDefault();
 
     controls.slideUp('slow', function() {;
