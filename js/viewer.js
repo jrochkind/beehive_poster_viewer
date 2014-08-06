@@ -193,7 +193,7 @@ function setupOpenSeadragonViewer() {
     zoomInButton: 'zoomInBtn',
     zoomOutButton: 'zoomOutBtn',
     homeButton: 'fullPosterBtn',
-    fullPageButton: 'fullPageBtn',
+    //fullPageButton: 'fullPageBtn',
     minZoomImageRatio: 0.7
   });
 }
@@ -205,8 +205,29 @@ function addControls() {
   var container = $("#openseadragon .openseadragon-container");
 
 
-  container.append(navControls);
-  container.append(controls);
+  //container.append(navControls);
+  //container.append(controls);
+
+  // Custom behavior for fullScreen, we want to full screen entire
+  // body so our custom controls will still be there. 
+  //  We do lose OSD's fullscreen-related events this way. We're still
+  // using some lower-level OSD events to deal with fullscreen switch. 
+  // (Skipping OSD's _fullPage_ mode was crucial, to leave our controls
+  // on-screen)
+  navControls.on("click", "#fullPageBtn", function(event) {
+    event.preventDefault();
+
+    if (OpenSeadragon.isFullScreen()) {
+      OpenSeadragon.exitFullScreen();
+    } else {
+      OpenSeadragon.requestFullScreen( document.body );
+    }
+  });
+  // But the hide the button entirely if OSD thinks we can't do full screen. 
+  if ((!OpenSeadragon.supportsFullScreen) && (! OpenSeadragon.isFullScreen())) {
+    $("#fullPageBtn").css("visibility", "hidden");
+  }
+
 
   // Add minimization behavior
   controls.on("click", ".controlsMinimize", function(event) {
@@ -222,6 +243,10 @@ function addControls() {
 
     minimizedButton.fadeOut(function() {
       controls.slideDown('slow');
+
+      // on iOS safari, this is helpful for making sure things
+      // are displayed:
+      storyListHeightLimit();
     });
   });
 
@@ -432,8 +457,9 @@ function loadPosterData() {
     var panel     = $("#overlayControls")
 
     var maxPanelHeight = container.height() - 
-      parseInt($(panel).css('margin-top')) -
-      8 // 8px bottom margin we want
+      panel.position().top -
+      parseInt(panel.css('margin-top')) -
+      12; // 12px bottom margin we want
 
     panel.css("max-height", maxPanelHeight);
 
@@ -559,7 +585,7 @@ jQuery( document ).ready(function( $ ) {
      to happen, mouse select text still seems to be allowed. */
 
   $("#overlayControls, #navControls, #minimizedControls").on("mousedown", function(e) {
-    e.stopImmediatePropagation();
+    //e.stopImmediatePropagation();
   });
   /*$("#overlayControls, #navControls, #minimizedControls").on("mouseup", function(e) {
     //e.target.click();

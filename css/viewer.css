@@ -121,6 +121,10 @@ html, body{
   height: 100%;
   padding: 0;
   margin: 0;
+
+  /* in some browsers, in full screen mode we get a black background
+     without this. Future TODO, customize bg color? Will take more than this. */
+  background-color: white;
 }
 
 /* our own nav controls, easier than trying to customize
@@ -208,8 +212,11 @@ html, body{
 
 #overlayControls {
   /* position below and lined up with openseadragon controls for now */
-  position: relative;
-  margin: 78px 6px 38px 6px;
+  position: absolute;
+  top: 78px;
+  left: 6px;
+  margin-bottom: 38px
+  margin-right: 6px;
 
   border: 1px solid black;
   width: 342px;
@@ -224,6 +231,7 @@ html, body{
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 }
 
 
@@ -259,7 +267,8 @@ html, body{
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-image: url(../images/single-bar.png) 5 0 0 0 repeat;  
+  border-image: url(../images/single-bar.png) 5 0 0 0 repeat;
+  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 }
 .controls-story-list-expander h3 {
   margin: 0;
@@ -291,6 +300,7 @@ html, body{
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 
 
   /* have to leave space for our new border now, grr */
@@ -310,6 +320,7 @@ html, body{
   border-left: 0;
   border-bottom: 0;  
   border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
+  -webkit-border-image: url(../images/single-bar.png) 5 100 0 0 repeat;
 
   padding-top: 14px;
 
@@ -343,6 +354,7 @@ html, body{
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 
   background-color: #FAFAFA;
 }
@@ -365,6 +377,7 @@ html, body{
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;  
+  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat; 
 
   font-family: courier, fixed;
 }
