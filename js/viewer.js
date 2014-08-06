@@ -559,7 +559,7 @@ jQuery( document ).ready(function( $ ) {
      to happen, mouse select text still seems to be allowed. */
 
   $("#overlayControls, #navControls, #minimizedControls").on("mousedown", function(e) {
-    e.stopPropagation();
+    //e.stopPropagation();
   });
   /*$("#overlayControls, #navControls, #minimizedControls").on("mouseup", function(e) {
     //e.target.click();
