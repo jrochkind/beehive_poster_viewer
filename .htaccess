@@ -25,7 +25,7 @@
 
 # Openseadragon.js is placed by us in a URL with OpenSeadragon version in it,
 # so we can have it cached forever. Same with our custom fonts. 
-<FilesMatch "openseadragon(\.min)?\.js">
+<FilesMatch "^openseadragon(\.min)?\.js$">
   ExpiresActive On
   ExpiresDefault "access plus 1 year"
 </FilesMatch>
