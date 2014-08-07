@@ -1,0 +1,34 @@
+# Default mayfirst.org apache conf was leading to files being cached by browsers
+# for long time. Not sure how long. We want to control cache headers ourself. 
+
+
+# For source code, don't cache very long
+<FilesMatch "\.(html|xml|js|css)$">
+  # Remove the Last-Modified header set by mayfirst conf, it resulted in weird things. 
+  Header unset Last-Modified
+
+  # Make sure etag is there though (was already, but making sure), for conditional
+  # GETs
+  FileETag All
+
+  # But do give hours of strict cacheability for performance.  
+  ExpiresActive On
+  ExpiresDefault "access plus 2 hours"
+</FilesMatch>
+
+# For fonts, cache indefinitely
+<FilesMatch "\.(woff|eot|ttf|svg)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+</FilesMatch>
+
+
+# Openseadragon.js is placed by us in a URL with OpenSeadragon version in it,
+# so we can have it cached forever. Same with our custom fonts. 
+<FilesMatch "openseadragon(\.min)?\.js">
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+</FilesMatch>
+
+# For jpg's, including the tile source (!), we use default apache for now,
+# which seems to result in cacheability.
