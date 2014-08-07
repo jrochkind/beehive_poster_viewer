@@ -241,12 +241,33 @@ function addControls() {
   navControls.on("click", "#showControlsBtn", function(event) {
     event.preventDefault();
 
-    minimizedButton.fadeOut(function() {
-      controls.slideDown('slow');
 
-      // on iOS safari, this is helpful for making sure things
-      // are displayed:
+    minimizedButton.fadeOut(function() {
       storyListHeightLimit();
+
+      controls.slideDown('slow', function() {
+        // Some issue in Safari (including iOS) is making
+        // the control panel lose it's proper max height,
+        // and worse the controlsText area strangely appearing
+        // as visibility:hidden (even though it's not marked so)
+        // on maximization. 
+        //
+        // We recalculate the max height after sliding down, 
+        // and also need to hide and then quickly fade in (just `show`
+        // didn't work!) to make things properly visible and sized
+        // in safari after slideDown. (If we just used show instead
+        // of slideDown it doesn't seem to trigger the Safari issue,
+        // but we like slideDown)
+        storyListHeightLimit();
+
+        if ($(".controlsText").is(":visible")) {
+          $(".controlsText").hide();
+          $(".controlsText").fadeIn(1);
+        }
+      });
+
+
+
     });
   });
 
