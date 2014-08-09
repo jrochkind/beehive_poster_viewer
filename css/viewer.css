@@ -269,8 +269,9 @@ html, body{
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
+  -webkit-border-image: url(../images/single-bar.png) 5 0 0 0 repeat;
   border-image: url(../images/single-bar.png) 5 0 0 0 repeat;
-  -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+
 }
 .controls-story-list-expander h3 {
   margin: 0;
@@ -301,8 +302,8 @@ html, body{
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
   -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 
 
   /* have to leave space for our new border now, grr */
@@ -320,9 +321,10 @@ html, body{
   border-top: 1px solid black;
   border-right: 0;
   border-left: 0;
-  border-bottom: 0;  
-  border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
+  border-bottom: 0;
   -webkit-border-image: url(../images/single-bar.png) 5 100 0 0 repeat;
+  border-image: url(../images/single-bar.png) 5 100 0 0 repeat;    
+
 
   padding-top: 14px;
 
@@ -355,8 +357,8 @@ html, body{
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
   -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;
 
   background-color: #FAFAFA;
 }
@@ -378,8 +380,8 @@ html, body{
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;  
   -webkit-border-image: url('../images/single-frame.gif') 5 5 5 5 repeat; 
+  border-image: url('../images/single-frame.gif') 5 5 5 5 repeat;  
 
   font-family: courier, fixed;
 }
