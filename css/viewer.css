@@ -149,18 +149,15 @@ html, body{
 }
 
 #zoomInBtn {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
+  /* hack to make sure our hover image gets preloaded first */
+  background-image:url(../images/plus_brown_px_07.png);
   background-image:url(../images/plus_blue_07.png);
 }
 #zoomInBtn:hover {
   background-image:url(../images/plus_brown_px_07.png);
 }
 #zoomOutBtn {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
+  background-image:url(../images/minus_brown_07.png);
   background-image:url(../images/minus_blue_07.png);
   position: relative;
   top:29px;
@@ -170,6 +167,7 @@ html, body{
   background-image:url(../images/minus_brown_07.png);
 }
 #fullPosterBtn {
+  background-image:url(../images/fullview_brown_07.png);
   background-image:url(../images/fullview_blue_07.png);
   position: relative;
   left:-50px;
@@ -178,6 +176,7 @@ html, body{
   background-image:url(../images/fullview_brown_07.png);
 }
 #fullPageBtn {
+  background-image:url(../images/fullscreen_brown_07.png);
   background-image:url(../images/fullscreen_blue_07.png);
   position: relative;
   top:28px;
@@ -187,6 +186,7 @@ html, body{
   background-image:url(../images/fullscreen_brown_07.png);
 }
 #makePermaLink {
+  background-image:url(../images/link_brown_07.png);
   background-image:url(../images/link_blue_07.png);
   position: relative;
   left:-98px;
@@ -195,6 +195,7 @@ html, body{
   background-image:url(../images/link_brown_07.png);
 }
 #showControlsBtn {
+  background-image:url(../images/menu_brown_07.png);
   background-image:url(../images/menu_blue_07.png);
   position: relative;
   top:28px;
