@@ -287,14 +287,6 @@ function addControls() {
 
   });
 
-  // Story text close
-  $("#overlayControls").on("click", ".close-story-link", function(event) {
-    event.preventDefault();
-
-    $(".controlsText").slideUp('slow');
-  });
-
-
 
   // Click on story
   $("#storyList").on("click", ".story", function(event) {
