@@ -3,12 +3,12 @@
 
 /* fonts */
 
-/* Call as 'font-family: beehiveserif' seems to work in all browsers, don't
-   entirely understand */
+/* Call as 'font-family: beehiveserif' */
 @font-face {
-  font-family: 'beehiveserifmedium';
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.eot');
-  src: url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.eot?#iefix') format('embedded-opentype'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.woff') format('woff'), url('http://beehivecollective.org/wp-content/themes/beehive-bones/library/fonts/beehiveserif-webfont.ttf') format('truetype');
+  font-family: 'beehiveserif';
+  src: url('../fonts/beehiveserif-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/beehiveserif-webfont.woff') format('woff'),
+    url('../fonts/beehiveserif-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,6 @@ Courtesy of Typodermic Fonts and Fontspring:
 http://www.fontspring.com/fonts/typodermic/euphorigenic */
 @font-face {
     font-family: 'Euphorigenic';
-    src: url('../fonts/euphorigenic.eot');
     src: url('../fonts/euphorigenic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/euphorigenic.woff') format('woff'),
          url('../fonts/euphorigenic.ttf') format('truetype'),
@@ -363,7 +362,7 @@ html, body{
   background-color: #FAFAFA;
 }
 #linkModal h1, #linkModal h2, #linkModal h3 {
-  font-family: beehiveserifmedium;
+  font-family: beehiveserif;
 }
 
 #linkModal input[type=text] {
