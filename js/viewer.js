@@ -194,7 +194,9 @@ function setupOpenSeadragonViewer() {
     zoomOutButton: 'zoomOutBtn',
     homeButton: 'fullPosterBtn',
     //fullPageButton: 'fullPageBtn',
-    minZoomImageRatio: 0.7
+    minZoomImageRatio: 0.7,
+
+    springStiffness: 5
   });
 }
 
@@ -362,29 +364,13 @@ function addPermalinkFunc() {
   });
 
   /* load data from the narrative file */
-  loadPosterData();
-
-  /* On load, do we have coordinates in a query string? If so, then zoom
-     to specified coords. If not, load first story! */
- openSeadragonViewer.addHandler('open', function (event) {
-    var params = paramsToHash(document.location.search);
-    if ( ("x" in params ) && (params.x !== "") &&
-         ("y" in params ) && (params.y !== "") &&
-         ("w" in params ) && (params.w !== "") &&
-         ("h" in params ) && (params.h !== "") ) {
-
-      var rect = new OpenSeadragon.Rect(parseFloat(params.x),
-        parseFloat(params.y),
-        parseFloat(params.w),
-        parseFloat(params.h));
-      openSeadragonViewer.viewport.fitBounds(rect);
-    } else {
-      // Load the first story
-      var li = $("#storyList li:first");
-      if (li.size() > 0) {
-        loadStory(li);
-      }
-    }
+  var ajaxLoad = loadPosterData();
+  // And go to first story, or specified bounds -- but only after OSD finishes
+  // loading AND our ajax loadPosterData is done!
+  openSeadragonViewer.addHandler('open', function (event) {
+    ajaxLoad.done(function() {
+      gotoInitialView();
+    });
   });
 
 
@@ -428,10 +414,34 @@ function storyXmlToJson(storyXml) {
   return json;
 }
 
+// Go to a view specified in URL, or else open first scene
+function gotoInitialView() {
+  var params = paramsToHash(document.location.search);
+  if ( ("x" in params ) && (params.x !== "") &&
+       ("y" in params ) && (params.y !== "") &&
+       ("w" in params ) && (params.w !== "") &&
+       ("h" in params ) && (params.h !== "") ) {
+
+    var rect = new OpenSeadragon.Rect(parseFloat(params.x),
+      parseFloat(params.y),
+      parseFloat(params.w),
+      parseFloat(params.h));
+    openSeadragonViewer.viewport.fitBounds(rect);
+  } else {
+    // Load the first story
+    var li = $("#storyList li:first");
+    if (li.size() > 0) {
+      loadStory(li);
+    }
+  }
+}
+
+// Loads the poster data, returns the AJAX object, so it can be used as a JQuery
+// promise. 
 function loadPosterData() {
   /* fetch the xml of stories */
   var fetchUrl = "./narrative/" + beehive_poster + "/" + beehive_lang + ".xml";
-  $.ajax({
+  var ajax = $.ajax({
     url: fetchUrl,
     success: function(xml) {
       xml = $(xml);
@@ -461,11 +471,10 @@ function loadPosterData() {
 
       // Adjust heights after load
       storyListHeightLimit();
-
-    },
+    }
   });
-  
 
+  return ajax;
 }
 
   // Height limits on the story list we couldn't figure out
