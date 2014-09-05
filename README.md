@@ -4,7 +4,7 @@ In Github at http://github.com/jrochkind/beehive_poster_viewer
 
 Originally by Jonathan Rochkind, beehive people please feel free to contact Jonathan at any time with issues, questions, problems. jonathan@dnil.net
 
-Live on the web at [TBD]
+This code is installed on the beehive web server under beehivecollective.org/posterViewer, accessible on the web at [TBD]
 
 The application is simply HTML and Javascript -- just files on the server, there is no special software running on the server.
 
