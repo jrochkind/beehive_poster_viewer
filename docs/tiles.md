@@ -1,4 +1,6 @@
-To display a very large high-resolution image in a web browser, that'll be horribly slow, use too much network, and crash some people's computers.
+# Creating DZI tiles
+
+To display a very large high-resolution image in a web browser, we don't want to simply delivery a giant image file to browsers: That'll be horribly slow, use too much network, and crash some people's computers.
 
 Instead, we want to split up the image into multiple tiles at various zoom levels.
 
