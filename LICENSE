@@ -1,6 +1,10 @@
-All narrative text (in `narrative` directory), images, and local custom fonts are owned by the Beehive Design Collective. Usage is generally licensed under CC-BY-NC, but please see for details: http://beehivecollective.org/graphics-projects/use-our-graphics/
+All narrative text (in `narrative` directory), images, and local custom 
+fonts are owned by the Beehive Design Collective. Usage is generally
+allowed under CC-BY-NC, but please see for details: 
+http://beehivecollective.org/graphics-projects/use-our-graphics/
 
-Third party Javascript (OpenSeadragon, easyModal) is included in the repo only for convenience, and owned and licensed by it's own authors. 
+Third party Javascript (OpenSeadragon, easyModal) is included in the
+repo only for convenience, and owned and licensed by it's own authors. 
 
 -----
 
