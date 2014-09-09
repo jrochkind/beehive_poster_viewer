@@ -375,6 +375,15 @@ function addPermalinkFunc() {
 
 }
 
+function storyToFragmentUrl(storyJson) {
+  var label = storyJson.label;
+  if ((typeof label === "undefined") || label.length === 0) {
+    return;
+  } else {
+    return window.location.href.split('#')[0] + "#s=" + encodeURIComponent(label);
+  }
+}
+
 // We store the story data in XML becuase it's more convenient
 // to edit by hand for the sort of data we have (really!), but
 // json is easier to deal with in javascript, esp cross-browser. 
@@ -417,6 +426,15 @@ function gotoInitialView() {
       parseFloat(params.w),
       parseFloat(params.h));
     openSeadragonViewer.viewport.fitBounds(rect);
+  } else if ("s" in params) {
+    // find the scene with matching title to our 's' 
+    var destLi = $("#storyList li").filter(function(i, li) {
+      var story = $(li).find(".story").data("beehive-story");
+      return story.label == params.s;
+    }).first();
+    if (destLi) {
+      loadStory(destLi);
+    }
   } else {
     // Load the first story
     var li = $("#storyList li:first");
@@ -445,10 +463,12 @@ function loadPosterData() {
       // Load scenes
       var storyList = $("#storyList");
       xml.find('story').each(function(i, storyXml){
-        var li = $("<li/>");
+        var storyJson = storyXmlToJson(storyXml);
+        var li        = $("<li/>");
         var a  = $("<a href='#' class='story'/>").
+          attr('href', storyToFragmentUrl(storyJson)).
           text($(storyXml).find("label").text()).
-          data('beehive-story', storyXmlToJson(storyXml));
+          data('beehive-story', storyJson);
 
         li.append(a).appendTo(storyList);
       });
