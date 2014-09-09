@@ -334,15 +334,15 @@ function addPermalinkFunc() {
      We keep 5 decimal places which is enough for an image 100,000 pixels
      high/wide, which should be plenty (coordinate are relative 0 -> 1 )*/
   function urlWithNewBounds(bounds) {
-    var currentParams = paramsToHash(window.location.search);
-    var url = window.location.href.split('?')[0];
+    var url = window.location.href.split('#')[0];
+    var hashParams = {};
 
-    currentParams.x = bounds.x.toFixed(5);
-    currentParams.y = bounds.y.toFixed(5);
-    currentParams.w = bounds.width.toFixed(5);
-    currentParams.h = bounds.height.toFixed(5);
+    hashParams.x = bounds.x.toFixed(5);
+    hashParams.y = bounds.y.toFixed(5);
+    hashParams.w = bounds.width.toFixed(5);
+    hashParams.h = bounds.height.toFixed(5);
 
-    url += '?' + jQuery.param(currentParams);
+    url += '#' + jQuery.param(hashParams);
 
     return url;
   }
@@ -406,7 +406,7 @@ function storyXmlToJson(storyXml) {
 
 // Go to a view specified in URL, or else open first scene
 function gotoInitialView() {
-  var params = paramsToHash(document.location.search);
+  var params = paramsToHash(document.location.hash.replace(/^\#/, ''));
   if ( ("x" in params ) && (params.x !== "") &&
        ("y" in params ) && (params.y !== "") &&
        ("w" in params ) && (params.w !== "") &&
