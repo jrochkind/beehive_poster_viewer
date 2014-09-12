@@ -358,7 +358,9 @@ function addPermalinkFunc() {
   // And go to first story, or specified bounds -- but only after OSD finishes
   // loading AND our ajax loadPosterData is done!
   openSeadragonViewer.addHandler('open', function (event) {
-    ajaxLoad.done(function() {
+    // always: poster.xml load may not have worked, we still
+    // wanna set our view of the tiles. 
+    ajaxLoad.always(function() {
       gotoInitialView();
     });
   });
