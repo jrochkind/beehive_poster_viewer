@@ -454,11 +454,14 @@ function loadPosterData() {
     success: function(xml) {
       xml = $(xml);
 
-      // Load title
-      var title = xml.find("data > title").text().trim();
+      // Load title. For now allow HTML in title (inline elements only please)
+      // to allow <br> tags for the attribution line. May change this to
+      // do it different, maybe hard-coded attribution line. 
+      var title_text = xml.find("data > title").text().trim();
+      var title_html = xml.find("data > title").html();
       var title_link = xml.find("data > link").text().trim();
-      $("#titleLink").attr("href", title_link).text(title);
-      document.title = title;
+      $("#titleLink").attr("href", title_link).html(title_html);
+      document.title = title_text;
 
       // Load scenes
       var storyList = $("#storyList");
