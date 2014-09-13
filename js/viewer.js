@@ -194,9 +194,7 @@ function setupOpenSeadragonViewer() {
     zoomOutButton: 'zoomOutBtn',
     homeButton: 'fullPosterBtn',
     //fullPageButton: 'fullPageBtn',
-    minZoomImageRatio: 0.7,
-
-    springStiffness: 5
+    minZoomImageRatio: 0.7
   });
 }
 
