@@ -22,7 +22,7 @@ The second argument `mr` is the name you want to give to the output DZI -- use t
 
 `libvips dzsave` will output JPG -- you can choose the JPG quality level you want to output. With the Mesoamerica Resiste poster, it looked to us like quality 5 is the lowest you can go with no noticeable image degradation. Higher levels didn't seem to result in any better quality, although lower levels added artifacts. Note the [Q=50] on the end, where we choose JPG quality level (50 out of 100, same as 5 out of 10 in other software).
 
-Also, note we begin with a TIFF file as input. you want to **begin with a TIFF file saved with an RGB colorspace profile**. You want to start with a TIFF, not a JPG, because a JPG has already lost some original image information, which can lead to poorer quality when libvips resizes for tiles. And, it looks like saving in the RGB colorspace helps avoid color shifts when libvips resizes for tiles too. 
+Also, note we begin with a TIFF file as input. you want to **begin with a TIFF file saved with an RGB colorspace profile**. You want to start with a TIFF, not a JPG, because a JPG has already lost some original image information, which can lead to poorer quality when libvips resizes for tiles. Using the RGB color profile (instead of CMYK), seems in our experience to significantly decrease file size of generated tiles, without effecting observed quality either way (positive or negative; at first I was hoping it might improve quality in the resize/reduced tiles with vips, but does not seem to). 
 
 ## output of libvips dzsave, transfer to web server
 
