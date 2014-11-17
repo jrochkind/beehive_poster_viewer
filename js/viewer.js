@@ -34,10 +34,18 @@ i18n_data.es = {
 };
 
 function applyI18nValues(lang) {
-  var keys = ['next', 'previous', 'scenes']  
+  $(document).find("[data-i18n-key]").each(function(i, el) {
+    var key = el.attributes['data-i18n-key'].value;
+    var value = i18n_data[lang][key];
+    if (value) {
+      $(el).text(  value  );
+    }
+  });
+
+  /*var keys = ['next', 'previous', 'scenes']  
   jQuery.each(keys, function(i, key) {
     $(document).find("[data-i18n-key=" + key + "]").text(  i18n_data[lang][key]  );
-  });
+  });*/
 }
 
 
