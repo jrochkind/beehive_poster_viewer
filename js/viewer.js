@@ -33,6 +33,12 @@ i18n_data.es = {
   'scenes': 'Escenas',
 };
 
+// A span or other element with data-i18n-key="key"
+// will have it's text content replaced by the value
+// from i18n hashes above.
+// data-i18n-title-key will have 'title' attribute
+// replaced instead, for <a> mouseovers.
+
 function applyI18nValues(lang) {
   $(document).find("[data-i18n-key]").each(function(i, el) {
     var key = el.attributes['data-i18n-key'].value;
@@ -42,10 +48,13 @@ function applyI18nValues(lang) {
     }
   });
 
-  /*var keys = ['next', 'previous', 'scenes']  
-  jQuery.each(keys, function(i, key) {
-    $(document).find("[data-i18n-key=" + key + "]").text(  i18n_data[lang][key]  );
-  });*/
+  $(document).find("[data-i18n-title-key]").each(function(i, el) {
+    var key = el.attributes['data-i18n-title-key'].value;
+    var value = i18n_data[lang][key];
+    if (value) {
+      $(el).attr('title',  value);
+    }
+  });
 }
 
 
