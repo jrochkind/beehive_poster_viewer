@@ -340,6 +340,10 @@ html, body{
 .full-screen-instruction a:hover {
   text-decoration: underline;
 }
+.full-screen-instruction img {
+  float: left;
+  margin-right: 1em;
+}
 
 
 #storyHeading {
