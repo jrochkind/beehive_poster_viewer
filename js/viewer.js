@@ -127,6 +127,13 @@ function loadStory(li) {
   $(".controlsText").get(0).scrollTop = 0;
   $(".controlsText").slideDown('slow');
 
+  // And try to get iOS to provide momentum scrolling.
+  // Doing this purely in CSS breaks with dynamically added
+  // content like we're addig, but adding as a style AFTER
+  // we adjust heights and content might?
+  $(".controlsSection").css("-webkit-overflow-scrolling", "");
+  $(".controlsSection").css("-webkit-overflow-scrolling", "touch");
+
   closeStoryList(function() {
     withSlowOSDAnimation(function() {
       rect = adjustRectForPanel(rect);
@@ -533,13 +540,6 @@ function loadPosterData() {
 
       // Adjust heights after load
       storyListHeightLimit();
-
-      // And try to get iOS to provide momentum scrolling.
-      // Doing this purely in CSS breaks with dynamically added
-      // content like we're addig, but adding as a style AFTER
-      // we adjust heights and content might?
-       $(".controlsSection").css("-webkit-overflow-scrolling", "");
-       $(".controlsSection").css("-webkit-overflow-scrolling", "touch");
     }
   });
 
