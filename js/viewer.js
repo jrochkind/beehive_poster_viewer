@@ -390,7 +390,6 @@ function addPermalinkFunc() {
     return url;
   }
 
-
   /* prepare the modal we'll display permalinks in */
   $("#linkModal").easyModal({
       overlayOpacity: 0.65
@@ -438,8 +437,8 @@ function storyXmlToJson(storyXml) {
 
   json.label        = storyXml.find("label").text();
 
-  // .html() on xml node doesn't work in safari, XMLSerializer
-  // if it's raw text with no elements, wrap in a single <p> for
+  // .html() on xml node doesn't work in safari, use XMLSerializer.
+  // If it's raw text with no elements, wrap in a single <p> for
   // consistency. 
   var htmlElement   = storyXml.find("html").get(0);
   var serialized    = new XMLSerializer().serializeToString(htmlElement);
@@ -496,6 +495,7 @@ function loadPosterData() {
   var fetchUrl = "./narrative/" + beehive_poster + "/" + beehive_lang + ".xml";
   var ajax = $.ajax({
     url: fetchUrl,
+    dataType: "xml",
     success: function(xml) {
       xml = $(xml);
 
@@ -503,9 +503,13 @@ function loadPosterData() {
       // to allow <br> tags for the attribution line. May change this to
       // do it different, maybe hard-coded attribution line. 
       var title_text = xml.find("data > title").text().trim();
-      var title_html = xml.find("data > title").html();
+
+      // html() method doesn't work on XML nodes in Safari and
+      // maybe IE. We get the child nodes, and can pass
+      // them directly to set html() on our HTML node. Seems to work. 
+      var title_children = xml.find("data > title").get(0).childNodes;
       var title_link = xml.find("data > link").text().trim();
-      $("#titleLink").attr("href", title_link).html(title_html);
+      $("#titleLink").attr("href", title_link).html(title_children);
       document.title = title_text;
 
       // Load scenes
