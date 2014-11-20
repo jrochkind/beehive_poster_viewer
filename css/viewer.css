@@ -332,6 +332,16 @@ html, body{
   font-size: 95%;
 }
 
+/* full-screen tip that sometimes shows within first scene */
+.full-screen-instruction a {
+  font-weight: normal;
+  text-decoration: none;
+}
+.full-screen-instruction a:hover {
+  text-decoration: underline;
+}
+
+
 #storyHeading {
   margin-top: 0;
 }

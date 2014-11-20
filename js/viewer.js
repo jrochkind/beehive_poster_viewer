@@ -18,6 +18,7 @@ i18n_data.en = {
   'next': 'Next',
   'previous': 'Previous',
   'scenes': 'Scenes',
+  'full_screen_instruction': 'For the best view, try full-screen display.',
   // haven't actually done these yet
   'zoom_in': 'Zoom in',
   'zoom_out': 'Zoom out',
@@ -78,6 +79,23 @@ function setPosterAndLang() {
   beehive_lang   = (typeof h.lang === "undefined") ? 'en' : h.lang;
 }
 
+// Hides or shows full-screen tip depending on current
+// context -- show, only on the first scene, only if
+// we're not in full-screen mode, and full-screen mode is
+// possible.
+//
+// Pass in an 'li' for a scene, so we can determine
+// if it's the first scene. 
+function adjustTipVisibility(li) {
+  // Show full screen instructions IFF it's the first element
+  // and we can switch to full-screen view
+  if (li.prev().size() == 0  && (OpenSeadragon.supportsFullScreen) && (! OpenSeadragon.isFullScreen())) {
+    $("#fullScreenInstruction").show();
+  } else {
+    $("#fullScreenInstruction").hide();
+  }
+}
+
 // arg is the <li> element containing the .story link
 // with story data attached. 
 function loadStory(li) {
@@ -99,6 +117,9 @@ function loadStory(li) {
   // we got em
   $(".controls-text-nav-prev").css("visibility",  (li.prev().size() > 0) ? "visible" : "hidden"  );
   $(".controls-text-nav-next").css("visibility",  (li.next().size() > 0) ? "visible" : "hidden"  );
+
+  // Should we make the full-screen tip visible? Make it so.
+  adjustTipVisibility(li);
 
   // Load the story content
   $("#storyLabel").text( story.label );
@@ -231,7 +252,9 @@ function addControls() {
   // using some lower-level OSD events to deal with fullscreen switch. 
   // (Skipping OSD's _fullPage_ mode was crucial, to leave our controls
   // on-screen)
-  navControls.on("click", "#fullPageBtn", function(event) {
+  //
+  // We can also catch a click on our full screen instructions.
+  $("body").on("click", "#fullPageBtn, #fullScreenInstruction", function(event) {
     event.preventDefault();
 
     if (OpenSeadragon.isFullScreen()) {
@@ -239,6 +262,11 @@ function addControls() {
     } else {
       OpenSeadragon.requestFullScreen( document.body );
     }
+
+    // After switching full screen, re-adjust whether full-screen
+    // tip is visible.
+    adjustTipVisibility($(".controlsText").data("beehive-story-li"));
+
   });
   // But the hide the button entirely if OSD thinks we can't do full screen. 
   if ((!OpenSeadragon.supportsFullScreen) && (! OpenSeadragon.isFullScreen())) {

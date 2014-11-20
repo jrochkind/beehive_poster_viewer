@@ -66,12 +66,14 @@
           </div>
 
           <a href="#" class="scene-expander"><span data-i18n-key="scenes">Scenes</span> <img src="./images/expand.png" alt="" id="sceneExpanderImg" class="scene-expander-icon tiny-icon"/></a>
-        </div>        
+        </div>
       </div>
 
       <div class="controls-slide-container">
         <div id="slideContainerOverlay" class="slide-container-overlay" style="display: none;">
         </div>
+
+
 
         <div class="controls-story-list controlsSection" style="display:none">
           <ul id="storyList" class="story-list storyList">
@@ -84,6 +86,11 @@
           </h3>
 
           <div id="storyText" class="storyText"></div>
+
+        <!-- instructional text shown only on first scene, and only
+           if applicable  -->
+        <p id="fullScreenInstruction" class="full-screen-instruction" style="display:none"><a href="#"><img src="./images/fullscreen_blue_07.png" style="float: left; margin-right: 6px;" /><span data-i18n-key="full_screen_instruction"></span></a></p>
+
         </div>
       </div>
     </div>
