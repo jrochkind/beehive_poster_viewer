@@ -551,7 +551,7 @@ function loadPosterData() {
     var maxPanelHeight = container.height() - 
       panel.position().top -
       parseInt(panel.css('margin-top')) -
-      12; // 12px bottom margin we want
+      20; // 20px bottom margin we want
 
     panel.css("max-height", maxPanelHeight);
 
