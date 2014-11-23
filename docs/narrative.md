@@ -61,7 +61,7 @@ Zoom and move to somewhere generally containing the area and zoom level of the p
 
 Then click the "DEFINE REGION" button, and click and drag to define a rectangular region. You don't need to worry about the exact zoom level you are at, beyond having a zoom level that lets you see and define the region you want -- when displayed, the viewer will zoom to wherever it needs to show all of the exact box you define. 
 
-When you let up the mouse button, you'll get a little box saying "add a comment" with a 'save' button. It actually doesn't matter what you enter as a comment, it will be ignored, but do press the 'save' button -- now move your mouse back inside the region you defined, and you'll see a box pop up with a '<region>' tag in it, that you can copy and paste into the narrative XML definition file, to link to that rectangular region you defined. 
+When you let up the mouse button, you'll get a little box saying "add a comment" with a 'save' button. It actually doesn't matter what you enter as a comment, it will be ignored, but do press the 'save' button -- now move your mouse back inside the region you defined, and you'll see a box pop up with a `<region>` tag in it, that you can copy and paste into the narrative XML definition file, to link to that rectangular region you defined. 
 
 This 'admin' interface is a bit klunky, but it should work to let you define the regions you want. If at first you didn't get quite the right one, just go try again and copy the new `<region>` into the appropriate scene in the narrative xml file again. 
 
