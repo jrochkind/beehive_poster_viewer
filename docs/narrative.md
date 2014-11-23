@@ -75,9 +75,9 @@ Since it is HTML, you need to be careful to keep the text legal/valid HTML thoug
 
 Any < or > or & characters you want to put in the text can't be put in directly, they need to be entered as HTML-escaped character entities:
 
-* for < enter &lt;
-* for > enter &gt;
-* for & enter &amp;
+* for < enter `&lt;`
+* for > enter `&gt;`
+* for & enter `&amp;`
 
 Additionally any HTML tags you use need closing tags, becuase it's in XML, even though you may not be used to those being required. For instance, if you enter a `<p>`, you need to close it with a `</p>` at the end of the paragraph. 
 
