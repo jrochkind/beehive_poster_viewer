@@ -16,7 +16,7 @@ To create a new one for a new poster (or new language), it might be easiest to s
 
 ## header info in XML file
 
-The top of the XML file begins with an opening "<data>" tag, and a <title> and <link> tag which give the name of the poster as it should be displayed in the posterViewer, as well as a URL that clicking on the name will take you to (usually the page for this poster on the website)
+The top of the XML file begins with an opening `<data>` tag, and a `<title>` and `<link>` tag which give the name of the poster as it should be displayed in the posterViewer, as well as a URL that clicking on the name will take you to (usually the page for this poster on the website)
 
 ~~~xml
 <data>
