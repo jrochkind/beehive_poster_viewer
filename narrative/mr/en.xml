@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <data>
   <title>
-      Mesoam&#xE9;rica Resiste<br/>
-      from the Beehive Design Collective
+      <!-- trying to manually add line break between title
+           and creator, <br/> got mistranslated in JS/XML/HTML
+           conversion, argh -->
+      <div>Mesoam&#xE9;rica Resiste</div>
+      <div>from the Beehive Design Collective</div>
   </title>
   <link>
     http://beehivecollective.org/beehive_poster/mesoamerica-resiste/
@@ -28,7 +31,12 @@
 
     <story>
       <label>The Land Bridge</label>
-      <region x="0.09777" y="0.12542" width="0.10432" height="0.09881"/>
+      <region
+        x="0.09284"
+        y="0.12982"
+        width="0.14597"
+        height="0.10564"
+      />
       <html>
         <p>Mesoamerica is a cultural and geographic region that forms a thin land bridge (or isthmus) between North and South America and the Atlantic and Pacific Oceans&#x2014;making this region highly strategic for international trade. Due
         to its climate and geography, Mesoamerica is one of the most biodiverse
@@ -43,7 +51,12 @@
 
     <story>
       <label>Paving the Way for Free Trade</label>
-          <region x="0.07967" y="0.13703" width="0.07656" height="0.04986"/>
+      <region
+        x="0.07322"
+        y="0.11771"
+        width="0.06759"
+        height="0.06243"
+      />
       <html>
         <p>Since the invasion of Hern&#xE1;n Cort&#xE9;s&#x2019; metal-clad armies in 1519, a long succession of foreign colonizers and transnational corporations have occupied and exploited Mesoamerica. Corporations and the U.S. State have referred to Mexico and Central America as their &#x201C;backyard&#x201D; since the early 1800s. Now with free trade agreements working to eliminate so many &#x201C;barriers&#x201D; to trade (like environmental and labor rights, industry is all the more eager to develop infrastructure in Mesoamerica to exploit the region</p>
         <p>In 2001 the president of Mexico and the Interamerican Development Bank introduced a plan to literally pave the way for implementing free trade policies. Named Plan Puebla Panama (PPP), the original plan included the southern states of Mexico (from Puebla) and the countries of Central America (to Panama). After fierce opposition throughout the region, the PPP underwent a public relations makeover and in 2008 was renamed the Mesoamerican Integration and Development Project, or Project Mesoamerica. The plan now includes Colombia and the Dominican Republic.</p>
@@ -53,7 +66,12 @@
 
     <story>
       <label>Project Mesoamerica</label>
-      <region x="0.07966" y="0.07392" width="0.03503" height="0.02154"/>
+      <region
+        x="0.06108"
+        y="0.07381"
+        width="0.05675"
+        height="0.08927"
+      />
       <html>
         <p>Project Mesoamerica consists of 8 initiatives to &#x201C;strengthen regional integration and promote economic and social development,&#x201D; but the bulk of the funding is going towards large-scale infrastructure projects for transportation, to increase &#x201C;market competitiveness&#x201D; by moving high volumes of commerce through the region. These highways, ports, and canals connect with factory zones, mines and resource extraction sites, and large-scale energy projects that power it all.</p>
         <p>These plans are unfolding in the context of the expanding War on Drugs, which has led to dramatically increased violence and further militarization of the U.S./Mexico border.</p>
@@ -62,7 +80,12 @@
 
     <story>
       <label>Compass Rose</label>
-      <region x="0.08164" y="0.21418" width="0.04885" height="0.04942"/>
+      <region
+        x="0.08442"
+        y="0.21401"
+        width="0.04863"
+        height="0.04369"
+      />
       <html>
         <p>The compass rose, flanked by capitalist
         mermaids, orients us to this map of the
@@ -78,7 +101,12 @@ of the violent history of the United Fruit Company (now Chiquita) in Central Ame
 
      <story>
       <label>The Trade Winds: The North Cloud</label>
-      <region x="0.10113" y="0.03167" width="0.08970" height="0.06693"/>
+      <region
+        x="0.10334"
+        y="0.03469"
+        width="0.09075"
+        height="0.06273"
+      />
       <html>
         <p>On all sides of the map, weather systems illustrate the global forces exerting pressure on the region.</p>
         <p>A dark cloud from the
@@ -92,7 +120,12 @@ force behind military invasions and the War on Drugs, global economic policies, 
 
     <story>
       <label>The Trade Winds: The Hurricane in the South</label>
-      <region x="0.12887" y="0.24273" width="0.07602" height="0.03938"/>
+      <region
+        x="0.13591"
+        y="0.23972"
+        width="0.07067"
+        height="0.03579"
+      />
       <html>
         A hurricane of unnatural disasters rips through the southern hemisphere, devastating already marginalized communities and reminding us that we&#x2019;re
 not &#x201C;all in this together.&#x201D; Though industrialized countries in the global North are causing this climate chaos, the first and worst impacts of climate change are being felt by the global South. Governments and corporations are finding ways to profit from increasingly frequent severe storms and weather, a form of &#x201C;disaster capitalism&#x201D; that takes advantage of crises as
@@ -102,7 +135,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>In the East: The typhoon of mass production</label>
-       <region x="0.03513" y="0.15815" width="0.05132" height="0.06386"/>
+       <region
+        x="0.03971"
+        y="0.15625"
+        width="0.05608"
+        height="0.06255"
+      />
       <html>
         The blind face of expanding production appears as a typhoon at sea. The stormfront steamrolls forward as a dark cloud wall, spilling out cheap parts filling endless rows of containers destined for the trade routes cutting through Mesoamerica.        
       </html>
@@ -111,7 +149,12 @@ opportunities to push through their economic agendas.
 
      <story>
       <label>In the West: The whirlwind of disposable consumerism</label>
-       <region x="0.20062" y="0.07709" width="0.07959" height="0.09088"/>
+       <region
+        x="0.23339"
+        y="0.07605"
+        width="0.04611"
+        height="0.07621"
+      />
       <html>
         The insatiable appetite for disposable goods controls the West wind. Sucking
         up container ships from the East Wind and spitting out a trash barge, the Consumer Vortex in the West creates a tornado of swirling detritus. Demand from North America and Europe, combined with accelerating mass manufacturing in East
@@ -122,7 +165,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Colonialism past &amp; present</label>
-      <region x="0.11821" y="0.08598" width="0.11428" height="0.07648"/>
+      <region
+        x="0.15571"
+        y="0.08692"
+        width="0.08399"
+        height="0.07459"
+      />
       <html>
         <p>Modern industrial cargo boats morphed with ships from the &#x201C;Age of Expansion&#x201D; sail across the map, some hauling away cash crops and others bringing imports.</p>
         <p>Three of these ships tell the story of the Triangle Trade of the late 1500s to early 1800s, the Atlantic Slave Trade circuit that relied on trafficking gold, sugar, and humans. Rum, made from sugar, was moved across the ocean to Africa and used to corrupt local leaders into facilitating the slave hunt. European colonists then shipped enslaved peoples to the sugar plantations in the Caribbean, where sugar was picked up and sent to Europe (and New England) to
@@ -132,7 +180,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The Gold boat</label>
-      <region x="0.20106" y="0.08608" width="0.03169" height="0.03226"/>
+      <region
+        x="0.20257"
+        y="0.08599"
+        width="0.03243"
+        height="0.03640"
+      />
       <html>
         The Gold boat has a full trunk of precious metals stolen from the Americas. It melts down culturally meaningful metalwork into bars of gold, and
         is propelled by the sails of modern
@@ -143,7 +196,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The Sugar boat</label>
-      <region x="0.17236" y="0.09289" width="0.03326" height="0.04166"/>
+      <region
+        x="0.17509"
+        y="0.09235"
+        width="0.03260"
+        height="0.03965"
+      />
       <html>
         Led by King Kool-Aid, the Sugar boat scoops piles of sugar into our food with its oars and
         relies on wage slavery to produce sugar cheaply while maintaining high profits. 
@@ -152,7 +210,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The slave ship</label>
-      <region x="0.19349" y="0.12360" width="0.03701" height="0.02669"/>
+      <region
+        x="0.19577"
+        y="0.12090"
+        width="0.03470"
+        height="0.02740"
+      />
       <html>
         The slave ship, with its crows nest guard towers and
         security cameras, connects the legacy of slavery to the modern
@@ -173,7 +236,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The beef boat</label>
-      <region x="0.12580" y="0.20693" width="0.04601" height="0.04953"/>
+      <region
+        x="0.12537"
+        y="0.20959"
+        width="0.04737"
+        height="0.04620"
+      />
       <html>
         The beef boat has a clear-cut in tow, a reminder of the massive deforestation caused by cattle ranching.
       </html>
@@ -181,7 +249,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>A heavily loaded mining ship</label>
-      <region x="0.21658" y="0.17296" width="0.03698" height="0.03947"/>
+      <region
+        x="0.22443"
+        y="0.16234"
+        width="0.03115"
+        height="0.04445"
+      />
       <html>
         A heavily loaded mining ship that resembles a dump truck departs from Central America, its sails carrying the logos of
         just two of the many Canadian mining companies
@@ -194,7 +267,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>A drug trafficking boat</label>
-      <region x="0.24541" y="0.17685" width="0.02755" height="0.04711"/>
+      <region
+        x="0.24496"
+        y="0.17716"
+        width="0.02555"
+        height="0.04294"
+      />
       <html>
         Near the Colombian coast, a drug trafficking boat armed with hypodermic needles speeds away with its illicit cargo. Not far behind, the CIA's money laundering machine is a reference to the CIA&#x2019;s direct involvement in profiting off the drug trade.
 
@@ -203,7 +281,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The fishing boat</label>
-      <region x="0.06575" y="0.19861" width="0.03909" height="0.03775"/>
+      <region
+        x="0.07007"
+        y="0.19267"
+        width="0.03699"
+        height="0.04025"
+      />
       <html>
         A reminder that over-extraction of resources is not only happening on land, the fishing boat&#x2019;s enormous net scoops up every sea creature in its path.
       </html>
@@ -211,7 +294,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The illegal animal trade boat</label>
-      <region x="0.19101" y="0.23729" width="0.04404" height="0.04156"/>
+      <region
+        x="0.19351"
+        y="0.23678"
+        width="0.04142"
+        height="0.03652"
+      />
       <html>
         The illegal animal trade boat ferries out exotic
       local animals, caught by poachers after infrastructure projects and deforesta- tion displaced these endangered creatures from their native habitat.
@@ -220,7 +308,12 @@ opportunities to push through their economic agendas.
 
       <story>
       <label>Coming in from the North</label>
-      <region x="0.18231" y="0.05774" width="0.02651" height="0.04534"/>
+      <region
+        x="0.18639"
+        y="0.06107"
+        width="0.02578"
+        height="0.04072"
+      />
       <html>        
         While the local animals are exported away, cartoon animals come in to replace them. Icons of mass media and consumer culture sail the seas on a Coca-Cola bottle.
       </html>
@@ -229,7 +322,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>A gun ship</label>
-      <region x="0.11102" y="0.09126" width="0.03723" height="0.04000"/>
+      <region
+        x="0.11161"
+        y="0.09527"
+        width="0.03681"
+        height="0.03538"
+      />
       <html>
         A gun ship carried in by by the storm cloud in the North brings military aid in the form of
         weapons wrapped up with a bow.
@@ -238,7 +336,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Another ship carries toxic chemical imports</label>
-      <region x="0.08534" y="0.09142" width="0.03741" height="0.03629"/>
+      <region
+        x="0.09025"
+        y="0.09012"
+        width="0.03442"
+        height="0.03547"
+      />
       <html>
         Close by another ship carries toxic chemical imports, equipped with a runway
         for the crop duster planes used to spray pesticides and herbicides on tropical fruit export crops.
@@ -282,7 +385,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>WTO - The World Trade Organization</label>
-       <region x="0.23319" y="0.00562" width="0.09644" height="0.08486"/>
+       <region
+        x="0.23726"
+        y="0.00223"
+        width="0.09302"
+        height="0.08988"
+      />
       <html>
         <p>The World Trade Organization serves as a judge of international trade disputes, favoring corporate interests at the expense of workers and the environment. The crumbling institution holds
         scales of injustice,
@@ -322,7 +430,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The house always wins</label>
-      <region x="0.25989" y="0.24442" width="0.06036" height="0.06707"/>
+      <region
+        x="0.24041"
+        y="0.24819"
+        width="0.07054"
+        height="0.05800"
+      />
       <html>
         The World Bank pours dollars into the carbon market by cutting out coins from a cloud of smoke while its other arm plays the slot machines, taking its chances with natural disasters. On the poker table in front of the Bank, the chips are stacked up against the global South. With loans tied to conditions like economic bear traps, the house always wins.        
       </html>
@@ -345,7 +458,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The biosphere reserve</label>
-     <region x="0.07014" y="0.27625" width="0.06919" height="0.05186"/>
+      <region
+        x="0.07844"
+        y="0.26800"
+        width="0.05775"
+        height="0.05095"
+      />
       <html>
         <p>Under the guise of conservation, the biosphere reserve nearby appears as a guarded greenhouse - particularly referring to the Mesoamerican Biological Corridor, a project of the World Bank. This private-sector approach to conservation leads to evictions of Indigenous communities who have long been stewards of the land, while allowing industry to access &#x201C;protected&#x201D; areas for activities
         including oil prospecting. </p>
@@ -356,7 +474,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>El Campo Sin Campesino</label>
-      <region x="0.00428" y="0.07421" width="0.04161" height="0.02176"/>
+      <region
+        x="0.00965"
+        y="0.07446"
+        width="0.04798"
+        height="0.02504"
+      />
       <html>
       <p>At the top of this cycle, a communally-farmed beehive is broken up
       into small hexagons.
@@ -394,7 +517,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The sewing machines in the maquiladora</label>
-      <region x="0.00278" y="0.14466" width="0.03732" height="0.05732"/>
+      <region
+        x="0.00886"
+        y="0.15383"
+        width="0.03367"
+        height="0.03048"
+      />
       <html>
         The sewing machines in the maquiladora are sucking
         up traditional textiles and
@@ -426,7 +554,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Meanwhile, the de-populated rural areas&#x2026;</label>
-      <region x="0.00361" y="0.08965" width="0.03228" height="0.03143"/>
+      <region
+        x="0.01068"
+        y="0.08837"
+        width="0.03209"
+        height="0.03189"
+      />
       <html>
         Meanwhile, the de-populated rural areas have been bought
         up for monocultures of
@@ -448,7 +581,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The Quetzal bird</label>
-      <region x="0.03222" y="0.21814" width="0.04165" height="0.04142"/>
+      <region
+        x="0.03574"
+        y="0.21494"
+        width="0.03426"
+        height="0.03650"
+      />
       <html>
         The Quetzal bird holds on to the social fabric of communities and steadily weaves cultural resistance, keeping alive textile traditions and the art of communicating through patterns and drawings.
       </html>
@@ -550,7 +688,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The upper layers of the canopy</label>
-      <region x="0.7456366666666667" y="0.00554" width="0.11151724137931035" height="0.05240"/>
+      <region
+        x="0.75590"
+        y="0.00592"
+        width="0.10505"
+        height="0.05420"
+      />
       <html>
         The rainforest holds its richness in the upper layers of the canopy, which nurtures the life below. Once trees are cut down, the soil left behind is weak, and the ecological damage is irreparable. The loss of rainforests
         is mirrored by the loss of cultural heritage, which is also being rapidly fragmented and eroded.
@@ -569,7 +712,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Hydroelectric Dams</label>
-      <region x="0.85303" y="0.09202" width="0.041117241379310346" height="0.03517"/>
+      <region
+        x="0.86834"
+        y="0.09277"
+        width="0.04385"
+        height="0.04293"
+      />
       <html>One foot of the power tower sucks its energy from a hydroelectric dam, flooding out entire villages and putting vast areas
     of habitat underwater. The dam, dubbed Clean Development,
     is backed with military might
@@ -579,7 +727,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>A wave of letters</label>
-    <region x="0.8367833333333333" y="0.09395" width="0.040765517241379313" height="0.02835"/>
+      <region
+        x="0.84452"
+        y="0.09691"
+        width="0.04787"
+        height="0.02746"
+      />
       <html>A wave of letters from the public flies at the dam, as people take up their pens in defense of their community. The high
     volume of public opinion fractures the dam and opens up time and space for a variety of resistance tactics to be used.
       </html>
@@ -587,7 +740,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Social Spiders</label>
-      <region x="0.79537" y="0.08963" width="0.04949655172413793" height="0.02533"/>
+      <region
+        x="0.80950"
+        y="0.09177"
+        width="0.04170"
+        height="0.02548"
+      />
       <html>In the shadow of the power
     lines, social spiders stitch together an urban squat as they
     collaboratively rebuild their
@@ -599,7 +757,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The Land Grab</label>
-      <region x="0.89809" y="0.11527" width="0.06322068965517241" height="0.07422"/>
+      <region
+        x="0.91035"
+        y="0.11395"
+        width="0.07064"
+        height="0.06927"
+      />
       <html>A monolithic copy machine dominates the righthand side of the poster as it
     spews out one-size-fits-all development plans. This machine rips
     up land, forcing it through
@@ -613,7 +776,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Bulldozer</label>
-        <region x="0.90693" y="0.20260" width="0.056441379310344826" height="0.03170"/>
+        <region
+          x="0.92785"
+          y="0.20605"
+          width="0.05096"
+          height="0.03995"
+        />
         <html>The road-paving bulldozer cuts
       through rural and urban areas
       alike in order to provide easy
@@ -626,7 +794,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Airport</label>
-        <region x="0.8471433333333334" y="0.10785" width="0.08586206896551725" height="0.04567"/>
+        <region
+          x="0.86607"
+          y="0.10895"
+          width="0.07993"
+          height="0.06722"
+        />
         <html>A cornfield faces off against an airplane
     trying to land at a new airport outside of Mexico City, one of the first projects proposed as part of
     Plan Puebla Panama.
@@ -638,7 +811,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Three fronts of resistance working together</label>
-        <region x="0.8922633333333334" y="0.15820" width="0.08387586206896552" height="0.08533"/>
+        <region
+          x="0.90137"
+          y="0.16739"
+          width="0.07978"
+          height="0.05755"
+        />
         <html>
           <p>Farmers, teachers, and workers are joining forces to tackle the tentacles of the land grabbing copy machine. These important social sectors are represented by three of the most important crops in the region, culturally and nutritionally: the three sisters of corns, beans, and squash.</p>
           <p>Planted together in milpas, a traditional system of farming in Mesoam&#xE9;rica, these plants support each other, each improving the growth of the others.</p>
@@ -647,7 +825,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Tequio</label>
-        <region x="0.8417033333333334" y="0.19545" width="0.05930344827586207" height="0.02444"/>
+        <region
+          x="0.85575"
+          y="0.20135"
+          width="0.04154"
+          height="0.02341"
+        />
         <html>
         Little beansprouts are learning
     about the value of Tequio, or collective work, from their teachers who are on strike and still educating their students through the struggle. The concept
@@ -657,21 +840,31 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>The People's Media</label>
-        <region x="0.8436366666666667" y="0.13954" width="0.06484827586206897" height="0.06206"/>
+        <region
+          x="0.83729"
+          y="0.15636"
+          width="0.07284"
+          height="0.05128"
+        />
         <html>
-    <p>The pedal-powered media machine rides into the scene, using media by
-    and for the people. They cut through the stream of development plans
-    from the copier with their screen-printed posters, as
-    they record stories from the frontlines and broadcast
-    them through alternative, independent media. The bees are taking the power of the
-    media into their own hands to build resistance movements, from small-scale distribution of pamphlets to bold takeovers of mass media, like in Oaxaca in 2006.</p>
-    <p>The free media machine catapults seed bombs at the land grab. The seed balls are a mix of seeds, soil, and clay that serve to reclaim damaged land for cultivation.</p>
+          <p>The pedal-powered media machine rides into the scene, using media by
+          and for the people. They cut through the stream of development plans
+          from the copier with their screen-printed posters, as
+          they record stories from the frontlines and broadcast
+          them through alternative, independent media. The bees are taking the power of the
+          media into their own hands to build resistance movements, from small-scale distribution of pamphlets to bold takeovers of mass media, like in Oaxaca in 2006.</p>
+          <p>The free media machine catapults seed bombs at the land grab. The seed balls are a mix of seeds, soil, and clay that serve to reclaim damaged land for cultivation.</p>
         </html>
       </story>
 
       <story>
         <label>Tourism</label>
-        <region x="0.86771" y="0.24553" width="0.09211034482758622" height="0.06201"/>
+        <region
+          x="0.88317"
+          y="0.24937"
+          width="0.10519"
+          height="0.07605"
+        />
         <html>In the bottom right corner of the poster, a cruise ship invades the coast. The ship is based off an amphibious landing&#xFFFC;craft used by the U.S. marines to deploy troops on the shores of Central America. The chompy teeth are tourists going on holiday to unwind as they gobble up a packaged experience.
     They don&#x2019;t see beyond billboards that offer up Indigenous culture for sale and entertainment, and local people for serving food and cleaning toilets. Relying on racism, the tourist industry exploits local communities of color while selling the idea that a privileged
     few are entitled to their vacationland.
@@ -680,7 +873,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Behind the billboard facade</label>
-        <region x="0.8400033333333333" y="0.20614" width="0.08957931034482759" height="0.06687"/>
+        <region
+          x="0.86299"
+          y="0.22265"
+          width="0.06844"
+          height="0.05331"
+        />
         <html>
           <p>A two-sided billboard works to homogenize all cultures and keep peoples thoughts only skin deep, as it sells tanning lotion to white tourists and skin whitening cream to local people of color.</p>
           <p>Behind the billboard
@@ -726,7 +924,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Women on the front lines</label>
-        <region x="0.51893" y="0.22471" width="0.12966206896551724" height="0.09968"/>
+        <region
+          x="0.52151"
+          y="0.23320"
+          width="0.14696"
+          height="0.08528"
+        />
         <html>
           <p>A scheming puppet master stands at a podium, controlling the many forms of military force that carry out the list of conquests. The use of force against people has taken many forms throughout the Americas, including death squads, private security forces, militarized riot police, organized crime, and plain-clothed paramilitary.</p>
           <p>The invaders are unable to advance as they find themselves surrounded by a blockade of women
@@ -739,8 +942,13 @@ opportunities to push through their economic agendas.
       </story>
 
       <story>
-        <region x="0.6430366666666667" y="0.22219" width="0.03598620689655172" height="0.05101"/>
         <label>Ancestors, &#xA1;Presente!</label>
+        <region
+          x="0.63641"
+          y="0.22227"
+          width="0.05696"
+          height="0.06061"
+        />
         <html>
         An ancient glyptodont roars and swings her armored tail, representing the spirits of ancestors that are being disturbed by the mine. Skeletons of extinct animals appear in a few other scenes, their presence reminding us of all who have come before us in the struggles for justice.
         </html>
@@ -748,7 +956,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Open pit mine</label>
-        <region x="0.6363633333333334" y="0.27319" width="0.06842758620689655" height="0.04840"/>
+        <region
+          x="0.64471"
+          y="0.27981"
+          width="0.06075"
+          height="0.05041"
+        />
         <html>
         Giant mining machines dig into the earth, employing dangerous and exploitative labor practices while disregarding the environment and health of nearby communities. Cerrejo&#x301;n, the worlds largest open pit coal mine,
         forcibly removed Wayuu and Afro-Colombian communities from their land. Cyanide leaching from Goldcorp&#x2019;s Marlin mine in Guatemala has severely contaminated the groundwater. Both have served as warnings and case studies for the organized resistance to mining across the Americas.
@@ -757,7 +970,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Water for Profit</label>
-        <region x="0.34417000000000003" y="0.19195" width="0.07440689655172414" height="0.08181"/>
+        <region
+          x="0.35084"
+          y="0.20376"
+          width="0.08144"
+          height="0.07313"
+        />
         <html>
           <p>The monster of water privatization looms over the stream, seizing water
           from the commons and locking it away with dollar
@@ -781,7 +999,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Water for life</label>
-        <region x="0.39309" y="0.13325" width="0.0812" height="0.07143"/>
+        <region
+          x="0.39541"
+          y="0.14278"
+          width="0.07350"
+          height="0.08620"
+        />
         <html>
         Moss covered toad statues illustrate the age-old uses of water &#x2014; drinking,
         cooking, bathing, and washing. At the top of the stream an Uo toad signifies the rainy season
@@ -791,7 +1014,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Reclaiming water from pollution</label>
-        <region x="0.39993666666666666" y="0.23682" width="0.03640689655172414" height="0.01887"/>
+        <region
+          x="0.39598"
+          y="0.24645"
+          width="0.04065"
+          height="0.03875"
+        />
         <html>Underfoot of the menacing water monster, a team of bacteria
     form a bucket-brigade to collect the polluted water and reclaim
     it through a &#x201C;living machine&#x201D;
@@ -803,7 +1031,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Pirate Radio</label>
-        <region x="0.3468966666666667" y="0.26501" width="0.060744827586206904" height="0.03885"/>
+        <region
+          x="0.34017"
+          y="0.27574"
+          width="0.06283"
+          height="0.04133"
+        />
         <html>
           The independent radio station or radio libre (free radio) beams out news and culturally valuable music over the airways. In situations where mass media is tightly controlled by oppressive governments, community radio may be the only way for transmitting critical information about social movements. Using a small-scale water wheel, the station powers itself as an example of autonomous energy production.
         </html>
@@ -812,7 +1045,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Golden toads</label>
-        <region x="0.41768333333333335" y="0.27819" width="0.041020689655172415" height="0.02840"/>
+        <region
+          x="0.40479"
+          y="0.28906"
+          width="0.04238"
+          height="0.02811"
+        />
         <html>
         <p>
         Frogs and toads are highly sensitive to changes in an ecosystem and serve as warning signs of environmental catastrophe. The demise of the golden toad marked the first time
@@ -824,7 +1062,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Birth</label>
-        <region x="0.43976333333333334" y="0.22486" width="0.057965517241379313" height="0.03685"/>
+        <region
+          x="0.43400"
+          y="0.20008"
+          width="0.07468"
+          height="0.09208"
+        />
         <html>
     Deep inside a womb-like cave formed by the tree roots, a scene of fertility portrays a
     vampire bat midwife assisting a birth. She is surrounded by herbal medicines used for traditional and Indigenous healing practices. The plants hanging in the cave are all related to fertility and women&#x2019;s reproductive health. Midwifery and other non-Western medical practices have resiliently survived despite the bio-medical industry&#x2019;s attempts to discredit and destroy them.
@@ -833,7 +1076,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Coastal Monoculture</label>
-        <region x="0.34992333333333336" y="0.16297" width="0.06907586206896552" height="0.04417"/>
+        <region
+          x="0.34954"
+          y="0.16238"
+          width="0.07142"
+          height="0.05691"
+        />
         <html>A bulldozer
     crashes through the roots of a mangrove ecosystem, dragging in fencing and
     an industrial shrimp farm in its wake. Mangroves protect the coast from erosion with their massive root systems, creating a unique ecosystem, nursey, and sanctuary for young aquatic creatures. Industrial shrimp farming is a rapidly growing industry that threatens mangroves worldwide. This polluting monoculture displaces the marine life which provides essential protein sources for local communities.
@@ -850,7 +1098,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Returning</label>
-        <region x="0.4616566666666667" y="0.01787" width="0.0873241379310345" height="0.04834"/>
+        <region
+          x="0.47889"
+          y="0.01787"
+          width="0.07330"
+          height="0.05788"
+        />
         <html>
           <p>Emerging
         from the forest canopy, the
@@ -932,7 +1185,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Stories of Bees and Economies</label>
-        <region x="0.7074566666666666" y="0.09424" width="0.11772413793103448" height="0.05513"/>
+        <region
+          x="0.69067"
+          y="0.08385"
+          width="0.17838"
+          height="0.10441"
+        />
         <html>
           <p>As European colonists invaded Central America, they brought with them the invasive European honey bee, which aggressively began to push the native Mesoamerican stingless bees out of their ecological niche. Today, deforestation, pollution, and industrial farming are destroying habitat and causing the collapse of pollinator species all over Central America. Bees are an indicator species, and the drastic decline of their populations may forecast a larger ecosystem collapse. Restoring native bee populations is vitally important to the health of ecosystems and agriculture globally, and is directly linked to the survival of Indigenous peoples and beekeeping knowledge. Traditional beekeeping is an intimate relationship between bees, people, culture,
           and the land.</p>
@@ -945,7 +1203,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Design</label>
-        <region x="0.78947" y="0.11176" width="0.03712413793103449" height="0.02785"/>
+        <region
+          x="0.80081"
+          y="0.11300"
+          width="0.03985"
+          height="0.03419"
+        />
         <html>
           Each terrace of the hive is buzzing as bees work on designing an economy to provide for their needs. As opposed to the accumulation of wealth that is central to the capitalist economy, this economy is centered around health, food, shelter and wellbeing. The Bees plan their economic system by studying the health and structure of their hive, taking notes, and mapping out routes for gathering local resources.
         </html>
@@ -953,7 +1216,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Production</label>
-        <region x="0.8197300000000001" y="0.12144" width="0.031048275862068965" height="0.04300"/>
+        <region
+          x="0.83676"
+          y="0.12625"
+          width="0.03351"
+          height="0.04637"
+        />
         <html>
           Carpenter bees and other species of solitary bees
     show solidarity by building
@@ -963,14 +1231,24 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Exchange</label>
-        <region x="0.79955" y="0.17395" width="0.044227586206896555" height="0.03559"/>
+        <region
+          x="0.80657"
+          y="0.17848"
+          width="0.05124"
+          height="0.04062"
+        />
         <html>In contrast to the exploitative maps made by the colonizers, bumble bees, mason bees, and carder bees are mapping out a solidarity economy that is mutually beneficial. A bee on a conch shell phone busily takes orders while others prepare to send out bundles of heirloom seeds, honey, tortillas, candles, bee houses, and books, as part of a regional network that relies on local skills and goods.
         </html>
       </story>
 
       <story>
         <label>An Alternative Economy: Eating together</label>
-        <region x="0.75293" y="0.15464" width="0.05688965517241379" height="0.03744"/>
+        <region
+          x="0.76350"
+          y="0.15713"
+          width="0.05982"
+          height="0.04082"
+        />
         <html>
           These bees have invited friends over for a meal and for a popular education workshop about direct trade. They explain how to connect with local farmers to get food straight
           from the farm to the table, cutting out the middleman. They use local bark to make DIY    biogas that heats the comal for cooking tortillas;
@@ -982,7 +1260,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Dividing the hive</label>
-        <region x="0.7873566666666667" y="0.13072" width="0.037910344827586206" height="0.02319"/>
+        <region
+          x="0.80148"
+          y="0.13415"
+          width="0.04026"
+          height="0.02567"
+        />
         <html>
           Bees work on dividing the hive, a skill passed down through the generations by oral tradition. The stingless bees are kept in a specially-made box, as the bee logs (stacked on the left side of this scene) are in short supply due to deforestation. Survival of Melipona bees depends on knowledge from elder beekeepers. In conservation efforts, some scientists with &#x201C;zoo&#x201D; mentalities have destroyed hives they tried to protect by collecting them for study in labs. The stingless bees remind
           us of the vital connection between culture and ecology.
@@ -991,7 +1274,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Reinvestment</label>
-        <region x="0.76971" y="0.09689" width="0.023979310344827587" height="0.04139"/>
+        <region
+          x="0.77623"
+          y="0.11647"
+          width="0.03535"
+          height="0.02750"
+        />
         <html>
           <p>Unlike the one-way flows of the global economy, resources in the hive are recycled and reinvested.</p>
           <h4>Seed saving</h4>
@@ -1003,7 +1291,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Composting</label>
-        <region x="0.7265966666666667" y="0.14881" width="0.030696551724137933" height="0.02364"/>
+        <region
+          x="0.73793"
+          y="0.15154"
+          width="0.04601"
+          height="0.02686"
+        />
         <html>
           Turning food
           scraps and garden
@@ -1017,7 +1310,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Most valued assets</label>
-        <region x="0.6924633333333333" y="0.08983" width="0.05315862068965517" height="0.03185"/>
+        <region
+          x="0.69668"
+          y="0.08957"
+          width="0.06543"
+          height="0.03289"
+        />
         <html>
           <p>Safeguarded at the top of the hive, the bee larvae are highly valued as they provide the base of the next generation and an investment
           in the future. Seeds and eggs are the currency
@@ -1033,7 +1331,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>An Alternative Economy: Astronomers</label>
-        <region x="0.70813" y="0.07378" width="0.02647586206896552" height="0.01992"/>
+        <region
+          x="0.71697"
+          y="0.07646"
+          width="0.02847"
+          height="0.02040"
+        />
         <html>
           At the top of the hive, Melipona bees study the cosmos, learning from the cycles of the earth and moon. Informed by these natural cycles, the community can plan for planting and cultivating.
         </html>
@@ -1041,7 +1344,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Globalization from below</label>
-        <region x="0.5244966666666667" y="0.12300" width="0.37465517241379315" height="0.08989"/>
+        <region
+          x="0.47381"
+          y="0.08510"
+          width="0.41141"
+          height="0.19320"
+        />
         <html>
           <p>Facing the serious dangers of colony collapse, over 50 bee species have come together to build an alternative economic system that emphasizes horizontal and equitable relationships, while providing the basic needs of their community.</p>
           <p>The values of an extractive economy have led us to a mass extinction crisis and climate chaos. The holistic values of a solidarity economy are part of the antidote to this crisis. Like the bees, rebuilding local and regional networks can help us deal with the challenges and consequences of a rapidly changing planet. All the critters defending their land between the roots of the Ceiba are showing us the meaning of globalization from below: reaching out across borders, cultures, and generations to link movements and support each other&#x2019;s struggles for survival.
