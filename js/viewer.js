@@ -499,18 +499,13 @@ function loadPosterData() {
     success: function(xml) {
       xml = $(xml);
 
-      // Load title. For now allow HTML in title (inline elements only please)
-      // to allow <br> tags for the attribution line. May change this to
-      // do it different, maybe hard-coded attribution line. 
       var title_text = xml.find("data > title").text().trim();
-
-      // html() method doesn't work on XML nodes in Safari and
-      // maybe IE. We get the child nodes, and can pass
-      // them directly to set html() on our HTML node. Seems to work. 
-      var title_children = xml.find("data > title").get(0).childNodes;
       var title_link = xml.find("data > link").text().trim();
-      $("#titleLink").attr("href", title_link).html(title_children);
+
       document.title = title_text;
+      // for the header, replace newlines with <br>s to preserve
+
+      $("#titleLink").attr("href", title_link).html(title_text.replace(/[\n\r]+/, "<br>"));
 
       // Load scenes
       var storyList = $("#storyList");
