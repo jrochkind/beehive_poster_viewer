@@ -618,7 +618,9 @@ function annotate() {
   });
 }
 
-/* Just a demo, not really using */
+/* In admin mode, we use annotorious, and change it's display
+   to give us the coordinates in a form we can just paste into
+   a narrative.xml file */
 function addShowRegionPlugin() {
 
   annotorious.plugin.ShowRegionPlugin = function(opt_config_options) { }
@@ -664,4 +666,6 @@ jQuery( document ).ready(function( $ ) {
   storyListHeightLimit();
 
   applyI18nValues(beehive_lang);
+
+
 });
