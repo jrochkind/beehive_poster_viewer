@@ -19,19 +19,19 @@ i18n_data.en = {
   'previous': 'Previous',
   'scenes': 'Scenes',
   'full_screen_instruction': 'For the best view, try full-screen display.',
-  // haven't actually done these yet
   'zoom_in': 'Zoom in',
   'zoom_out': 'Zoom out',
   'full_poster': 'Full poster',
   'full_screen': 'Toggle full screen',
-  'share_link': 'Share link',
-  'minimize': 'Minimize'
+  'share_link': 'Share link to the current view of the poster',
+  'minimize': 'Hide the guide',
+  'show_text_box': 'Show the guide'
 };
 
 i18n_data.es = {
   'next': 'Siguiente',
   'previous': 'Anterior',
-  'scenes': 'Escenas',
+  'scenes': 'Escenas'
 };
 
 // A span or other element with data-i18n-key="key"

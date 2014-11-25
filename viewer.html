@@ -48,7 +48,7 @@
   <div id="overlayControls">
     <div class="controlContentWrapper">
       <div class="controlsHeader controlsSection">
-        <a href="#" class="controlsMinimize"><img src="./images/collapse.png" class="controlsMinimizeImg tiny-icon" alt="Minimize" title="Minimize"></a>
+        <a href="#" class="controlsMinimize"><img src="./images/collapse.png" class="controlsMinimizeImg tiny-icon" alt="Minimize" title="Minimize" data-i18n-title-key="minimize"></a>
         <h1 class="controls-header-label">
           <a id="titleLink" href="http://beehivecollective.org">Beehive Design Collective</a>
         </h1>
@@ -104,13 +104,15 @@
     <a id="zoomOutBtn" href="#" class="hexagon" title="Zoom out" data-i18n-title-key="zoom_out"></a>
     <a id="fullPosterBtn" href="#" class="hexagon" title="Whole poster" data-i18n-title-key="full_poster"></a>
     <a id="fullPageBtn" href="#" class="hexagon" title="Toggle full screen" data-i18n-title-key="full_screen"></a>
-    <a id="makePermaLink" href="#" class="hexagon" title="Share link to this view"></a>
+    <a id="makePermaLink" href="#" class="hexagon" title="Share link to the current view of the poster" data-i18n-title-key="share_link"></a>
     <!-- the minimized control panel, starts out hidden -->
-    <a id="showControlsBtn" href="#" class="hexagon" title = "Menu" style="display:none"></a>
+    <a id="showControlsBtn" href="#" class="hexagon" title = "Show the text box" data-i18n-title-key="show_text_box" style="display:none"></a>
   </div>
 
   <div id="linkModal" style="display:none">
-    <h2>Share link to this view</h2>
+    <h2 data-i18n-key="share_link">
+      Share link to the current view of the poster
+    </h2>
     <div class="container" style="width: 100%">
       <input type="text" id="linkModalUrlField" readonly>
     </div>
