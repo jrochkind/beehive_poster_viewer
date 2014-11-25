@@ -118,10 +118,10 @@ force behind military invasions and the War on Drugs, global economic policies, 
     <story>
       <label>The Trade Winds: The Hurricane in the South</label>
       <region
-        x="0.13591"
-        y="0.23972"
-        width="0.07067"
-        height="0.03579"
+        x="0.12870"
+        y="0.23966"
+        width="0.07999"
+        height="0.03255"
       />
       <html>
         A hurricane of unnatural disasters rips through the southern hemisphere, devastating already marginalized communities and reminding us that we&#x2019;re
@@ -146,11 +146,11 @@ opportunities to push through their economic agendas.
 
      <story>
       <label>In the West: The whirlwind of disposable consumerism</label>
-       <region
-        x="0.23339"
-        y="0.07605"
-        width="0.04611"
-        height="0.07621"
+      <region
+        x="0.22613"
+        y="0.07953"
+        width="0.04619"
+        height="0.07405"
       />
       <html>
         The insatiable appetite for disposable goods controls the West wind. Sucking
@@ -178,10 +178,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>The Gold boat</label>
       <region
-        x="0.20257"
-        y="0.08599"
-        width="0.03243"
-        height="0.03640"
+        x="0.19967"
+        y="0.08579"
+        width="0.03413"
+        height="0.03446"
       />
       <html>
         The Gold boat has a full trunk of precious metals stolen from the Americas. It melts down culturally meaningful metalwork into bars of gold, and
@@ -194,10 +194,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>The Sugar boat</label>
       <region
-        x="0.17509"
-        y="0.09235"
-        width="0.03260"
-        height="0.03965"
+        x="0.17064"
+        y="0.09369"
+        width="0.03430"
+        height="0.03981"
       />
       <html>
         Led by King Kool-Aid, the Sugar boat scoops piles of sugar into our food with its oars and
@@ -208,10 +208,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>The slave ship</label>
       <region
-        x="0.19577"
-        y="0.12090"
-        width="0.03470"
-        height="0.02740"
+        x="0.19079"
+        y="0.12042"
+        width="0.04343"
+        height="0.03027"
       />
       <html>
         The slave ship, with its crows nest guard towers and
@@ -247,10 +247,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>A heavily loaded mining ship</label>
       <region
-        x="0.22443"
-        y="0.16234"
-        width="0.03115"
-        height="0.04445"
+        x="0.22364"
+        y="0.16135"
+        width="0.03385"
+        height="0.05283"
       />
       <html>
         A heavily loaded mining ship that resembles a dump truck departs from Central America, its sails carrying the logos of
@@ -265,10 +265,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>A drug trafficking boat</label>
       <region
-        x="0.24496"
-        y="0.17716"
-        width="0.02555"
-        height="0.04294"
+        x="0.24442"
+        y="0.16854"
+        width="0.03206"
+        height="0.05155"
       />
       <html>
         Near the Colombian coast, a drug trafficking boat armed with hypodermic needles speeds away with its illicit cargo. Not far behind, the CIA's money laundering machine is a reference to the CIA&#x2019;s direct involvement in profiting off the drug trade.
@@ -320,10 +320,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>A gun ship</label>
       <region
-        x="0.11161"
-        y="0.09527"
-        width="0.03681"
-        height="0.03538"
+        x="0.11272"
+        y="0.09544"
+        width="0.03475"
+        height="0.04360"
       />
       <html>
         A gun ship carried in by by the storm cloud in the North brings military aid in the form of
@@ -334,10 +334,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>Another ship carries toxic chemical imports</label>
       <region
-        x="0.09025"
-        y="0.09012"
-        width="0.03442"
-        height="0.03547"
+        x="0.09093"
+        y="0.08967"
+        width="0.03411"
+        height="0.04232"
       />
       <html>
         Close by another ship carries toxic chemical imports, equipped with a runway
@@ -530,7 +530,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>The mall</label>
-      <region x="0.00304" y="0.17012" width="0.04894" height="0.05386"/>
+      <region
+        x="0.01020"
+        y="0.16394"
+        width="0.03437"
+        height="0.04301"
+      />
       <html>
         The mall has
         replaced
@@ -542,7 +547,12 @@ opportunities to push through their economic agendas.
 
     <story>
       <label>Looking deeper</label>
-      <region x="0.01772" y="0.19179" width="0.04146" height="0.04572"/>
+      <region
+        x="0.01919"
+        y="0.18977"
+        width="0.03731"
+        height="0.04363"
+      />
       <html>
         Looking deeper, we see that the church was built directly on top of a Mayan pyramid, a literal reference to colonial history.
       </html>
@@ -738,10 +748,10 @@ opportunities to push through their economic agendas.
     <story>
       <label>Social Spiders</label>
       <region
-        x="0.80950"
-        y="0.09177"
-        width="0.04170"
-        height="0.02548"
+        x="0.80537"
+        y="0.09192"
+        width="0.05090"
+        height="0.02729"
       />
       <html>In the shadow of the power
     lines, social spiders stitch together an urban squat as they
@@ -922,10 +932,10 @@ opportunities to push through their economic agendas.
       <story>
         <label>Women on the front lines</label>
         <region
-          x="0.52151"
-          y="0.23320"
-          width="0.14696"
-          height="0.08528"
+          x="0.52261"
+          y="0.23689"
+          width="0.13150"
+          height="0.09259"
         />
         <html>
           <p>A scheming puppet master stands at a podium, controlling the many forms of military force that carry out the list of conquests. The use of force against people has taken many forms throughout the Americas, including death squads, private security forces, militarized riot police, organized crime, and plain-clothed paramilitary.</p>
@@ -987,7 +997,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>A trio of water creatures</label>
-        <region x="0.4202966666666667" y="0.17533" width="0.05373793103448276" height="0.05005"/>
+        <region
+          x="0.42620"
+          y="0.18108"
+          width="0.04465"
+          height="0.05436"
+        />
         <html>
           Taking a stance on the nearby tree root, a trio of water creatures are caught in a tug-of-war. Pulling with all their might, they work
     to take back the water for its use as a life giving force.
@@ -997,10 +1012,10 @@ opportunities to push through their economic agendas.
       <story>
         <label>Water for life</label>
         <region
-          x="0.39541"
-          y="0.14278"
-          width="0.07350"
-          height="0.08620"
+          x="0.39513"
+          y="0.13663"
+          width="0.07514"
+          height="0.08856"
         />
         <html>
         Moss covered toad statues illustrate the age-old uses of water &#x2014; drinking,
@@ -1118,7 +1133,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Fiesta</label>
-        <region x="0.49135666666666666" y="0.13618" width="0.11173793103448276" height="0.10549"/>
+        <region
+          x="0.49189"
+          y="0.14090"
+          width="0.10913"
+          height="0.11294"
+        />
         <html>
           Spirits and the living mingle together in this lively
     fiesta, as they sing and dance in honor of
@@ -1132,7 +1152,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>Historical memory</label>
-          <region x="0.44850333333333336" y="0.23947" width="0.10197931034482759" height="0.07059"/>
+        <region
+          x="0.45659"
+          y="0.25437"
+          width="0.09303"
+          height="0.05482"
+        />
         <html>
           <p>In the roots below the bat cave and the
           fiesta, caterpillar youth are painting a mural
@@ -1152,7 +1177,12 @@ opportunities to push through their economic agendas.
 
       <story>    
         <label>The community assembly</label>
-        <region x="0.5849166666666668" y="0.12673" width="0.14920689655172414" height="0.09166"/>
+        <region
+          x="0.58781"
+          y="0.11760"
+          width="0.12971"
+          height="0.11808"
+        />
         <html>
           Representatives of communities affected by Project Mesoam&#xE9;rica gather in a circle at the center of the poster to discuss their common struggles and plans for collective action. Some of the
           characters bring items from their communities, signaling that they&#x2019;ve traveled far to be here, and that organizing efforts have been coordinated
@@ -1165,7 +1195,12 @@ opportunities to push through their economic agendas.
 
       <story>
         <label>The Ant Swarm</label>
-        <region x="0.4631033333333333" y="0.07237" width="0.16254482758620692" height="0.07631"/>
+        <region
+          x="0.42352"
+          y="0.07800"
+          width="0.14023"
+          height="0.10712"
+        />
         <html>
           <p>A giant swarm of ants comes down the trunk of the Ceiba tree. The ants, like so many other little critters, play an essential role in the ecosystem. Scurrying beneath the dirt, they aerate the soil, making it possible for plants to grow, essentially laying the foundations for life on earth. While these ants seem small in the face of the entire forest, they outweigh all other animals and plants combined. The ants remind us that great changes are in the hands of the small and many. Working tirelessly, these miniscule creatures embody the phrase,
           la revoluci&#xF3;n es el trabajo de las hormigas (the revolution
