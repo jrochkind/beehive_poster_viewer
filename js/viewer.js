@@ -31,7 +31,16 @@ i18n_data.en = {
 i18n_data.es = {
   'next': 'Siguiente',
   'previous': 'Anterior',
-  'scenes': 'Escenas'
+  'scenes': 'Escenas',
+  'full_screen_instruction': 'Para la mejor vista, trate de pantalla completa.',
+  'zoom_in': 'Acercar',
+  'zoom_out': 'Alejar',
+  'full_poster': 'Cartel completo',
+  'full_screen': 'Pantalla completa',
+  'share_link':  'Compartir un enlace a la vista actual del cartel',
+  'minimzie': 'Ocultar la guía',
+  'show_text_box': 'Mostrar el guía'
+
 };
 
 // A span or other element with data-i18n-key="key"
