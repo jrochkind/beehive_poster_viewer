@@ -1,17 +1,24 @@
+# Let people access eg '/posterViewer/?poster=mr', as a shortcut skipping
+# the 'viewer.html' in /posterViewer/viewer.html?poster=mr
+# because we've said viewer.html is a default document.
+
+DirectoryIndex viewer.html index.html
+
+
 # Default mayfirst.org apache conf was leading to files being cached by browsers
 # for long time. Not sure how long. We want to control cache headers ourself. 
 
-
 # For source code, don't cache very long
 <FilesMatch "\.(html|xml|js|css)$">
-  # Remove the Last-Modified header set by mayfirst conf, it resulted in weird things. 
+  # Remove the Last-Modified header set by default conf,
+  # it resulted in weird things.
   Header unset Last-Modified
 
   # Make sure etag is there though (was already, but making sure), for conditional
   # GETs
   FileETag All
 
-  # But do give hours of strict cacheability for performance.  
+  # But do give hours of strict cacheability for performance.
   ExpiresActive On
   ExpiresDefault "access plus 2 hours"
 </FilesMatch>
@@ -24,7 +31,7 @@
 
 
 # Openseadragon.js is placed by us in a URL with OpenSeadragon version in it,
-# so we can have it cached forever. Same with our custom fonts. 
+# so we can have it cached forever.
 <FilesMatch "^openseadragon(\.min)?\.js$">
   ExpiresActive On
   ExpiresDefault "access plus 1 year"
