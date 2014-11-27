@@ -9,35 +9,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Beehive Design Collective</title>
 
-  <!-- facebook opengraph metadata. We use apache SSI to determine
-       a filename to include based on poster name and language.
-       File should include the OpenGraph tags for that poster/language
-       combo.  Eg, if poster=mr and lang=en, file should be in
-       ./opengraph-partials/mr.en.html
-       -->
+  <!-- facebook opengraph metadata for thumbs. for now, we've
+       hard-coded this to Mesoamerica Resiste, we'll have to figure
+       out how to handle it for multiple posters later -->
+  <meta property="og:title" content="Mesoamérica Resiste" />
+  <!-- relative URLs don't work for og:image, alas -->
+  <meta property="og:image" content="http://beehivecollective.org/posterViewer/og-thumbs/MR-og-thumb-sm.jpg" />
+  <meta property="og:site_name" content="Beehive Design Collective" />
 
-  <!--#if expr="$QUERY_STRING = /(^|&|;)poster=([^&;]+)($|&|;)/" -->
-    <!--#set var="poster" value="$2" -->
-  <!--#endif -->
-  <!--#if expr="$QUERY_STRING = /(^|&|;)lang=([^&;]+)($|&|;)/" -->
-    <!--#set var="lang" value="$2" -->
-  <!--#else -->
-    <!--#set var="lang" value="en" -->
-  <!--#endif -->
+  <meta property="og:description" content="The third and final image in the Beehive’s trilogy about globalization in the Americas, focusing on resistance to mega-infrastructure projects that are literally paving the way for free trade agreements that devastate local economies and communities. 9 years in the making, this double-sided, folding poster illustrates stories of resistance, resilience, and solidarity from Mexico to Colombia."
+  />
 
-  <!--#set var="og_filepath" value="opengraph_partials/${poster}.${lang}.html" -->
-
-  <!-- if the file doesn't exist, an error message will be shown, change
-       from default to avoid interfering with HTML and provide diagnostics. -->
-  <!--#config errmsg="<meta name='beehive_og_no_file_found' content='No file found for inclusion at `${og_filepath}` />" -->
-  <!--#include virtual="${og_filepath}" -->
-  <!--#config errmsg="[an error occurred while processing this directive]"-->
-
-  <!--#if expr="-A 'viewr'" -->
-    <meta name="ere" value="new" />
-  <!--#endif -->
-
-  <!-- END facebook opengraph SSI inclusion -->
 
   <!-- One custom font from google, Cardo, used for body text -->
   <link href='http://fonts.googleapis.com/css?family=Cardo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
