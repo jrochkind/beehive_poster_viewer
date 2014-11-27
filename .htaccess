@@ -5,6 +5,18 @@
 DirectoryIndex viewer.html index.html
 
 
+# Turn on SSI, that viewer.html uses for including partial html
+# doc with facebook opengraph tags suitable for the poster
+
+<Files viewer.html>
+  Options +Includes
+  SetOutputFilter INCLUDES
+</Files>
+
+############################
+#
+# CACHING
+
 # Default mayfirst.org apache conf was leading to files being cached by browsers
 # for long time. Not sure how long. We want to control cache headers ourself. 
 
