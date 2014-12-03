@@ -13,11 +13,15 @@
       <label>La mirada del colonizador</label>
       <region x="0.00000" y="0.00000" width="0.33333" height="0.33333"/>
       <html>
-        El cartel se dobla sobre sí mismo creando un
+        <p>Este cartel está impreso a doble cara y se dobla para crear un cuadrado que se abre para desplegar una imagen mayor.</p>
+
+        <p><img src="images/drawn-folding-MR.png" /></p>
+
+        <p>El cartel se dobla sobre sí mismo creando un
 cuadrado que se abre mostrando una imagen
 más grande por dentro. Cerrando las solapas
 del exterior, el cartel parece un mapa antiguo
-de Mesoamérica de los conquistadores españoles. La perspectiva de arriba hacia abajo se refiere a los paralelos entre la historia colonial y el capitalismo contemporáneo. Extranjeros sin conexión a esta tierra han trazado este mapa con el motivo de extracción y ganancias.
+de Mesoamérica de los conquistadores españoles. La perspectiva de arriba hacia abajo se refiere a los paralelos entre la historia colonial y el capitalismo contemporáneo. Extranjeros sin conexión a esta tierra han trazado este mapa con el motivo de extracción y ganancias.</p>
       </html>
     </story>
     <story>
