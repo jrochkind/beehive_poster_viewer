@@ -3,7 +3,7 @@ with a nice thumbnail, title, and description.
 
 Facebook uses special "OpenGraph" tags in the `<head>` of an
 HTML document at a given URL, in order to construct it's
-summary. See https://developers.facebook.com/docs/sharing/best-practices#debug
+summary. See https://developers.facebook.com/docs/sharing/best-practices
 
 One thing that makes this more complicated with the posterViewer, is
 that we have _one_ HTML page, viewer.html, that can load many posters.
