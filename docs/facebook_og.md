@@ -49,3 +49,6 @@ location, you'll see an error reported like this if you view HTML
 source:
 
     <meta name='beehive_og_no_file_found' content='No file found for inclusion at `opengraph_partials/postername.lang.html` />
+
+Again, the posterViewer will work fine, just without the facebook opengraph
+tags for nice facebook summaries. 
