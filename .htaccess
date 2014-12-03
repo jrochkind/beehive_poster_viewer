@@ -7,6 +7,7 @@ DirectoryIndex viewer.html index.html
 # Get rid of viewer.html, redirect to just /?poster=mr part
 # that we made work above. Need to do this in a somewhat
 # unusual way since we're in a per-directory .htaccess context
+
 RewriteEngine on
 RewriteCond %{REQUEST_URI} ^(.*/)viewer.html
 RewriteRule .* %1 [R,L]
@@ -27,34 +28,41 @@ RewriteRule .* %1 [R,L]
 # Default mayfirst.org apache conf was leading to files being cached by browsers
 # for long time. Not sure how long. We want to control cache headers ourself. 
 
-# For source code, don't cache very long
-<FilesMatch "\.(html|xml|js|css)$">
-  # Remove the Last-Modified header set by default conf,
-  # it resulted in weird things.
-  Header unset Last-Modified
+ExpiresActive On
 
-  # Make sure etag is there though (was already, but making sure), for conditional
-  # GETs
-  FileETag All
+# Source code, including .xml, cache for just a bit. 6 hours?
+ExpiresByType text/html "access plus 6 hours"
+ExpiresByType text/css "access plus 6 hours"
+ExpiresByType text/javascript "access plus 6 hours"
+ExpiresByType application/xml "access plus 6 hours"
 
-  # But do give hours of strict cacheability for performance.
+# For jpgs, which includes tile sources, we want to cache em
+# a long time. forever? okay let's. We could try
+# to separate out tiles specifically with filesmatch, but we're not.
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+
+# Openseadragon.js is placed by us in a URL with OpenSeadragon version in it,
+# so we can have it cached forever.
+<FilesMatch "^openseadragon(\.min)?\.js(\.map)?$">
   ExpiresActive On
-  ExpiresDefault "access plus 2 hours"
+  ExpiresDefault "access plus 1 year"
 </FilesMatch>
 
-# For fonts, cache indefinitely
+# For fonts, cache forever
 <FilesMatch "\.(woff|eot|ttf|svg)$">
   ExpiresActive On
   ExpiresDefault "access plus 1 year"
 </FilesMatch>
 
 
-# Openseadragon.js is placed by us in a URL with OpenSeadragon version in it,
-# so we can have it cached forever.
-<FilesMatch "^openseadragon(\.min)?\.js$">
-  ExpiresActive On
-  ExpiresDefault "access plus 1 year"
-</FilesMatch>
 
-# For jpg's, including the tile source (!), we use default apache for now,
-# which seems to result in cacheability.
+
+
+
+
+
+
+
+
