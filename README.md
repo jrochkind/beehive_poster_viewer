@@ -44,3 +44,6 @@ Please note that narratives and HTML/CSS/JS code are controlled by a git reposit
 
 * [Making tiles](./docs/tiles.md)
 * [Creating and Editing Narrative](./docs/narrative.md)
+
+You should also add facebook summary information:
+* [Adding facebook OpenGraph tags](./docs/facebook_og.md)
