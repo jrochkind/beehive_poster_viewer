@@ -16,17 +16,21 @@ For techies, see other notes on [software](./docs/software.md)
 
 The particular poster to be viewed is given in a query parameter in the URL, `poster=`:
 
-    /posterViewer?poster=mr
+    /posterViewer/?poster=mr
 
 That will try to load the tile images designated as 'mr', and by default, that will try to load an english language narrative file for 'mr'.  If other language narrative files are available, you can add an additional language parameter with the code for the language (matching the filename for the narrative file):
 
-    /posterViewer?poster=mr&lang=es
+    /posterViewer/?poster=mr&lang=es
+
+(This actually accesses the file viewer.html, but you can leave
+the filename out of the URL, because we set it as a default "index"
+file in the .htaccess)
 
 ## Features of the posterViewer you may miss
 
-Notice the small honeycomb-shaped icons in the upper left corner. 
+Notice the small honeycomb-shaped icons in the upper left corner.
 
-* If you click on the one that looks like a dotted square with a line through it, you can go into FULL SCREEN mode, where your entire monitor will be taken up with poster -- this is highly recommended for the beehive posters, they really look awesome this way. 
+* If you click on the one that looks like a dotted square with a line through it, you can go into FULL SCREEN mode, where your entire monitor will be taken up with poster -- this is highly recommended for the beehive posters, they really look awesome this way.
 
 * If you click on the the one that looks like a chain link, you can get a URL that will point to whatever portion of the poster you are looking at _at that moment_ (zoom level and boundaries), so you can send to someone else or bookmark or put in a web page to refer to that particular portion of poster. (I plan to try to make this work better in the future, so you can always just copy and paste the URL from the browser location bar; but not yet)
 
