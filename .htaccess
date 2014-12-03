@@ -4,6 +4,13 @@
 
 DirectoryIndex viewer.html index.html
 
+# Get rid of viewer.html, redirect to just /?poster=mr part
+# that we made work above. Need to do this in a somewhat
+# unusual way since we're in a per-directory .htaccess context
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^(.*/)viewer.html
+RewriteRule .* %1 [R,L]
+
 
 # Turn on SSI, that viewer.html uses for including partial html
 # doc with facebook opengraph tags suitable for the poster
