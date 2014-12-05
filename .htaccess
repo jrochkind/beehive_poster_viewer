@@ -38,6 +38,7 @@ Header set Vary Accept-Encoding
 ExpiresByType text/html "access plus 6 hours"
 ExpiresByType text/css "access plus 6 hours"
 ExpiresByType text/javascript "access plus 6 hours"
+ExpiresByType application/javascript "access plus 6 hours"
 ExpiresByType application/xml "access plus 6 hours"
 
 # For jpgs, which includes tile sources, we want to cache em
