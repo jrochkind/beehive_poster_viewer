@@ -34,6 +34,11 @@ ExpiresActive On
 # wrong and redbot.org suggests against. Let's just:
 Header set Vary Accept-Encoding
 
+
+# consider .dzi application/xml, because it is, and then
+# our expires directive will also effect it
+AddType application/xml .dzi
+
 # Source code, including .xml, cache for just a bit. 6 hours?
 ExpiresByType text/html "access plus 6 hours"
 ExpiresByType text/css "access plus 6 hours"
