@@ -19,6 +19,10 @@ RewriteRule .* %1 [R,L]
 <Files viewer.html>
   Options +Includes
   SetOutputFilter INCLUDES
+  # Normally apache won't do a last-modified for ssi, tell it to anyway,
+  # even though our facebook OG tags won't be taken into account. This
+  # will help caches. 
+  SSILastModified on
 </Files>
 
 ############################
