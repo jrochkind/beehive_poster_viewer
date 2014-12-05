@@ -19,10 +19,11 @@ RewriteRule .* %1 [R,L]
 <Files viewer.html>
   Options +Includes
   SetOutputFilter INCLUDES
-  # Normally apache won't do a last-modified for ssi, tell it to anyway,
-  # even though our facebook OG tags won't be taken into account. This
-  # will help caches. 
-  SSILastModified on
+  # SSI will never send a HTTP 304 in response to conditional GET, alas.
+  # SSILastModified and SSIEtag don't really help, I think it's
+  # a bug in apache nobody cares about.
+  # We still set 6 month caching headers, but browser can't do
+  # a conditional GET anymore, oh well.
 </Files>
 
 ############################
