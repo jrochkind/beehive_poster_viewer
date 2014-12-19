@@ -32,7 +32,7 @@ i18n_data.es = {
   'next': 'Siguiente',
   'previous': 'Anterior',
   'scenes': 'Escenas',
-  'full_screen_instruction': 'Para la mejor vista, trate de pantalla completa.',
+  'full_screen_instruction': 'Para la mejor vista, prueba la pantalla completa.',
   'zoom_in': 'Acercar',
   'zoom_out': 'Alejar',
   'full_poster': 'Cartel completo',
