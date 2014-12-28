@@ -530,8 +530,8 @@ function loadPosterData() {
       });
 
       // Make the scene list visible only if we actually have
-      // scenes
-      if (storyList.find("li").size() > 0) {
+      // scenes, and more than one
+      if (storyList.find("li").size() > 1) {
         $(".controls-story-list-expander").show();
       }
 
