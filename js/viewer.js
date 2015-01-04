@@ -107,12 +107,16 @@ function adjustTipVisibility(li) {
 
 // arg is the <li> element containing the .story link
 // with story data attached. 
-function loadStory(li) {
+function loadStory(li, move) {
+  if (typeof move === "undefined")
+    move = true;
+
+
+  li = $(li);
   var story = li.find(".story").data("beehive-story");
 
   if (typeof story === "undefined")
     return;
-
 
   var rect = new OpenSeadragon.Rect(parseFloat(story.region.x),
       parseFloat(story.region.y),
@@ -137,11 +141,13 @@ function loadStory(li) {
   $(".controlsText").slideDown('slow');
 
   closeStoryList(function() {
-    withSlowOSDAnimation(function() {
-      rect = adjustRectForPanel(rect);
+    if (move) {
+      withSlowOSDAnimation(function() {
+        rect = adjustRectForPanel(rect);
 
-      openSeadragonViewer.viewport.fitBounds(rect);
-    });
+        openSeadragonViewer.viewport.fitBounds(rect);
+      });
+    }
   });
 }
 
@@ -201,21 +207,38 @@ function withSlowOSDAnimation(f) {
 function adjustRectForPanel(rect) {
   var newRect = jQuery.extend(true, {}, rect)
 
-  var overlay = $("#overlayControls");
-  var containerWidth = openSeadragonViewer.viewport.getContainerSize().x;
-  var panelWidth = overlay.width() + 
-    parseInt(overlay.css("margin-left")) +
-    parseInt(overlay.css("margin-right"));
+  var reservedPortion = panelReservedPortion();
 
-  var reservedPortion = panelWidth / containerWidth;
-
-  // Not sure if this math is exactly right, I think we need
-  // to math more. 
   var newWidth = rect.width / (1 - reservedPortion);
   newRect.x = rect.x - (newWidth - rect.width);
   newRect.width = newWidth;
 
   return newRect;
+}
+
+// opposite of adjustRectForPanel, take a viewport rect,
+// and remove the area for legend panel
+function subtractPanelFromViewport(viewportRect) {
+  var reservedPortion = panelReservedPortion();
+
+  var newRect = jQuery.extend(true, {}, viewportRect);
+
+  newRect.width  = viewportRect.width * (1 - reservedPortion);
+  newRect.x      = newRect.x + (viewportRect.width - newRect.width);
+
+  return newRect;
+}
+
+
+
+function panelReservedPortion() {
+  var overlay = $("#overlayControls");
+  var containerWidth = openSeadragonViewer.viewport.getContainerSize().x;
+  var panelWidth = overlay.width() +
+    parseInt(overlay.css("margin-left")) +
+    parseInt(overlay.css("margin-right"));
+
+  return (panelWidth / containerWidth);
 }
 
 
@@ -653,6 +676,65 @@ function addShowRegionPlugin() {
   anno.addPlugin('ShowRegionPlugin', {});
 }
 
+// Pass in an OpenSeadragon Rect, usually representing current
+// viewport bounds. We will calculate proximity of the defined
+// scenes to try to find which scene most matches
+// what you are looking at.
+function calcProximateScene(rect) {
+  var maxCoverage = 0;
+  var maxLi = null;
+
+  $("#storyList > li").each(function(i, li) {
+    var rectArea = rect.width * rect.height;
+
+    // Bad, this should be encapsulated somehow
+    var story = $(li).find(".story").data("beehive-story");
+
+    var storyRect = new OpenSeadragon.Rect(parseFloat(story.region.x),
+      parseFloat(story.region.y),
+      parseFloat(story.region.width),
+      parseFloat(story.region.height));
+
+    var intersectRect = rectIntersect(rect, storyRect);
+    if (intersectRect !== null) {
+      var storyArea = storyRect.width * storyRect.height;
+      var intersectArea = intersectRect.width * intersectRect.height;
+
+      var storyIntersectPct = intersectArea / storyArea;
+      var viewIntersectPct  = intersectArea / rectArea;
+
+      var coverage          = (1.2 * storyIntersectPct) + viewIntersectPct;
+
+      if (storyIntersectPct > 0.1 && viewIntersectPct > 0.1 && coverage > maxCoverage) {
+        maxCoverage = coverage;
+        maxLi = li;
+      }
+    }
+  });
+
+  return maxLi;
+}
+
+// Returns null if no intersection, otherwise Openseadragon.Rect
+// of the intersection. 
+function rectIntersect(rectA, rectB) {
+  var xL = Math.max(rectA.x, rectB.x);
+  var xR = Math.min(rectA.x + rectA.width, rectB.x + rectB.width);
+
+  if (xL >= xR) {
+    return null;
+  }
+
+  var yT = Math.max(rectA.y, rectB.y);
+  var yB = Math.min(rectA.y + rectA.height, rectB.y + rectB.height);
+
+  if (yT >= yB) {
+    return null;
+  }
+
+  return new OpenSeadragon.Rect(xL, yB, xR-xL, yB-yT);
+}
+
 
 
 setPosterAndLang();
@@ -670,6 +752,18 @@ jQuery( document ).ready(function( $ ) {
   storyListHeightLimit();
 
   applyI18nValues(beehive_lang);
+
+  openSeadragonViewer.addHandler('animation-finish', function(target, info) {
+    var bounds = target.eventSource.viewport.getBounds();
+
+    var bestLi = calcProximateScene(subtractPanelFromViewport(bounds));
+    if (bestLi == null) {
+      // unload any story, but leave 'next' button. 
+      $(".controlsText").hide();
+    } else {
+      loadStory(bestLi, false);
+    }
+  });
 
 
 });
