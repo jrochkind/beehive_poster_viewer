@@ -18,15 +18,17 @@
         height="0.47462"
       />
       <html>
-        <strong>To understand where we are,
-        we must remember where
-        we’ve been.</strong> In this nighttime
-        scene, we find communities
-        living as though their lives
-        depend on the land around them.
-        The night sky, undisturbed by
-        satellites or airplanes, is filled with constellations, used
-        for orientation, navigation, and storytelling.
+        <p>
+          <strong>To understand where we are,
+          we must remember where
+          we’ve been.</strong> In this nighttime
+          scene, we find communities
+          living as though their lives
+          depend on the land around them.
+          The night sky, undisturbed by
+          satellites or airplanes, is filled with constellations, used
+          for orientation, navigation, and storytelling.
+        </p>
       </html>
     </story>
 
@@ -64,10 +66,10 @@
       <story>
         <label>The Source of Water &amp; Life</label>
         <region
-          x="0.09215"
-          y="0.16216"
-          width="0.04311"
-          height="0.10821"
+          x="0.11371"
+          y="0.37882"
+          width="0.08929"
+          height="0.10571"
         />
         <html>
           <p>The Appalachian mountains
@@ -250,35 +252,1368 @@
       </story>
 
       <story>
-        <label></label>
-
+        <label class="subhead">Colonization</label>
+        <region
+          x="0.17648"
+          y="0.01511"
+          width="0.16087"
+          height="0.47373"
+        />
         <html>
+          <h4>Disease &amp; Forced Displacement</h4>
+          <p>When the poster opens, we
+          see throngs of European
+          colonist birds, following on
+          the heels of the Scots-Irish
+          in unprecedented numbers.
+          They bring violence and
+          a new agenda for the land
+          of Appalachia: the production
+          of “wealth.” Sanctioned
+          by the church, powered by the
+          stolen labor of enslaved peoples,
+          and reinforced with military
+          might, they build a
+          new nation-state
+          on the graves of
+          Native peoples, 95% of
+          whom perish at the point
+          of a gun or in the fevers
+          of smallpox &amp; other diseases
+          spread intentionally
+          throughout the Americas as
+          biological weapons.</p>
         </html>
       </story>
 
       <story>
-        <label></label>
+        <label>Negotiated Territory</label>
+        <region
+          x="0.17880"
+          y="0.22552"
+          width="0.07221"
+          height="0.06422"
+        />
         <html>
+          Cherokee was an oral
+          language until the 1830s, when Sequoia drafted the
+          nation’s first syllabary. Used to record Cherokee
+          lifeways and letters and to defend rights to land and
+          sovereignty in the face of genocide, The Phoenix bilingual
+          newspaper reached Cherokee and white readers
+          alike with a strong, clear message: the
+          Cherokee Nation was negotiating for
+          its survival. 
         </html>
       </story>
 
       <story>
-        <label></label>
+        <label>The Trail of Tears</label>
+        <region
+          x="0.17835"
+          y="0.29151"
+          width="0.07155"
+          height="0.14087"
+        />
         <html>
+          In 1838, the U.S.
+          military forced
+          the “removal” of over
+          14,000 Cherokee men,
+          women, and children from their desirable
+          mountain real estate in the dead
+          of winter. During the long, cold procession
+          out of mineral-rich Appalachia
+          into the “Indian Territory”
+          of Oklahoma, over 4,000
+          people died from starvation
+          and deprivation. Although
+          the majority of the Nation
+          was lost or “relocated,”
+          some Cherokee
+          folks remained in the
+          mountains, negotiating
+          life in two worlds. Not disappeared though often invisibilized,
+          indigenous folks persist in Appalachia, and
+          are present in this poster for generations to come.
         </html>
       </story>
 
       <story>
-        <label></label>
+        <label>Industrialization</label>
+        <region
+          x="0.23749"
+          y="0.04839"
+          width="0.13932"
+          height="0.08777"
+        />
         <html>
+          <h4>Coal-Powered Wealth</h4>
+          <p>In the name of progress and
+          productivity, new nation-builders
+          sought not only to rid the U.S. of indigenous peoples
+          seen as “in the way,” but to convert all available land,
+          labor, and resources to profits for those in power.
+          Their capitalist endeavors -including their wars- were
+          fueled with coal harvested from Appalachia.</p>
         </html>
       </story>
 
       <story>
-        <label></label>
+        <label>Land Grab</label>
+        <region
+          x="0.23018"
+          y="0.10864"
+          width="0.10021"
+          height="0.08399"
+        />
         <html>
+          The arrival of the railroad brought an erosion
+          of land rights for folks in the mountains, resulting
+          in outside landowners claiming deeds to over 80%
+          of all Appalachian territory! The <b>Broad Form Deed</b>
+          separated surface rights from mineral rights, which
+          land prospectors gobbled up, often for 25¢ an acre.
         </html>
       </story>
+
+      <story>
+        <label>Labor Grab</label>
+        <region
+          x="0.20907"
+          y="0.16819"
+          width="0.15798"
+          height="0.06377"
+        />
+        <html>
+          Feudal labor relations prevailed
+          in the booming coal
+          camps of the early 20th
+          century, where coal companies
+          kept miners indebted
+          and imperiled in trecherous
+          underground working
+          conditions. Overseen with
+          guns and preachers and
+          paid only in company scrip,
+          mining families could only
+          secure food and housing
+          from the company store at
+          inflated prices, resulting in a
+          lifetime of debt
+        </html>
+      </story>
+
+      <story>
+        <label>Resistance</label>
+        <region
+          x="0.22551"
+          y="0.32018"
+          width="0.09466"
+          height="0.08399"
+        />
+        <html>
+          Unionization and collective
+          bargaining eventually
+          won healthcare and
+          safety victories for United
+          Mine Workers of America
+          (UMWA). But strikers sacrificed
+          their homes -and
+          sometimes their lives- in the struggle for justice.
+        </html>
+      </story>
+
+      <story>
+        <label>Battle of Blair Mountain</label>
+        <region
+          x="0.24031"
+          y="0.23246"
+          width="0.11910"
+          height="0.07977"
+        />
+        <html>
+          One of the largest labor struggles fought in U.S. history,
+          Blair Mountain saw over 12,000 miners march
+          on the seat of coal
+          company power in
+          armed resistance to
+          repressive, militarized,
+          and unsafe
+          working conditions.
+          In retaliation,
+          the coal operators
+          summoned the
+          U.S. Marshals, who
+          dropped bombs on
+          the striking miners
+        </html>
+      </story>
+
+      <story>
+        <label>Celebration Dance</label>
+        <region
+          x="0.25630"
+          y="0.29245"
+          width="0.13754"
+          height="0.07177"
+        />
+        <html>
+          Life in the coal camps was steeped in struggle, but is
+          also remembered as a time of community resilience.
+          Here, immigrant miners share stories, songs, and moonshine
+          while the square dancing June Bug, Bee, Turkey,
+          and Woodcock
+          celebrate union
+          victories and
+          the long-awaited
+          arrival of coalpowered
+          electricity-
+          more than a
+          generation after
+          it appeared in
+          northern cities.
+        </html>
+      </story>
+
+      <story>
+        <label>Mountaintop Removal</label>
+        <region
+          x="0.35397"
+          y="0.16023"
+          width="0.25681"
+          height="0.20784"
+        />
+        <html>
+          The wealth, industry, and Empire of the US were built
+          on the resources of rural and wild lands (at home and
+          abroad), powered with the dust of dirty coal, and prospered
+          by the sweat of miners and workers. As we see
+          in the center of the graphic, where a massive mine site
+          is tearing into the landscape, colonies like Appalachia
+          were sacrified on the altar of “the greater good”- progress,
+          power, and prosperity. And just as rural places gave
+          birth to the modern industrial world, the rising powers
+          of government, banks, and big business also shaped
+          the profile of Appalachia, transforming a region rich
+          in traditions of land-based self-reliance into a jobcentered
+          mono-economy reliant almost
+          entirely on a single, non-renewable
+          resource: <b>coal.</b>
+        </html>
+      </story>
+
+      <story>
+        <label>MTR: What’s the Difference?</label>
+        <region
+          x="0.47399"
+          y="0.24290"
+          width="0.12199"
+          height="0.07021"
+        />
+        <html>
+          For over a century, coalfield communities watched the
+          wealth of Appalachia carted out of the mountains by
+          the trainload, leaving behind little of the prosperity
+          or profits the “black diamonds” earned for absentee
+          land owners. Today, coal mining operations are highly
+          mechanized, using massive machines -like the 22-story
+          tall dragline below -to excavate the thin seams of coal
+          that run flat through the mountains like icing between
+          layers of a cake. Unlike underground mines, which were
+          worked with the hand-held pick and shovel, MTR and
+          other forms of strip mining use explosives to expose
+          and access underground coal seams, utterly decimating
+          the soil, habitat, and critters above. The fractured
+          mountain chunks, called “overburden,” are dumped in
+          nearby waterways, polluting them with “valley fills”-
+          inside out, upside down mountains. Over 2,000 miles
+          of rivers are already buried, while 450,000 acres -an
+          area bigger than Manhattan, distributed over 450 distinct,
+          named mountain tops -have been flattened into
+          lifeless moonscape.
+        </html>
+      </story>
+
+      <story>
+        <label>Mechanization: Machines Replace Miners</label>
+        <region
+          x="0.30507"
+          y="0.20586"
+          width="0.10021"
+          height="0.09821"
+        />
+        <html>
+          In 1950 there were 150,000 coal miners in Appalachia.
+          <b>Today, fewer than 15,000 remain.</b> And where an underground
+          mine once employed 200 men, (and today
+          employs only 30), an MTR site requires only 15 workers
+          to extract vastly more coal. Through mechanization
+          and union busting efforts by Massey Energy and
+          other companies, the coal industry has eliminated so
+          many jobs that many thousands of Appalachians have
+          been forced to leave the mountains. Here, a continuous
+          mining machine undercuts union power by chewing
+          up UMWA helmets and lunchpails, while miners
+          (the Rattler), farmers
+          (the Skunk), and grannies
+          (the Possum) use
+          their unique and potent
+          defense mechanisms
+          to fight back!
+          Such direct actions (and
+          even industrial sabotage)
+          have been key tools of
+          coalfield resistance for
+          decades.
+        </html>
+      </story>
+
+      <story>
+        <label>Who Pays for Walmart’s Low Prices?</label>
+        <region
+          x="0.43347"
+          y="0.16562"
+          width="0.09310"
+          height="0.05799"
+        />
+        <html>
+          The new face of the company store
+          is familiar across the rural US, where
+          the Walmart mono-economy
+          means dollars earned by miners
+          purchase goods produced
+          “cheaply” in US-owned
+          factories overseas, leaving
+          local businesses unable to
+          compete... or survive.
+        </html>
+      </story>
+
+      <story>
+        <label>“Development”</label>
+        <region
+          x="0.46384"
+          y="0.15898"
+          width="0.17997"
+          height="0.05518"
+        />
+        <html>
+          Walmarts, Prisons,
+          and Golf
+          Courses are the
+          three main “development”
+          projects
+          promoted by Big
+          Coal interests as
+          beneficial uses of
+          “reclaimed”
+          former mine
+          sites. Only
+          3% ever
+          receive even
+          this excuse for
+          development!
+        </html>
+      </story>
+
+      <story>
+        <label>Depopulation Plans</label>
+        <region
+          x="0.53267"
+          y="0.18461"
+          width="0.09741"
+          height="0.06355"
+        />
+        <html>
+          Folks whose labor is seen as “unprofitable”
+          count for little in an
+          “efficient” free-market economy.
+          <b>Depopulation Plans</b>, written by
+          coal companies, target schools
+          &amp; community spaces for consolidation
+          and destruction, urging
+          out-migration of folks
+          who are seen as “in
+          the way” of the
+          extraction
+          agenda.
+        </html>
+      </story>
+
+      <story>
+        <label>Prisons</label>
+        <region
+          x="0.50191"
+          y="0.14742"
+          width="0.09929"
+          height="0.05999"
+        />
+        <html>
+          New prison construction in Appalachia is lauded as
+          a recipe for prosperity, while states trade in incarcerated
+          people, many low income people of color and
+          prisoners of the “war on drugs.” The prison industry
+          means big bucks for corporate profiteers who trade
+          in human lives, but a world of violence and cages for
+          prisoners... <i>and</i> guards.
+        </html>
+      </story>
+
+      <story>
+        <label>The Myth of Reclamation</label>
+        <region
+          x="0.46867"
+          y="0.19926"
+          width="0.17182"
+          height="0.06982"
+        />
+        <html>
+          <b><i>But where are the lawmakers,
+          the regulators, the news
+          media?!</i></b> Coal industry
+          propaganda, greased with tax breaks and skyrocketing
+          profits, attempts to calm and persuade the public
+          that minelands are “reclaimed,” ie. restored to their
+          “approximate original contour,” and repopulated with
+          Oak, Elk, and folks with jobs security. Yet when coal
+          operators abandon their “strip jobs” after they’ve pillaged
+          the mineral wealth of the mountains,
+        </html>
+      </story>
+
+      <story>
+        <label>Losing Ground</label>
+        <region
+          x="0.49041"
+          y="0.20302"
+          width="0.08570"
+          height="0.04348"
+        />
+        <html>
+          Every mountain is
+          sacred to someone.
+          While official cemeteries
+          are some
+          of the only lands
+          deemed “unsuitable” for explosive MTR, unmarked
+          and Native burial sites are destroyed everyday.
+        </html>
+      </story>
+
+      <story>
+        <label>They Can’t Put It Back</label>
+        <region
+          x="0.39713"
+          y="0.28058"
+          width="0.18980"
+          height="0.17935"
+        />
+        <html>
+          The ecological diversity in this graphic is a metaphor
+          for the cultural vitality of the region, both of which
+          are threatened by destruction from MTR. Mountaintop
+          removal destroys renewable resources- a forest
+          that could be replanted, a road that could be rebuilt.
+          <strong>But other losses are permanent.</strong> Fertile top soil,
+          made rich over millenia, takes more than 500 years to
+          accumulate even half an inch. Once extinct, endemic
+          species (native only to a particular mountaintop or
+          stream) take with them unique evolutionary adaptations-
+          whole genetic languages that fall silent in their
+          absence. Like soil or species, the fabric of community
+          life -languages and dialects, skills for sustenance and
+          survival, stories and songs -once unraveled through
+          depopulation and degradation, are gone forever. 
+        </html>
+      </story>
+
+      <story>
+        <label>Community Impacts</label>
+        <region
+          x="0.59494"
+          y="0.17027"
+          width="0.09406"
+          height="0.06331"
+        />
+        <html>
+          <h4>Waste</h4>
+          With “planned obselence”
+          (building
+          things to break) and
+          disposable, well, <i>everything</i>,
+          most consumer
+          goods aren’t
+          even consumed at
+          all—they’re wasted.
+          That means, a real
+          live mountain that’s
+          green and vibrant
+          and full of life gets
+          blown up and gutted,
+          its insides mined and
+          burned and turned
+          into lots of stuff, and
+          then the stuff gets
+          thrown in a landfill
+          <strong>trading
+          a mountain
+          of life for a mountain
+          of trash!</strong>
+        </html>
+      </story>
+
+      <story>
+        <label>Sludge</label>
+        <region
+          x="0.55433"
+          y="0.24492"
+          width="0.07585"
+          height="0.03046"
+        />
+        <html>
+          Thanks to the Clean Air Act, coal is washed before it’s
+          burned (to get some -<i>never all</i>- of the toxins out). But
+          the deadly rinse water has to go somewhere- usually,
+          back up the mountain into unlined, open air pits held
+          back by some of the largest earthen dams in the world
+          (the most famous of these is directly above Marshfork
+          Elementary School in the Coal River Valley of W. Virginia).
+          This “sludge” is even injected into old underground
+          mines, (where it leaches and leaks into aquifers
+          and wells), or illegally dumped into waterways.
+        </html>
+      </story>
+
+      <story>
+        <label>Unnatural Disasters</label>
+        <region
+          x="0.43100"
+          y="0.36467"
+          width="0.19022"
+          height="0.10959"
+        />
+        <html>
+          <p>
+            Floods and erosion from MTR are a constant reality in
+            the coalfields, but residents live with an even deadlier
+            threat- impoundment collapse. The 2008 TVA spill of
+            toxic, radioactive fly ash (another type of coal waste)
+            near Harriman, TN wasn’t the first time coal industry
+            recklessness caused a life-threatening disaster in the
+            coalfields. The Buffalo Creek dam break of 1972 killed
+            118 in West Virginia; the 2000 spill in Inez, Kentucky
+            buried 100 miles of waterways. Engineers say, it’s not a
+            question of <i>if</i> the impoundments will break, but <i>when</i>.
+          </p>
+          <h4>Climate Injustice</h4>
+          <p>Climate Injustice means that the devastating burdens of
+          climate &amp; energy related disasters- like the TVA Spill,
+          Hurriane Katrina, or the BP Oil Blowout- are carried
+          by folks who didn’t create them or profit from them,
+          while the responsible parties get tax breaks and bailouts
+          and aren’t held accountable for cleaning up their
+          messes. They even make money off reconstruction!</p>
+          <h4>Clean Coal is a Dirty Lie</h4>
+          <p><strong>Coal can never be clean.</strong>
+          A non-renewable fossil fuel
+          containing almost every element in the periodic table,
+          coal cannot be mined, burned, or stored without extensive
+          damage and destruction. Yet the same corporatations
+          and big government officials that are encouraging
+          us to shop away our guilt about climate change
+          are labeling coal “clean”- and hoping we won’t notice
+          we’ve been greenwashed.
+          </p>
+        </html>
+      </story>
+
+      <story>
+        <label>The Coal economy</label>
+        <region
+          x="0.42115"
+          y="0.27837"
+          width="0.18395"
+          height="0.09765"
+        />
+        <html>
+          <h4>The Gifts of Coal, The Threats of Coal</h4>
+          <p>Across the MTR pit (and a world away) from the Big
+            City, we see Appalachian communities struggling with
+            the complicated legacy of coal mining and the repressive
+            stranglehold of today’s coal mono-economy. The
+            seeming gifts of coal, including jobs, pensions, and subsidies
+            for basic community services, are trucked in with
+            a sparkling Santa smile. On the other hand, the bared
+            teeth of intimidation and the spotlight of surveillance
+            show the sinister side of coal- one that uses violence
+            and threats to silence dissent and coerce complicity.</p>
+        </html>
+      </story>
+
+      <story>
+        <label>The Dance of Hard Choices</label>
+        <region
+          x="0.51715"
+          y="0.29255"
+          width="0.04360"
+          height="0.04076"
+        />
+        <html>
+          Miner Frog is a non-union
+          miner working on a strip
+          job. He spends each day
+          blowing up the mountains
+          where he fished and hunted
+          as a kid, cause it’s that, flip
+          burgers, or leave town.
+        </html>
+      </story>
+
+      <story>
+        <label>Frog’s got all sorts of health problems</label>
+        <region
+          x="0.48789"
+          y="0.30032"
+          width="0.04196"
+          height="0.03837"
+        />
+        <html>
+          Frog’s got all sorts of health
+          problems, from asthma to
+          severe back injury, as a result
+          of working at the mine
+          and breathing in coal dust
+          all day. Urged on by his
+          boss, he doesn’t report his
+          injury to keep his job.
+        </html>
+      </story>
+
+      <story>
+        <label>The whole family is getting very sick</label>
+        <region
+          x="0.41895"
+          y="0.28247"
+          width="0.07630"
+          height="0.08107"
+        />
+        <html>
+          The whole family is
+          getting very sick from
+          sludge in the well. Black
+          water comes out of
+          the tap, poisoned with
+          heavy metals. Mama
+          Frog has had her gall
+          bladder removed, while
+          this year all the garden
+          tomatoes have rotted
+          in the ground. 
+        </html>
+      </story>
+
+      <story>
+        <label>When Miner Frog and Tadpole go to visit the doctor</label>
+        <region
+          x="0.48734"
+          y="0.32741"
+          width="0.07689"
+          height="0.05704"
+        />
+        <html>
+          When Miner Frog and Tadpole
+          go to visit the doctor
+          (an Ass with a well endorsed
+          pharmaceutical labcoat),
+          they pay a high price for
+          bottled water and Oxycontin
+          pills, highly-addictive
+          pain medication that has
+          flooded Appalachian communities
+          in recent decades.
+        </html>
+      </story>
+
+      <story>
+        <label>At the end of the day, Frog has to go back to work</label>
+        <region
+          x="0.54686"
+          y="0.30946"
+          width="0.04434"
+          height="0.04823"
+        />
+        <html>
+          At the end of the day, Frog
+          has to go back to work to
+          keep up with his bills and
+          his pills. As Tadpole grows
+          older, she too must make
+          hard choices - destroy the
+          land she loves in order to
+          stay? Or leave? 
+        </html>
+      </story>
+
+      <story>
+        <label>Resistance</label>
+        <region
+          x="0.66052"
+          y="0.01366"
+          width="0.15647"
+          height="0.47181"
+        />
+        <html>
+          <b><i>So what’s the good news?</i></b> As grim and
+          overwhelming as the true cost of
+          coal is, <b>resistance is fertile!</b> Folks
+          all around the world are using wildly
+          different tactics to keep the oil in the
+          soil and the coal in the hole... from the
+          coalfields of Colombia to China, a global movement
+          is gaining momentum, urgency, and the power to fight
+          coal and address the climate crisis with system change.
+        </html>
+      </story>
+
+      <story>
+        <label>Social Movement Building</label>
+        <region
+          x="0.70282"
+          y="0.26850"
+          width="0.11945"
+          height="0.12183"
+        />
+        <html>
+          <p>The most endangered species
+          of the air, water, and
+          land -those most threatened
+          by MTR- have gathered
+          in the root system of
+          an ancient tree (collapsed
+          prematurely from atmospheric
+          pollution) to learn,
+          discuss, and strategize.Sharing
+          grassroots knowledge
+          and research, young and old from all different walks,
+          swims, and slithers of life are mapping their community
+          assests, watersheds, and coal industry pressure
+          points in preparation for collective action. One chair
+          is left empty, because we never know what new allies
+          we’ll discover along the way!
+        </p>
+        </html>
+      </story>
+
+      <story>
+        <label>Coalfield Community Organizing</label>
+        <region
+          x="0.58307"
+          y="0.28045"
+          width="0.12840"
+          height="0.11467"
+        />
+        <html>
+          Building upon an inheritance
+          of cultural
+          resilience and collective
+          organizing passed
+          down for generations,
+          Appalachian community
+          groups are speaking
+          out and standing up for
+          the mountains and the
+          miners! Educating their folks about MTR’s health impacts,
+          hosting vigils, and organizing rallies and marches,
+          these activist “pollinators” are fighting for their homes,
+          their mountains, their livelihoods, and their lives at great
+          personal risk. Through documentation, petitions, lobbying,
+          lawsuits, and non-violent civil disobedience, they
+          are laboring to make their voices heard in Washington’s
+          halls of power. Despite EPA lipservice, MTR continues,
+          along with coal company threats and acts of violence.
+        </html>
+      </story>
+
+      <story>
+        <label>Existence as Resistance</label>
+        <region
+          x="0.77059"
+          y="0.12951"
+          width="0.04405"
+          height="0.05748"
+        />
+        <html>
+          With the vicious backlash of the coal industry
+          against such public organizing, most
+          Appalachians resist through private
+          acts of perseverance. For many, continuing
+          to hunt and fish on “company
+          property”- the mountains that
+          are everyone’s backyard- is an act of
+          courage and defiance.
+        </html>
+      </story>
+
+      <story>
+        <label>Solidarity</label>
+        <region
+          x="0.62811"
+          y="0.22455"
+          width="0.08256"
+          height="0.18339"
+        />
+        <html>
+          Parachuting in to lend a paw are
+          activists from outside the coalfields,
+          represented by the Tortoise
+          and the Hare. They carry
+          different tools and tactics for
+          the struggle, including access to
+          education, technology, and social
+          movements. By respectfully taking
+          direction from local leaders,
+          these activists can be instrumental
+          in supporting coalfield resistance;
+          they’re less likely to be violently
+          targeted for their efforts, so
+          they can engage in direct actions,
+          documentation, and organizing.
+        </html>
+      </story>
+
+      <story>
+        <label>Community Power, not coal power</label>
+        <region
+          x="0.68437"
+          y="0.15441"
+          width="0.15526"
+          height="0.10485"
+        />
+        <html>
+          <p>“Paperwrenching”
+          means death to Big
+          Coal by a thousand
+          paper cuts! Here, a
+          multitasking millipede
+          turns the MTR permitting
+          process, weak environmental
+          legislation, and a mountain
+          of other paperwork into
+          potent ammunition against
+          the construction of a new coal-fired power plant. Aiming
+          to “exhaust the administrative capacity” of government
+          regulators like the Office of Surface Mining, her
+          paper airplanes are gumming up the gears of the coal
+          industry machine, effectively buying time for community-based
+          activists to halt it for good.</p>
+          <p> Meanwhile, in the low-income barrios and neighborhoods
+          of the city, resourceful urban critters like the
+          Squirrel, Cockroach, Cat, and even the carefully coiffed
+          Poodle aren’t standing for Big Coal’s ongoing assault of
+          air pollutants or huge doses of toxins. Instead, they are
+          defending their neighborhoods through direct action
+          and advancing a revised definition of “power”- <b><i>community
+          power</i></b>. With over 150 new coal-fired power
+          plants slated for contruction in during the final years
+          of the Bush administration, dozens have already been
+          defeated through such grassroots resistance!</p>
+        </html>
+      </story>
+
+      <story>
+        <label>We’re Not All In This Together</label>
+        <region
+          x="0.65952"
+          y="0.01704"
+          width="0.13846"
+          height="0.12713"
+        />
+        <html>
+          <h4>Big Banks, Big Government, Big Greens</h4>
+          <p><b><i>Who is responsible
+          for MTR? Who
+          pays for it? Who
+          permits it?</i></b> Here,
+          activist moths
+          shine a light on
+          the biggest culprits from Wall Street (including CitiGroup
+          and Bank of America) and Capitol Hill to demonstrate
+          their complicity in MTR. Always in cahoots,
+          these financiers and regulators offer their answer
+          to dirty energy and climate change - <b>green capitalism</b>,
+          including carbon trading. Seen here carving up
+          and selling off chunks our atmosphere -<i>the very air we
+          breathe</i>- they pretend the same logic they’ve been using
+          to create these problems is going to solve them- while
+          earning them profits all the while! Full of hot air and
+          bending over backwards to rubber stamp legislation
+          and legitimize destruction and distraction, floppy tubey
+          wind-sock men representing Big Green environmental
+          groups (like the Natural Resources Defense Council
+          and the Nature Conservancy) usurp funds, confuse
+          public opinion, and undermine grassroots power to get
+          “a seat at the table.”</p>
+        </html>
+      </story>
+
+      <story>
+        <label>False Solutions</label>
+        <region
+          x="0.58576"
+          y="0.04752"
+          width="0.14381"
+          height="0.09866"
+        />
+        <html>
+          There is no renewable replacement
+          for coal, because
+          coal concentrates
+          thousands of years of solar
+          energy in every square
+          inch. We’d have to plant the
+          entire planet in corn many
+          times over to keep up with
+          our growing energy demand!
+          No one makes money off energy
+          reduction or admitting
+          “there is no easy answer” - but
+          anyone who says otherwise is
+          likely selling something!
+        </html>
+      </story>
+
+      <story>
+        <label>Regeneration</label>
+        <region
+          x="0.81773"
+          y="0.01621"
+          width="0.16137"
+          height="0.46906"
+        />
+        <html>
+          <p>No place on earth should be a sacrifice
+          zone for the profit or luxury of any
+          other, and no people -anywhere- are
+          disposable. While folks fight like mad
+          for their lives and lands, we are all in
+          a perpetual moment of opportunity to
+          get together, imagine, and build a million
+          creative solutions to the problems of this
+          very dire historical moment. And fortunately for us, we
+          don’t have to reinvent the (water) wheel! Appalachians
+          (like these Carrion Flies) have been saving the seeds
+          of sustainable lifeways for generations, and, like landbased
+          people everywhere, they have lots to
+          teach us about how to use our resources
+          wisely and build our communities from
+          our own life energy and <b>beyond coal.</b></p>
+          <h4>When we close the poster…</h4>
+          <p> ...and return to a local, grounded perspective,
+          we find scenes inspired by real
+          folks building alternative economies
+          today in Appalachia. Entwined with the legacy
+          of environmental devastation, we see old wounds
+          healing, ecosystems and cultures regenerating and
+          thriving, and new ideas taking root in fertile soil.
+          </p>
+        </html>
+      </story>
+
+      <story>
+        <label>Bioremediation</label>
+        <region
+          x="0.81779"
+          y="0.31949"
+          width="0.17308"
+          height="0.17015"
+        />
+        <html>
+          Seven generations of lady salamanders are working
+          together to clean up contaminated water by planting
+          Cattails, Oyster Mushrooms, and other
+          species that naturally absorb toxins.
+          By remembering the three generations
+          before and planning
+          for three to come, they
+          stand a chance of eventually
+          restoring their waterways
+          - and the fabric
+          of their community
+        </html>
+      </story>
+
+      <story>
+        <label>Rainwater Harvest</label>
+        <region
+          x="0.92589"
+          y="0.15137"
+          width="0.06029"
+          height="0.05520"
+        />
+        <html>
+          With so much toxic mine waste
+          and devastated land, things won’t
+          be normal again in Appalachia for
+          a long time. Folks will have to be
+          inventive and relearn ancient ways
+          of meeting their basic needs, like
+          this Fly seen gathering rainwater
+          where aquifers are too polluted.
+        </html>
+      </story>
+
+      <story>
+        <label>Reclamation: The Longest Walk</label>
+        <region
+          x="0.83059"
+          y="0.23850"
+          width="0.13497"
+          height="0.06320"
+        />
+        <html>
+          Real reclamation means honoring native land rights!
+          Native folks from many nations
+          are joined by solidarity
+          marchers on the
+          Longest Walk, a real
+          cross-continental
+          journey of homecoming
+          made in
+          1977 and in 2008.
+        </html>
+      </story>
+
+      <story>
+        <label>Soil, Not Oil</label>
+        <region
+          x="0.79626"
+          y="0.15216"
+          width="0.15500"
+          height="0.09492"
+        />
+        <html>
+          The antidote to a fossil-fuel addicted
+          society is not merely more “renewable”
+          energy sources - shall we
+          have solar powered tanks and
+          ethanol charged missiles? It is in
+          changing our land-use patterns
+          to sequester more carbon, produce
+          less greenhouse gases, build precious
+          topsoil, and provide
+          more resources to
+          folks locally. The best
+          place to start is with
+          communtiy supported,
+          organic agriculture!
+        </html>
+      </story>
+
+      <story>
+        <label>Representation</label>
+        <region
+          x="0.82471"
+          y="0.07496"
+          width="0.09084"
+          height="0.07350"
+        />
+        <html>
+          <h4>Become the Media!</h4>
+          <p>
+            After generations of outsiders
+            telling tales of Appalachia
+            far and wide, young
+            folks like this Possum Mama
+            are seizing the airwaves and
+            telling their communities’ stories themselves. The future
+            belongs to those who tell a better story, and documentary
+            journalism not only outs coal industry corruption,
+            it trains storytellers for the next generation.
+          </p>
+          <p>
+            Social movements have
+            always had music, art, and
+            culture at the center of their
+            organizing strategy. Whether
+            at an old time revival or a
+            mountain punk show, these
+            critters are fueling the resistance
+            with homegrown tunes
+          </p>
+        </html>
+      </story>
+
+      <story>
+        <label>Solidarity Economies</label>
+        <region
+          x="0.80812"
+          y="0.26449"
+          width="0.10340"
+          height="0.09640"
+        />
+        <html>
+          What does a regional Appalachian economy look like
+          without coal at the center? Here, folks each bring a
+          different ingredient and skill to a Local Foods Cooperative
+          (canning chow-chow and other preserves). Inspired
+          by community commerical kitchens,
+          where small producers can work together
+          to scale-up production and
+          contend with bigger markets, this
+          scene reminds us that production
+          and trade can be equitable,
+          sustainable, and nourishing. 
+        </html>
+      </story>
+
+      <story>
+        <label>The Story of the Wasps</label>
+        <region
+          x="0.81862"
+          y="0.01823"
+          width="0.08495"
+          height="0.08145"
+        />
+        <html>
+          If you’ve seen the Beehive’s
+          <i>Plan Colombia</i> graphic, you
+          might remember the Paper
+          Wasps as North American
+          colonizers and consumers-
+          bad guys with bad habits.
+          Here, the Wasps are getting their
+          act together, building an affordable
+          urban housing project that’s energy
+          efficient, pooling their resources, reducing energy consumption,
+          and retrofitting their nest with insulation and
+          a couple of solar panels. No longer just consumers,
+          they’ve started a print collective (get it? <i>Paper</i> Wasps?)
+          and are teaching themselves forgotten skills for how
+          to live and work cooperatively - and even taking turns
+          doing the dishes!
+        </html>
+      </story>
+
+      <story>
+        <label>Energy Generation, Not Energy Extraction</label>
+        <region
+          x="0.86412"
+          y="0.11909"
+          width="0.07668"
+          height="0.05441"
+        />
+        <html>
+          Communities are saying NO to extractive
+          power from mega-utilities in
+          favor of democratically distributed,
+          locally-produced, renewable energy.
+          Not only is this better for Appalachia,
+          but it’s also far more efficient,
+          as nearly two-thirds of all electricity “from the grid”
+          is wasted, dissipating on the lines during transmission!
+          What if we measured energy in
+          terms of what we can generate with
+          our bodies and communities, not what
+          can be extracted from the earth?
+        </html>
+      </story>
+
+      <story>
+        <label>Homecoming</label>
+        <region
+          x="0.85935"
+          y="0.05482"
+          width="0.08368"
+          height="0.06522"
+        />
+        <html>
+          Our story’s end is also a beginning: a scene
+          of reunion. Birds representing young
+          folks returning home (after generations
+          of migration and displacement)
+          are welcomed into the
+          waiting arms of their communities,
+          where their energy is urgently needed
+          to build the future of Appalachia.
+        </html>
+      </story>
+
+      <story>
+        <label>Cast of Characters</label>
+        <region
+          x="0.01819"
+          y="0.01454"
+          width="0.96154"
+          height="0.46942"
+        />
+        <html>
+          <h4>A living Ecology</h4>
+          <p>These critters appear in this graphic
+          because they are significant to the
+          Appalachian Mountains, both ecologically
+          and culturally. For folks who
+          spend time in the woods, hunting
+          and fishing and playing, gathering
+          ginseng for cash or bloodroot for
+          sickness, this is not a static natural
+          history roster, but a familiar cast of characters in a
+          beloved and threatened natural world.</p>
+          <h4>Cast of Characters of the Mixed Mesophytic Forest</h4>
+          <h4>FLORA</h4>
+          <ul>
+            <li>American Chestnut(extinct)</li>
+            <li>Eastern Hemlock</li>
+            <li>Tulip Poplar</li>
+            <li>White Oak</li>
+            <li>Red Maple</li>
+            <li>Black Locust</li>
+            <li>Rhododendron spp.</li>
+            <li>Red Bud</li>
+            <li>Lady Slipper</li>
+            <li>Morel Mushroom</li>
+            <li>Cinnamon Fern</li>
+            <li>Lepidodendron spp.</li>
+            <li>Horsetail</li>
+            <li>Ramps</li>
+            <li>Cattails</li>
+            <li>Cherokee Rose</li>
+            <li>Pipsissewa</li>
+            <li>Solomon’s Seal</li>
+            <li>Pedicularis spp.</li>
+            <li>Lobelia</li>
+            <li>Mayapple</li>
+            <li>Poke</li>
+            <li>Kudzu</li>
+            <li>Poison Ivy</li>
+            <li>Dandelion</li>
+            <li>Goldenseal</li>
+            <li>Yellow Dock</li>
+            <li>Burdock</li>
+            <li>Stinging Nettle</li>
+            <li>Bloodroot</li>
+            <li>Yellow Root</li>
+            <li>Ginseng</li>
+            <li>Juncus</li>
+            <li>Water Lily</li>
+            <li>Oyster Mushroom</li>
+            <li>Black Cohosh</li>
+            <li>Wild Yam</li>
+            <li>Partridge Berry</li>
+            <li>Purple Trillium</li>
+            <li>Blue Cohosh</li>
+            <li>PawPaw</li>
+            <li>Sassafras</li>
+            <li>Mountain Laurel</li>
+            <li>Basswood</li>
+            <li>Flowering Dogwood</li>
+            <li>Reishi Mushroom</li>
+          </ul>
+          <h4>FAUNA</h4>
+          <ul>
+            <li>Barred Owl</li>
+            <li>European Starling</li>
+            <li>Eastern Grey Squirrel</li>
+            <li>Appalachian Cave Spider</li>
+            <li>Virginia Big-Eared Bat</li>
+            <li>Bog Turtle</li>
+            <li>Timber Rattlesnake</li>
+            <li>Eastern Cougar</li>
+            <li>Red Wolf</li>
+            <li>Great Blue Heron</li>
+            <li>Flat-Spired Three-Toothed Land Snail</li>
+            <li>Eastern American Toad</li>
+            <li>Spring Peeper</li>
+            <li>Field Cricket</li>
+            <li>Coyote</li>
+            <li>Eastern Cockroach</li>
+            <li>Appalachian Bewicks Wren</li>
+            <li>Cerulean Warbler</li>
+            <li>Passenger Pigeon (extinct)</li>
+            <li>Beaver</li>
+            <li>Black Bear</li>
+            <li>Bobcat</li>
+            <li>Muskrat</li>
+            <li>Eastern Kingsnake</li>
+            <li>Mountain Chorus Frog</li>
+            <li>Mudpuppy</li>
+            <li>W. Va. No. Flying Squirrel</li>
+            <li>New River Crayfish</li>
+            <li>Pileated Wodpecker</li>
+            <li>American Woodcock</li>
+            <li>Firefly spp.</li>
+            <li>Green June Beetle</li>
+            <li>Red Fox</li>
+            <li>Wood Mouse</li>
+            <li>Wild Turkey</li>
+            <li>European Honey Bee</li>
+            <li>Raccoon</li>
+            <li>Yellow Canary</li>
+            <li>Groundhog</li>
+            <li>Eastern Cottontail Rabbit</li>
+            <li>Eastern Elk</li>
+            <li>Blister Beetle</li>
+            <li>Bloodhound Dog</li>
+            <li>Domesticated Bull</li>
+            <li>Spruce-Fir Moss Spider</li>
+            <li>Red-Cheeked Salamander</li>
+            <li>Paper Wasp</li>
+            <li>Blackfly Larva</li>
+            <li>Red-Cockaded Woodpecker</li>
+            <li>Great Golden Digger Wasp</li>
+            <li>Mining Bee spp.</li>
+            <li>Eastern Spotted Skunk</li>
+            <li>Least Weasel</li>
+            <li>Porcupine</li>
+            <li>Snapping Turtle</li>
+            <li>Carpenter Ant spp.</li>
+            <li>Red Ant spp.</li>
+            <li>Lead Beetle</li>
+            <li>Star-Nosed Mole</li>
+            <li>Virginia Oppossum</li>
+            <li>Chestnut Clearwing Boring Moth</li>
+            <li>Blacksided Dace</li>
+            <li>Caddisfly Larva</li>
+            <li>Mayfly Larva</li>
+            <li>Mosquito Larva</li>
+            <li>House Mouse</li>
+            <li>Domestic Cat</li>
+            <li>Donkey</li>
+            <li>Cope’s Grey Tree Frog</li>
+            <li>Peppered Moth</li>
+            <li>Mockingbird</li>
+            <li>Earthworm</li>
+            <li>Carrion Fly spp.</li>
+            <li>Acorn Weevil</li>
+            <li>Bald-Faced Hornet</li>
+            <li>Threadwaisted Wasp</li>
+            <li>Monarch Butterfly</li>
+            <li>Appalachian Grizzled Skipper</li>
+            <li>Gray Bat</li>
+            <li>Ruby Throated Hummingbird</li>
+            <li>Bumblebee</li>
+            <li>Millipede spp.</li>
+            <li>Peregrine Falcon</li>
+            <li>Snowshow Hare</li>
+            <li>Eastern Painted Turtle</li>
+            <li>American Red Squirrel</li>
+            <li>Black Rat</li>
+            <li>Poodle Dog Domestic</li>
+            <li>Cumberlandian Combshell</li>
+            <li>Fisher</li>
+            <li>White-Tailed Deer</li>
+            <li>Yucatan Snail</li>
+            <li>Hermit Thrush</li>
+            <li>Appalachian Grasshopper</li>
+            <li>Cicada</li>
+            <li>Cheat Mountain Salamander</li>
+            <li>Midland Mud Salamander</li>
+            <li>Shenendoah Salamander</li>
+            <li>Southern Appalachian Salamander</li>
+          </ul>
+        </html>
+      </story>
+
 
   </stories>
 </data>
