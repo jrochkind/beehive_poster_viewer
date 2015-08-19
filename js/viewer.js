@@ -760,7 +760,8 @@ jQuery( document ).ready(function( $ ) {
     if (bestLi == null) {
       // unload any story, but leave 'next' button. 
       $(".controlsText").hide();
-    } else {
+    } else if (bestLi != $(".controlsText").data("beehive-story-li").get(0)) {
+      // Load it unless it's already loaded. 
       loadStory(bestLi, false);
     }
   });
