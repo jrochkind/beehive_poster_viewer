@@ -12,10 +12,10 @@
     <story>
       <label class="subhead">Ancestors</label>
       <region
-        x="-0.00025"
-        y="0.01289"
-        width="0.17687"
-        height="0.47462"
+        x="0.00965"
+        y="0.01112"
+        width="0.16261"
+        height="0.16343"
       />
       <html>
         <p>
@@ -254,10 +254,10 @@
       <story>
         <label class="subhead">Colonization</label>
         <region
-          x="0.17648"
-          y="0.01511"
-          width="0.16087"
-          height="0.47373"
+          x="0.18037"
+          y="0.01453"
+          width="0.16428"
+          height="0.13785"
         />
         <html>
           <h4>Disease &amp; Forced Displacement</h4>
@@ -380,10 +380,10 @@
       <story>
         <label>Labor Grab</label>
         <region
-          x="0.20907"
-          y="0.16819"
-          width="0.15798"
-          height="0.06377"
+          x="0.20585"
+          y="0.16147"
+          width="0.08025"
+          height="0.05772"
         />
         <html>
           Feudal labor relations prevailed
@@ -1140,10 +1140,10 @@
       <story>
         <label>Resistance</label>
         <region
-          x="0.66052"
-          y="0.01366"
-          width="0.15647"
-          height="0.47181"
+          x="0.67922"
+          y="0.14065"
+          width="0.11447"
+          height="0.21252"
         />
         <html>
           <b><i>So what’s the good news?</i></b> As grim and
@@ -1368,10 +1368,10 @@
       <story>
         <label>Regeneration</label>
         <region
-          x="0.81773"
-          y="0.01621"
-          width="0.16137"
-          height="0.46906"
+          x="0.83783"
+          y="0.13596"
+          width="0.14389"
+          height="0.19841"
         />
         <html>
           <p>No place on earth should be a sacrifice
