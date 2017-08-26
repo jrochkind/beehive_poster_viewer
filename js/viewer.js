@@ -1,6 +1,6 @@
 /* All the javascript we need for the poster viewer in one file
 
-  Sorry this file is a bit of a mess organizationally. 
+  Sorry this file is a bit of a mess organizationally.
 
 */
 
@@ -94,7 +94,7 @@ function setPosterAndLang() {
 // possible.
 //
 // Pass in an 'li' for a scene, so we can determine
-// if it's the first scene. 
+// if it's the first scene.
 function adjustTipVisibility(li) {
   // Show full screen instructions IFF it's the first element
   // and we can switch to full-screen view
@@ -106,7 +106,7 @@ function adjustTipVisibility(li) {
 }
 
 // arg is the <li> element containing the .story link
-// with story data attached. 
+// with story data attached.
 function loadStory(li, move) {
   if (typeof move === "undefined")
     move = true;
@@ -245,7 +245,7 @@ function panelReservedPortion() {
 
 
 function setupOpenSeadragonViewer() {
-  /* Save in global cause we're gonna need to refer to it and stuff 
+  /* Save in global cause we're gonna need to refer to it and stuff
      and we're too lazy to make a closure right now */
 
   //eg  "./tiles/mr-inside/mr-inside.dzi"
@@ -256,7 +256,7 @@ function setupOpenSeadragonViewer() {
     //prefixUrl: "http://annotorious.github.io/js/openseadragon/images/",
     showNavigator: false,
     autoHideControls: false,
-    prefixUrl: "./openseadragon-bin-1.1.1/images/",
+    prefixUrl: "./openseadragon-bin-2.3.0/images/",
     tileSources: dziFile,
     // We tell OSD to use our own nav buttons, easier than
     // trying to customize OSD's
@@ -279,9 +279,9 @@ function addControls() {
   //container.append(controls);
 
   // Custom behavior for fullScreen, we want to full screen entire
-  // body so our custom controls will still be there. 
+  // body so our custom controls will still be there.
   //  We do lose OSD's fullscreen-related events this way. We're still
-  // using some lower-level OSD events to deal with fullscreen switch. 
+  // using some lower-level OSD events to deal with fullscreen switch.
   // (Skipping OSD's _fullPage_ mode was crucial, to leave our controls
   // on-screen)
   //
@@ -300,7 +300,7 @@ function addControls() {
     adjustTipVisibility($(".controlsText").data("beehive-story-li"));
 
   });
-  // But the hide the button entirely if OSD thinks we can't do full screen. 
+  // But the hide the button entirely if OSD thinks we can't do full screen.
   if ((!OpenSeadragon.supportsFullScreen) && (! OpenSeadragon.isFullScreen())) {
     $("#fullPageBtn").css("visibility", "hidden");
   }
@@ -327,9 +327,9 @@ function addControls() {
         // the control panel lose it's proper max height,
         // and worse the controlsText area strangely appearing
         // as visibility:hidden (even though it's not marked so)
-        // on maximization. 
+        // on maximization.
         //
-        // We recalculate the max height after sliding down, 
+        // We recalculate the max height after sliding down,
         // and also need to hide and then quickly fade in (just `show`
         // didn't work!) to make things properly visible and sized
         // in safari after slideDown. (If we just used show instead
@@ -374,7 +374,7 @@ function addControls() {
   $(".controls-text-nav").on("click", ".controls-text-nav-prev", function(event) {
     event.preventDefault();
 
-    var li = $(".controlsText").data("beehive-story-li");    
+    var li = $(".controlsText").data("beehive-story-li");
     loadStory(li.prev());
   });
   $(".controls-text-nav").on("click", ".controls-text-nav-next", function(event) {
@@ -399,7 +399,7 @@ function addControls() {
    set current view from URL on load */
 function addPermalinkFunc() {
   function boundsToParams(bounds) {
-    return "x=" + encodeURIComponent(bounds.x.toFixed(5)) + 
+    return "x=" + encodeURIComponent(bounds.x.toFixed(5)) +
       "&y=" + encodeURIComponent(bounds.y.toFixed(5)) +
       "&w=" + encodeURIComponent(bounds.width.toFixed(5)) +
       "&h=" + encodeURIComponent(bounds.height.toFixed(5))
@@ -433,7 +433,7 @@ function addPermalinkFunc() {
   // loading AND our ajax loadPosterData is done!
   openSeadragonViewer.addHandler('open', function (event) {
     // always: poster.xml load may not have worked, we still
-    // wanna set our view of the tiles. 
+    // wanna set our view of the tiles.
     ajaxLoad.always(function() {
       gotoInitialView();
     });
@@ -462,7 +462,7 @@ function storyToFragmentUrl(storyJson) {
 
 // We store the story data in XML becuase it's more convenient
 // to edit by hand for the sort of data we have (really!), but
-// json is easier to deal with in javascript, esp cross-browser. 
+// json is easier to deal with in javascript, esp cross-browser.
 function storyXmlToJson(storyXml) {
   storyXml = $(storyXml);
   var json = {};
@@ -471,7 +471,7 @@ function storyXmlToJson(storyXml) {
 
   // .html() on xml node doesn't work in safari, use XMLSerializer.
   // If it's raw text with no elements, wrap in a single <p> for
-  // consistency. 
+  // consistency.
   var htmlElement   = storyXml.find("html").get(0);
   var serialized    = new XMLSerializer().serializeToString(htmlElement);
   if (htmlElement.childNodes.length === 1 && htmlElement.childNodes[0].nodeType === 3) {
@@ -503,7 +503,7 @@ function gotoInitialView() {
       parseFloat(params.h));
     openSeadragonViewer.viewport.fitBounds(rect);
   } else if ("s" in params) {
-    // find the scene with matching title to our 's' 
+    // find the scene with matching title to our 's'
     var destLi = $("#storyList li").filter(function(i, li) {
       var story = $(li).find(".story").data("beehive-story");
       return story.label == params.s;
@@ -521,7 +521,7 @@ function gotoInitialView() {
 }
 
 // Loads the poster data, returns the AJAX object, so it can be used as a JQuery
-// promise. 
+// promise.
 function loadPosterData() {
   /* fetch the xml of stories */
   var fetchUrl = "./narrative/" + beehive_poster + "/" + beehive_lang + ".xml";
@@ -568,14 +568,14 @@ function loadPosterData() {
 
   // Height limits on the story list we couldn't figure out
   // how to do with pure CSS, we'll use some JS that we run on
-  // load and screen size change. 
+  // load and screen size change.
   function storyListHeightLimit() {
     // Need to make sure it's a container that makes it onto
-    // full screen mode. 
+    // full screen mode.
     var container = $("#openseadragon");
     var panel     = $("#overlayControls")
 
-    var maxPanelHeight = container.height() - 
+    var maxPanelHeight = container.height() -
       panel.position().top -
       parseInt(panel.css('margin-top')) -
       20; // 20px bottom margin we want
@@ -585,12 +585,12 @@ function loadPosterData() {
     // The story list and and the story text area take
     // turns being on the screen once at a time, below
     // the header area. They each need a max height
-    // such that they won't overflow the panel. 
-    var storyListBottom = 
-      $(".controls-story-list-expander").position().top + 
+    // such that they won't overflow the panel.
+    var storyListBottom =
+      $(".controls-story-list-expander").position().top +
       $(".controls-story-list-expander").outerHeight(true);
     // CSS max-heigh doesn't account for padding or borders, we need
-    // to subtract extra to account, we just do a healthy extra amt. 
+    // to subtract extra to account, we just do a healthy extra amt.
     var maxLowerHeight = maxPanelHeight - storyListBottom - 24;
 
     panel.find(".controls-story-list, .controlsText").each(function(i, section) {
@@ -610,7 +610,7 @@ function loadPosterData() {
   // add our custom Annotorious plugin, and show the 'define region' button
   //
   // We're currently linking to annotorious/latest on github, for some reason
-  // we had trouble using a local copy. 
+  // we had trouble using a local copy.
   function addAdminHelperUI() {
     $("<link/>", {
       rel: "stylesheet",
@@ -658,7 +658,7 @@ function addShowRegionPlugin() {
 
   annotorious.plugin.ShowRegionPlugin.prototype.onInitAnnotator = function(annotator) {
     // A Field can be an HTML string or a function(annotation) that returns a string
-    annotator.popup.addField(function(annotation) { 
+    annotator.popup.addField(function(annotation) {
       var geometry = annotation.shapes[0].geometry;
 
       return '<pre>' +
@@ -716,7 +716,7 @@ function calcProximateScene(rect) {
 }
 
 // Returns null if no intersection, otherwise Openseadragon.Rect
-// of the intersection. 
+// of the intersection.
 function rectIntersect(rectA, rectB) {
   var xL = Math.max(rectA.x, rectB.x);
   var xR = Math.min(rectA.x + rectA.width, rectB.x + rectB.width);
@@ -758,11 +758,26 @@ jQuery( document ).ready(function( $ ) {
 
     var bestLi = calcProximateScene(subtractPanelFromViewport(bounds));
     if (bestLi == null) {
-      // unload any story, but leave 'next' button. 
+      // unload any story, but leave 'next' button.
       $(".controlsText").hide();
     } else {
       loadStory(bestLi, false);
     }
+  });
+
+  // for some reason keypress event doesn't work in chrome,
+  // keydown or keyup do. let's go with keydown. in chrome
+  // at least keydown does repeat if you hold the key down, go figure.
+  $(document).on("keydown", function(event) {
+    var x = 1;
+
+    //event.preventDefault();
+
+    // pass it to the OSD viewer
+    var newEvent = jQuery.Event('keypress');
+    newEvent.which = event.which;
+    newEvent.keyCode = event.keyCode;
+    $("#openseadragon .openseadragon-container").focus().trigger(newEvent);
   });
 
 
