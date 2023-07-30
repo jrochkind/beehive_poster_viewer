@@ -14,6 +14,10 @@ var beehive_lang;
    one english (en), one spanish (es). */
 var i18n_data = {}
 
+// Hacky global mode to avoid moving to a new scene and then immediately calculating
+// a DIFFERENT scene.
+var sceneTransitionMode = false;
+
 i18n_data.en = {
   'next': 'Next',
   'previous': 'Previous',
@@ -142,6 +146,9 @@ function loadStory(li, move) {
 
   closeStoryList(function() {
     if (move) {
+      // Avoid calculating a new 'best scene' after animation completes!
+      sceneTransitionMode = true;
+
       withSlowOSDAnimation(function() {
         rect = adjustRectForPanel(rect);
 
@@ -754,6 +761,14 @@ jQuery( document ).ready(function( $ ) {
   applyI18nValues(beehive_lang);
 
   openSeadragonViewer.addHandler('animation-finish', function(target, info) {
+    // If the animation finished after we explicitly loaded a scene,
+    // do NOT re-calculate and load a DIFFERENT scene!
+    if (sceneTransitionMode) {
+      sceneTransitionMode = false;
+      return;
+    }
+
+
     var bounds = target.eventSource.viewport.getBounds();
 
     var bestLi = calcProximateScene(subtractPanelFromViewport(bounds));
