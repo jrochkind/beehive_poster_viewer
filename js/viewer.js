@@ -615,11 +615,11 @@ function loadPosterData() {
     $("<link/>", {
       rel: "stylesheet",
       type: "text/css",
-      href: "http://annotorious.github.io/latest/annotorious.css"
+      href: "//annotorious.github.io/latest/annotorious.css"
     }).appendTo("head");
 
     $.ajax({
-      url: "http://annotorious.github.io/latest/annotorious.min.js",
+      url: "//annotorious.github.io/latest/annotorious.min.js",
       dataType: "script",
       success: function() {
         // Important to add the plugin BEFORE we make the OpenSeadragon viewer
@@ -761,7 +761,7 @@ jQuery( document ).ready(function( $ ) {
       // unload any story, but leave 'next' button.
       $(".controlsText").hide();
     } else if (bestLi != $(".controlsText").data("beehive-story-li").get(0)) {
-      // Load it unless it's already loaded. 
+      // Load it unless it's already loaded.
       loadStory(bestLi, false);
     }
   });
