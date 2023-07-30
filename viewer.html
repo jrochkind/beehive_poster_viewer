@@ -14,13 +14,20 @@
        File should include the OpenGraph tags for that poster/language
        combo.  Eg, if poster=mr and lang=en, file should be in
        ./opengraph-partials/mr.en.html
+
+       Due to weird bug in apache SSI, this gets even weirder -- in general,
+       we kind of regret trying to use SSI, now years later.
+
+       https://stackoverflow.com/questions/41977344/get-parts-of-document-uri-using-regex-and-ssi
+       https://bz.apache.org/bugzilla/show_bug.cgi?id=57448
        -->
 
-  <!--#if expr="$QUERY_STRING = /(^|&|;)poster=([^&;]+)($|&|;)/" -->
-    <!--#set var="poster" value="$2" -->
+  <!--#if expr='v("QUERY_STRING") =~ /(^|&|;)poster=([^&;]+)($|&|;)/ && $2 =~ /(.*)/' -->
+    <!--#set var="poster" value="$0" -->
   <!--#endif -->
-  <!--#if expr="$QUERY_STRING = /(^|&|;)lang=([^&;]+)($|&|;)/" -->
-    <!--#set var="lang" value="$2" -->
+
+  <!--#if expr='v("QUERY_STRING") =~ /(^|&|;)lang=([^&;]+)($|&|;)/ && $2 =~ /(.*)/' -->
+    <!--#set var="lang" value="$0" -->
   <!--#else -->
     <!--#set var="lang" value="en" -->
   <!--#endif -->
