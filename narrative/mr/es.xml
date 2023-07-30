@@ -5,9 +5,9 @@
       del Colectivo de Diseño la Colmena
   </title>
   <link>
-    http://beehivecollective.org/proyectos-graficos/mesoamerica-resiste-es/
+    //beehivecollective.org/proyectos-graficos/mesoamerica-resiste-es/
   </link>
-  <stories>  
+  <stories>
 
     <story>
       <label>La mirada del colonizador</label>
@@ -64,7 +64,7 @@ economía global.</p>
         <p>La brújula es una ruleta donde las corporaciones inescrupulosamente apuestan el futuro de la región. Las bolitas brincan sobre los logos de los inversionistas extranjeros quienes
 guían las economías locales hacia la exportación. Ferrocarriles y tanques rodean el juego, recordándonos la historia violenta de la United Fruit Company (hoy Chiquita) en Centroamérica: controlando grandes extensiones de tierra, reprimiendo los trabajadores, y hasta apoyando un golpe de estado que resultó en décadas de dictadura en Guatemala y derrocó a un presidente elegido democráticamente que intentó redistribuir la tierra al pueblo.</p>
         <p>Las industrias bananeras y cafeteras se han beneficiado del uso de las fuerzas militares y de la violencia para poder controlar unas de las tierras más fértiles con las que poder producir un buen desayuno para los países del Norte.</p>
-        
+
       </html>
     </story>
 
@@ -97,7 +97,7 @@ países industrializados en el Norte están causando el caos climático, los pri
        <region x="0.03971" y="0.15625" width="0.05608" height="0.06255"/>
       <html>
         La ceguera de la producción expansiva aparece como un tifón en el mar. La tempestad avanza arremolinandose como un muro de humo oscuro, escupiendo piezas baratas y llenando filas infinitas de contenedores destinados a las rutas de comercio que atraviesan por Mesoamérica.
-        
+
       </html>
     </story>
 
@@ -137,7 +137,7 @@ barras de oro, y es impulsado por las velas de los bancos modernos que continúa
       <html>
         Liderado por la caricatura de la bebida azucarada,
 el Rey Kool-Aid, el barco de Azúcar reparte cucharadas de azúcar en nuestros alimentos con sus remos y depende de la esclavitud asalariada para producir azúcar de forma barata mientras la industria mantiene altas ganancias.
- 
+
       </html>
     </story>
 
@@ -213,7 +213,7 @@ criaturas en peligro de extinción fuera de su hábitat.
       <story>
       <label>Llegando deste el norte</label>
       <region x="0.18639" y="0.06107" width="0.02578" height="0.04072"/>
-      <html>        
+      <html>
         Mientras animales tropicales son exportados al exterior,
 animales de caricatura entran a reemplazarlos. Iconos de los medios de comunicación y de la cultura consumista navegan los mares en una botella de Coca-Cola.
 
@@ -296,7 +296,7 @@ están en contra la globalización en un juego de “whack-a-mole”, pero sus d
     <story>
       <label>El Banco Mundial</label>
       <region x="0.22957" y="0.22908" width="0.10287" height="0.10535"/>
-      <html>        
+      <html>
         El Banco Mundial, otra institución financiera importante detrás
 del Proyecto Mesoamérica, es presentado como un jugador barrigón adicto a la economía de los hidrocarburos.
 
@@ -312,7 +312,7 @@ Desarrollo Limpio (MDL), que se
 muestra como un juego de ajedrez sospechoso, operado por monedas en donde el Banco juega con sí mismo. Bajo la lógica del MDL, la industria sucia en los países del Norte recibe cierta “flexibilidad” para cumplir con su objetivo de emisiones por medio de la creación de “Desarrollo Limpio” en los países del Sur, generando créditos de carbono para compensar sus emisiones. Supuestamente los créditos “compensan” la contaminación sin que las industrias recorten
 sus actividades contaminantes. Excavadoras empujan todas las piezas del ajedrez fuera de su camino, sin importar si éstas se encuentra en
 el lado de la energía “limpia” o “sucia” del juego.
- 
+
       </html>
     </story>
 
@@ -321,7 +321,7 @@ el lado de la energía “limpia” o “sucia” del juego.
       <region x="0.24041" y="0.24819" width="0.07054" height="0.05800"/>
       <html>
         El Banco Mundial derrama dólares en el mercado de carbono, cortando monedas de las nubes de humo mientras su otro brazo juega las máquinas de casino, arriesgando su suerte con los desastres naturales. En la mesa de poker en frente del Banco, las fichas están apostadas en contra de los países del Sur. Con los préstamos ligados a condiciones que parecen trampas económicas para osos, la casa siempre gana.
-        
+
       </html>
     </story>
 
@@ -407,7 +407,7 @@ salarios bajos.
         Las máquinas de coser en la maquiladora están
 deshilando los tejidos tradicionales y expulsado una línea de ropa de marca
 de producción masiva para inundar los centros comerciales del mercado global.
- 
+
       </html>
     </story>
 
@@ -680,7 +680,7 @@ sus fuerzas para afrontar a los tentáculos de la máquina fotocopiadora de
 acaparamiento de tierras. Estos sectores sociales importantes están representados por tres
 de los cultivos de mayor importancia cultural y nutritiva de la región: las tres hermanas (maíz, frijol y calabaza).</p>
       <p>Sembrado juntos en las milpas, un sistema tradicional de la agricultura en Mesoamérica, estas plantas se apoyan entre sí, cada una mejora el crecimiento de las demás de la forma en que diferen tes partes de los movimientos sociales se apoyan mutuamente.</p>
-    </html>   
+    </html>
   </story>
 
   <story>
@@ -712,7 +712,7 @@ tierras dañadas para el cultivo.</p>
     <region x="0.88317" y="0.24937" width="0.10519" height="0.07605"/>
     <html>Un barco crucero invade la esquina derecha inferior del cartel. El barco está basado en un vehículo anfibio, utilizado por la Marina Estadounidense
 para desplegar tropas en las playas de Centroamérica...hoy en día es utilizados para aventuras turísticas. Estos turistas-dentadura motorizada están tomando unas vacaciones para relajarse mientras engullen una experiencia empaquetada. No ven más allá de los anuncios que retratan la cultura indígena como un artículo o entretenimiento para su consumo y a la gente local como trabajadores que les sirven su comida
-y limpian sus baños. De manera racista, la industria del turismo explota comunidades locales a la vez que vende la idea de que sólo unos pocos privilegiados tienen el derecho a acceder a estos “paraísos vacacionales”. 
+y limpian sus baños. De manera racista, la industria del turismo explota comunidades locales a la vez que vende la idea de que sólo unos pocos privilegiados tienen el derecho a acceder a estos “paraísos vacacionales”.
     </html>
   </story>
 
@@ -891,7 +891,7 @@ rodeada de hierbas medicinales y plantas relacionadas con la fertilidad y la sal
 una cerca y una granja industrial de camarón. Los manglares protegen las costas de la erosión, con su sistema masivo de raíces crean un ecosistema único que es un vivero y santuario para la cría de criaturas acuáticas. La industria de cría de camarones es una industria que rápidamente está creciendo que amenaza a los manglares alrededor del mundo. Este monocultivo contaminante desplaza la vida marina, la cuál provee una fuente esencial de proteínas para las comunidades.
     </html>
   </story>
-  
+
 
   <story>
     <label>Refugiados</label>
@@ -952,7 +952,7 @@ que representa el hablar y el escuchar. A lo largo y ancho del cartel simboliza 
     </html>
   </story>
 
-  <story>    
+  <story>
     <label>La asamblea comunitaria</label>
     <region x="0.58781" y="0.11760" width="0.12971" height="0.11808"/>
     <html>Representantes de comunidades afectadas por el Proyecto Mesoamérica se reúnen en un círculo en el centro de la imagen para platicar en común sus luchas y planear para la
