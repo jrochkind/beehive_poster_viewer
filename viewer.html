@@ -14,13 +14,20 @@
        File should include the OpenGraph tags for that poster/language
        combo.  Eg, if poster=mr and lang=en, file should be in
        ./opengraph-partials/mr.en.html
+
+       Due to weird bug in apache SSI, this gets even weirder -- in general,
+       we kind of regret trying to use SSI, now years later.
+
+       https://stackoverflow.com/questions/41977344/get-parts-of-document-uri-using-regex-and-ssi
+       https://bz.apache.org/bugzilla/show_bug.cgi?id=57448
        -->
 
-  <!--#if expr="$QUERY_STRING = /(^|&|;)poster=([^&;]+)($|&|;)/" -->
-    <!--#set var="poster" value="$2" -->
+  <!--#if expr='v("QUERY_STRING") =~ /(^|&|;)poster=([^&;]+)($|&|;)/ && $2 =~ /(.*)/' -->
+    <!--#set var="poster" value="$0" -->
   <!--#endif -->
-  <!--#if expr="$QUERY_STRING = /(^|&|;)lang=([^&;]+)($|&|;)/" -->
-    <!--#set var="lang" value="$2" -->
+
+  <!--#if expr='v("QUERY_STRING") =~ /(^|&|;)lang=([^&;]+)($|&|;)/ && $2 =~ /(.*)/' -->
+    <!--#set var="lang" value="$0" -->
   <!--#else -->
     <!--#set var="lang" value="en" -->
   <!--#endif -->
@@ -36,7 +43,7 @@
   <!-- END facebook opengraph SSI inclusion -->
 
   <!-- One custom font from google, Cardo, used for body text -->
-  <link href='http://fonts.googleapis.com/css?family=Cardo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Cardo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <!-- maximum scale keeps ipads from doing weird things on orientation change -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -44,7 +51,7 @@
 
     <link href="./css/viewer.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <script src="./openseadragon-bin-2.3.0/openseadragon.min.js"></script>
 
