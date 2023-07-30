@@ -757,10 +757,11 @@ jQuery( document ).ready(function( $ ) {
     var bounds = target.eventSource.viewport.getBounds();
 
     var bestLi = calcProximateScene(subtractPanelFromViewport(bounds));
+
     if (bestLi == null) {
       // unload any story, but leave 'next' button.
       $(".controlsText").hide();
-    } else if (bestLi != $(".controlsText").data("beehive-story-li").get(0)) {
+    } else if ($(".controlsText").data("beehive-story-li") == undefined || bestLi != $(".controlsText").data("beehive-story-li").get(0)) {
       // Load it unless it's already loaded.
       loadStory(bestLi, false);
     }
